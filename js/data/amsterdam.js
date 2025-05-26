@@ -2,8 +2,6 @@ window.amsterdam = [
   {
     id: "2818",
     listing_url: "https://www.airbnb.com/rooms/2818",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Quiet Garden View Room & Super Fast WiFi",
     description:
       'Quiet Garden View Room & Super Fast WiFi<br /><br /><b>The space</b><br />I\'m renting a bedroom (room overlooking the garden) in my apartment in Amsterdam, <br /><br />The room is located to the east of the city centre in a quiet, typical Amsterdam neighbourhood the "Indische Buurt". Amsterdamâ€™s historic centre is less than 15 minutes away by bike or tram.<br /><br /><br />The features of the room are:<br /><br />- Twin beds (80 x 200 cm, down quilts and pillows) <br />- 2 pure cotton towels for each guest <br />- reading lamps<br />- bedside table<br />- wardrobe<br />- table with chairs<br />- tea and coffee making facilities<br />- mini bar<br />- alarm clock<br />- Hi-Fi system with cd player, connection for mp3 player / phone<br />- map of Amsterdam and public transport<br />- Wi-Fi Internet connection <br /><br />Extra services:<br /><br />- Bike rental<br /><br /><b>License number</b><br />0363 5F3A 5684 6750 D14D',
@@ -59,7 +57,6 @@ window.amsterdam = [
     availability_60: "40",
     availability_90: "63",
     availability_365: "132",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "279",
     number_of_reviews_ltm: "1",
     number_of_reviews_l30d: "1",
@@ -83,8 +80,6 @@ window.amsterdam = [
   {
     id: "20168",
     listing_url: "https://www.airbnb.com/rooms/20168",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Studio with private bathroom in the centre 1",
     description:
       "17th century Dutch townhouse in the heart of the city. no public transport needed! Located a stones throw from Rembrandt Square, Dam Square, Leidse Square and Flower Market. Walking distance from Central Station.<br />Comfortable, cosy, lockable studio with comfortable bed and with private bathroom, double glazed windows and night blackout curtains, flat screen TV and mini fridge, Wi-Fi. No bathtub only shower. No kitchen. No curfew. You feel 100% privacy. Maximum for 2 persons!<br /><br /><b>The space</b><br />For those who like all facets of city life. In the streets surrounding the house, there are lots of antique shops, and for those who are into browsing for antiques. The Rijksmuseum is a short walk away. The famous nine-streets with all its little boutique shops, cafes, restaurants and whatnot is also around the corner. The Dam Square, Leidse Square and Rembrandt Squarejust minutes to walk.<br />No Curfew and you feel 100% privacy. <br />Hair dryer, towels and linens are included",
@@ -138,7 +133,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "339",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -162,8 +156,6 @@ window.amsterdam = [
   {
     id: "25428",
     listing_url: "https://www.airbnb.com/rooms/25428",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Lovely, sunny 1 bed apt in Ctr (w.lift) & firepl.",
     description:
       "Lovely apt in Centre ( lift & fireplace) near Jordaan<br /><br /><b>The space</b><br />This nicely furnished, newly renovated apt  is very sunny, and spacious with 8 windows. The appliances are fairly new. There are two flat screen TVs, washing machine, dryer, dishwasher, laptop computer, Wi-fi, and high speed internet as well as a printer. The floors are wood throughout the apt. The large living room and bedroom are separated by a nice corridor.The living room has two sofas, and is very comfortable. Doors in all rooms, and lots of privacy. Lots of books and CDs. There is a bathroom with a tub, and a separate toilet. We have a new wood burning fireplace in the living room.<br /><br />Wonderful views of the Keizersgracht Canal and Wester Church in front, and trees and gardens in back.<br /><br />The apt is in a historic area, as well as a very convenient one. It is two blocks from the Anne Frank House. The neighborhood is filled with cafes, and restaurants, with  the Albery Heijn superm",
@@ -215,7 +207,6 @@ window.amsterdam = [
     availability_60: "1",
     availability_90: "1",
     availability_365: "57",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "5",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -238,8 +229,6 @@ window.amsterdam = [
   {
     id: "27886",
     listing_url: "https://www.airbnb.com/rooms/27886",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Romantic, stylish B&B houseboat in canal district",
     description:
       "Stylish and romantic houseboat on fantastic historic location with breathtaking view.  Wheelhouse, deckhouse and captains room. Central, quiet. Great breakfast, 2 vanMoof design bikes and a Canadian Canoe are included. Just read the reviews on tripadvisor for instance!<br /><br /><b>The space</b><br />For a romantic couple: A beautifully restored traditional dutch barge, M.s. Luctor, with all modern comforts, your own entrance, three rooms,(sleeping room, deckhouse and wheelhouse) with two bikes and a Canadian canoe to explore the city. Have your breakfast weather permitting on the large jetty. (You  might want to give a piece of your fresh fruit to our Greek turtle...) Organic products, a variety of cheese, fresh orange juice and croisants... We are member of green-hotels (ECEAT) and care for the environment. (We just installed solar pannels! A lot of questions can be answered on our own site, there is a button with Frequently Asked Questions.) <br />The location is superb, fantastic ",
@@ -294,7 +283,6 @@ window.amsterdam = [
     availability_60: "24",
     availability_90: "47",
     availability_365: "182",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "221",
     number_of_reviews_ltm: "2",
     number_of_reviews_l30d: "0",
@@ -318,8 +306,6 @@ window.amsterdam = [
   {
     id: "28871",
     listing_url: "https://www.airbnb.com/rooms/28871",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Comfortable double room",
     description:
       "<b>The space</b><br />In a monumental house right in the center of Amsterdam, we offer two rooms (one single room and one double room) to visitors who want to enjoy the comfort of a home-like accommodation, plus being in the middle of the historic city center, close to all important museums, shopping streets, restaurants, bars and clubs. Both rooms share a bathroom,  access to free wifi internet.<br /><br />We are situated in the middle of the most important nightlife area of Amsterdam, which makes it a very vibrant place, but also a noisy place.<br /><br /><b>Other things to note</b><br />Washing and drying are for a flat fee of â‚¬10<br /><br /><b>License number</b><br />0363 607B EA74 0BD8 2F6F",
@@ -373,7 +359,6 @@ window.amsterdam = [
     availability_60: "18",
     availability_90: "32",
     availability_365: "295",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "343",
     number_of_reviews_ltm: "10",
     number_of_reviews_l30d: "4",
@@ -397,8 +382,6 @@ window.amsterdam = [
   {
     id: "29051",
     listing_url: "https://www.airbnb.com/rooms/29051",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Comfortable single room",
     description:
       "This room can also accomodate 2 people.  For an extra of â‚¬15<br /><br /><b>The space</b><br />In a monumental house right in the center of Amsterdam, we offer two rooms (one single room and one double room) to visitors who want to enjoy the comfort of a home-like accommodation, plus being in the middle of the historic city center, close to all important museums, shopping streets, restaurants, bars and clubs. Both rooms share a bathroom, and access to free wifi internet. <br /> <br />We are situated in the middle of the most important nightlife area of Amsterdam, which makes it a very vibrant place, but also a noisy place.  <br /> <br />We accept all major credit cards.<br /><br /><b>Other things to note</b><br />No smoking and no sleepovers pls<br /><br />Washing and drying is for a flat fee of â‚¬10<br /><br /><b>License number</b><br />0363 607B EA74 0BD8 2F6F",
@@ -453,7 +436,6 @@ window.amsterdam = [
     availability_60: "20",
     availability_90: "39",
     availability_365: "314",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "486",
     number_of_reviews_ltm: "9",
     number_of_reviews_l30d: "6",
@@ -477,8 +459,6 @@ window.amsterdam = [
   {
     id: "41125",
     listing_url: "https://www.airbnb.com/rooms/41125",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Amsterdam Center Entire Apartment",
     description:
       "<b>The space</b><br />A nice, sunny and spacious apartment in the center of Amsterdam, in the  Jordaan neighborhood: one of the most characteristics neighborhood of Amsterdam. Apartment consists of 2 rooms (bedroom + living room) . There is a modern kitchen with full appliances, and a toilet & bathroom in the apartment. It is very nearby to the central station and other public transportation. Easy to travel to the all hot spots within 10 minutes.<br /><br />There are many nice cafe's, restaurants, bars, art galleries and shops at walking distance. Anne Frank's house and Wester Church are just 5 minutes away. There are also many supermarkets and restaurants for your convenience.<br /><br />The apartment is fully furnished. Amenities: Washing machine, dishwasher, combi-microwave, espresso machine, big flat screen tv, stereo system, cable TV and Free WIFI. It is available for 2 people for short term. Any other questions, please let me know.",
@@ -531,7 +511,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "89",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -554,8 +533,6 @@ window.amsterdam = [
   {
     id: "43980",
     listing_url: "https://www.airbnb.com/rooms/43980",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "View into park / museum district (long/short stay)",
     description:
       "RELOCATE RENTAL / ASK FOR LONG TERM RELOCATION DEALS !<br />Ideal starting point for joggers the crowd in their 30ies to 50ies. Residential upgrade area, safe and right at the park with many cafes/restaurants, just off center, public transport at 50 m, 15 min. to airport. The home is meant ONLY for who can be respectful and silent.<br /><br /><b>The space</b><br />Exclusive park view area, 10 min. walk to Leidseplein and Van Gogh museum/Rijksmuseum etc., safe and most silent area in town, trams and restaurants and (night)shops 50 m!<br /><br />2 PERS.: Only appartment with bed linnen and towels for max. 2 pers. and the 2 kids. The appartment is meant for 2 pers. It is meant as an extra service as we had this question before, so please understand it this way. All self-catering, fill up what you used in my house, no Bed & Breakfast service!<br /><br />PLEASE NOTE: arrival after 15h and departure before 10h (other times have to be agreed upon and times have to fit working schedules)<br />",
@@ -610,7 +587,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "61",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -633,8 +609,6 @@ window.amsterdam = [
   {
     id: "44391",
     listing_url: "https://www.airbnb.com/rooms/44391",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Quiet 2-bedroom Amsterdam city centre apartment",
     description:
       "Guests greatly appreciate the unique location of the apartment. It is located in a very quiet part of the city centre whilst only 1,5km away from central station. A bus takes you there directly in just five minutes. Restaurants, bars, musea, the Amsterdam Zoo and the popular citypark Marineterrein are just around the corner. The apartment itself is very well isolated so you can sleep in silence. The large private terrace provides you, directly from the kitchen, a nice outdoor space! Have a look!<br /><br /><b>The space</b><br />Fully furnished apartment in the center of Amsterdam including a livingroom, 2 bedrooms (1 room with 2p bed 1,40*2m and second bedroom has a 2p bed 1,60*2m which can be seperated in two seperate single beds upon request), toilet, shower, luxurious kitchen and beautiful roof terrace!<br /><br /><b>Guest access</b><br />All the facilities are included (towels , bed linen , heating , WIFI) .<br /><br /><b>Other things to note</b><br />All the facilities are include",
@@ -689,7 +663,6 @@ window.amsterdam = [
     availability_60: "27",
     availability_90: "27",
     availability_365: "27",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "39",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -713,8 +686,6 @@ window.amsterdam = [
   {
     id: "47061",
     listing_url: "https://www.airbnb.com/rooms/47061",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Charming apartment in old centre",
     description:
       "<b>The space</b><br />A beautiful, quiet apartment in the center of Amsterdam. First floor of a characteristic Amsterdam house build in 1890. Wonderful view over the â€˜Singelgrachtâ€™- canal. 74m2. Spacious living. Fully equipped modern half-open kitchen. Bedroom with a double bed and another separate room with an single sleeping couch. Nice old wooden floor. Wireless Internet.<br /><br />Nassaukade is a street in West Amsterdam, on the banks of the canal between the Nassau Square and the Overtoom. The street is part of a series of three building situated on the canal quays, that the center boundary. The Nassaukade makes with the line located Stadhouderskade and Mauritskade part of the s100, the Amsterdaminner ring.<br /><br />The westside of the center of Amsterdam. Lots of nice bars and restaurants around. Very close to the Leidseplein, the 9-Streets and the Vondelpark. However very close to the tourists attractions, the apartment itself is very quiet and idyllic.<br /><br />We're a cou",
@@ -766,7 +737,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "212",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "182",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -790,8 +760,6 @@ window.amsterdam = [
   {
     id: "49552",
     listing_url: "https://www.airbnb.com/rooms/49552",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Multatuli Luxury Guest Suite in top location",
     description:
       "Stylish & spacious guest suite in Amsterdam's most desirable neighbourhood. Central and convenient. Perfectly placed in easy walking distance of all the sights, shops, cafes and restaurants. Quiet and peaceful bedroom, large and light living room (can be used as second bedroom),  luxurious and spacious bathroom, handy pantry. The house is national monument built in 1790, completely renovated in 2019. In the 1820s it was the home of Multatuli, Holland's most famous author.<br /><br /><b>The space</b><br />The house is a 'Rijksmonument' (national monument) dating from 1790 and has a rich history, reflected in the original beamed ceilings and narrow stairways yet has been fully renovated and now offers modern comfort and convenience in a superb location.<br /><br />LAYOUT DESCRIPTION:<br />The Multatuli Guest Suite is located one flight up from the street level on the first floor (US second floor). The main entrance and staircase are shared with the hosts/owners but the guest suite is com",
@@ -847,7 +815,6 @@ window.amsterdam = [
     availability_60: "5",
     availability_90: "19",
     availability_365: "202",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "371",
     number_of_reviews_ltm: "4",
     number_of_reviews_l30d: "2",
@@ -871,8 +838,6 @@ window.amsterdam = [
   {
     id: "49790",
     listing_url: "https://www.airbnb.com/rooms/49790",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Luxurous Houseboat-Great Location",
     description:
       "Book right away, ill do everything to get u an unforgettable stay.<br /><br /><b>The space</b><br />One of the best houseboats in Central Amsterdam, luxurous, fantastic terrace on the water and great view on a very good location, near the center. Quiet neighboorhood with shops and restaurants. Next to the Vondelpark and Musea aerea.<br /><br />If you want a real comfortable stay, on a not commonplace object, this is the place for you. Watch the boats and the swans passing by. Walk through the vondelpark to the center and musea.<br /><br />This a beautiful well mordern designed boathouse with large windows that let in a lot of ligh. Is an open space where you can interact easily. You have a well and beautiful designed shower with a shower cap. The walls are white and makes the place more specious. <br /><br /><br />One big bedroom with a double bed and a semi open room with one twin bed (140 cm-200 cm). Open kitchen, big living room with big launch sofa, LCDTV, seperate bathroom, sepera",
@@ -924,7 +889,6 @@ window.amsterdam = [
     availability_60: "31",
     availability_90: "57",
     availability_365: "185",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "103",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -948,8 +912,6 @@ window.amsterdam = [
   {
     id: "50515",
     listing_url: "https://www.airbnb.com/rooms/50515",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Family Home (No drugs, smoking or parties)",
     description:
       "This is a beautiful family home in a lovely part of Amsterdam, Bos en Lommer. It's a recently build house, connected to a friendly little square with a small garden. Only 10 minutes by bike from city centre, museums etc. Quiet and comfortable. It's not suitable for parties, drugs or alcohol and we prefer families or couples.<br /><br /><b>The space</b><br />A nice family home in a lovely part of Amsterdam. With it's warm and comfortable interior you'll feel at home instantly. Only 10 minutes on a bike (which you can rent everywhere) to the city centre with it's museums, parks, shops etc. Also great location to take a day trip to Haarlem, the beach or explore the rest of Amsterdam. This area has all you need. Small bakery around the corner, supermarkets, theatre  and a lovely park with a nice cafe around the corner (Erasmuspark). <br />The house is newly build and surrounded by other houses/apartments which are all connected  to a friendly and quiet little square. It's a real family are",
@@ -1004,7 +966,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "226",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "17",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -1027,8 +988,6 @@ window.amsterdam = [
   {
     id: "50523",
     listing_url: "https://www.airbnb.com/rooms/50523",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "B & B de 9 Straatjes (city center)",
     description:
       "B & B â€œDe 9 Straatjesâ€ welcomes you to your â€˜home away from homeâ€™.<br /> <br />Located in a monumental historic building in the middle of the famous Jordaan and nine shopping streets. Itâ€™s situated in the lively city center of Amsterdam offering a diversity of brown pubs, restaurants and boutiques in the direct area. B & B â€œDe 9 Straatjesâ€ is the most excellent location for a city trip.<br /><br /><b>The space</b><br />B & B â€œDe 9 Straatjesâ€ welcomes you to your â€˜home away from homeâ€™.<br /> <br />Located in a monumental historic building in the middle of the famous Jordaan and nine shopping streets. Itâ€™s situated in the lively city center of Amsterdam offering a diversity of brown pubs, restaurants and boutiques in the direct area. B & B â€œDe 9 Straatjesâ€ is the most excellent location for a city trip, business visit or shopping spree.<br /> <br />B &B â€œDe 9 Straatjesâ€ is only a 15-minute walk from Amsterdam Central Railway Station. Typical Amsterdam sightseeing attractions such as The ",
@@ -1081,7 +1040,6 @@ window.amsterdam = [
     availability_60: "51",
     availability_90: "79",
     availability_365: "351",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "307",
     number_of_reviews_ltm: "6",
     number_of_reviews_l30d: "0",
@@ -1105,8 +1063,6 @@ window.amsterdam = [
   {
     id: "52490",
     listing_url: "https://www.airbnb.com/rooms/52490",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Amsterdam Aqua",
     description:
       "Welcome to Amsterdam Aqua <br />You are not renting the entire private apartment,<br />I live here  with my girlfriend and<br />also sometimes by myself.<br />There is  only one guestroom in the apartment.<br /><br />If you want to rent the entire apartment, different conditions apply.<br /><br /><b>The space</b><br />Welcome to Amsterdam Aqua. <br />My bright and spacious home is build above a canal, it has nice views over the water.<br />It is located in a residential area, about 10 to 15 minutes to the city center by bicycle, bus or tram, stops are very near. <br />It's really easy to get around town from here..<br />Eastern islands is a modern area with lots of space, light and water.<br />A local beer tasting <br />garden/brewery in a windmill,  cafe-terraces, shops, cinema and restaurants are very near.<br />The guest room is equiped  with a king-size waterbed, plus  a wall size window. <br />You can sit on the large balcony and have a lovely view over the the mini marina,<br />t",
@@ -1162,7 +1118,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "102",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -1185,8 +1140,6 @@ window.amsterdam = [
   {
     id: "53671",
     listing_url: "https://www.airbnb.com/rooms/53671",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Nice room near centre with en suite bath",
     description:
       'Our room with private bathroom (including shower and tub) is situated in a quiet and picturesque area in Central Amsterdam. Around the corner you can sit on the square along a canal in a coffee shop. Within 5 minutes walking you reach the centre. Free Wifi (in july 2016 upgraded to 100bit/sec).<br /><br /><b>The space</b><br />This room with en suite private bathroom including shower and tub is situated on the first floor of a historic monument from the beginning of the 20th century, built in the Amsterdam school style. The house was recently (6 years ago) thoroughly renovated including a completely new private bathroom with natural stone, shower and bath tub. We also put a new floor 2 years ago and live on the 2nd and 3rd floor ourselves.<br /><br />The house is situated in the small "Zeeheldenbuurt", close to famous Prinseneiland and separated from the city centre only by the railway tracks. It is only 5 minutes walking to get there (Jordaan and grachten: canals, atmospheric shopping',
@@ -1242,7 +1195,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "309",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -1265,8 +1217,6 @@ window.amsterdam = [
   {
     id: "55621",
     listing_url: "https://www.airbnb.com/rooms/55621",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Fully equiped house, PIJP area = great",
     description:
       "Be happy as we are in our apartment. In our spacious, two floor appartment of 120m2. In a very nice area (typical Amsterdam and all flavours and colours of the world) yet a very quit street. Apartment is very suitable for families or couples.<br /><br /><b>The space</b><br />Welcome to our nice spaceous, clean and tidy apartment on 3rd and 4th floor. <br /><br />This is a nice modernized apartment in 100 year old building in a quiet street. Light, space and tidy are keywords. A warm wooden floor brings contrast to the modern materials used as well as to the furniture. On the 3rd floor you'll be living with a big open kitchen (50m2), separate extra toilet and attached a little balcony. 4th floor one bedroom (20m2) with a double bed, the masterbedroom (20m2) with roof terrace (9m2). Plus the bathroom with bath and separate shower.<br /><br />During your stay you can use our amenities which includes WiFi, television, kitchen tools, washing machine, dishwasher.<br /><br />The place is priv",
@@ -1322,7 +1272,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "32",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -1346,8 +1295,6 @@ window.amsterdam = [
   {
     id: "55868",
     listing_url: "https://www.airbnb.com/rooms/55868",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Apartment near Museumplein (centre)",
     description:
       "All guests agree: the apartment  is perfect and the location even better. A real home away from home. Two bedrooms, a fully equipped kitchen, a living with a comfortable couch. Quiet area, next to the Museumplein with the 3 major Museums.<br /><br /><b>The space</b><br />Dear reader, If you would like to stay in my house, please send me a message. I never accept reservation requests without communicating with potential guests through email before. It is not a second home, but the house I live in. I do not rent it out to everybody. Thanks!<br /><br />Our 80m2 home is on the second floor (no elevator) and is over 100 years old. Lots of old characteristics are saved, but the house is comfortable in a 21th century way! There are two bedrooms, one with a double bed and one with a single bed (2 meters up). There is also room for an extra, comfortable bed on the floor. If needed I can arrange a cod. Please ask for it. <br /><br />We have an open, fully equipped kitchen which looks into the li",
@@ -1402,7 +1349,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "38",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "95",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -1426,8 +1372,6 @@ window.amsterdam = [
   {
     id: "62015",
     listing_url: "https://www.airbnb.com/rooms/62015",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Charming, beautifully & sunny place with cat Luna",
     description:
       "This beautiful apartment in one of the most lively and upcoming neighborhoods of Amsterdam. In between two city parks with a lot of new horeca places. The heart of the city is about 10 minutes away and you can reach it by train, tram or bike.<br /><br /><b>The space</b><br />Dear traveller,<br /><br />The modern sunny beautifully apartment (second floor) is located to the east of the city centre in a typical Amsterdam neighbourhood. Amsterdamâ€™s historic centre is less than 10 minutes away by bike or tram or train.<br /><br />My dear cat Luna also lives in the apartment. If you rent my place she is included. She is very easy and lazy and sleeps a lot ;-).<br /><br />The apartment has all the things you need:<br />- Double bed<br />- Big couch, television, dvd player <br />- Free wifi <br />- Kitchen fridge, tea cooker, coffe maker, oven and stove (fully furnished) <br />- Shower, bath and seperate toilet <br />- Double glass, so almost no noice from outside<br />- 2 balconies<br /><br /",
@@ -1482,7 +1426,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "218",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "34",
     number_of_reviews_ltm: "4",
     number_of_reviews_l30d: "4",
@@ -1506,8 +1449,6 @@ window.amsterdam = [
   {
     id: "62801",
     listing_url: "https://www.airbnb.com/rooms/62801",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Very nice appartment ALL of januari",
     description:
       "<b>The space</b><br />Very Nice Appartment for rent from the 5th of Januari to 6th of febuari.  <br />Nicely located on an entrance to the Westerpark.  <br />Great friendly calm neighbourhood  <br />Lots of grocery shops, restaurants and public transportation on walking distance  <br /> <br />Comes with free wifi, dishwasher, microwave, washer, dryer, BATH, etc.  <br />One bike available (with kidseat).  <br /> <br />1 bedroom with kingsize 2 pers bed  <br />1 bedroom for child until age of 4, includes bed, closet, etc.  <br />1 livingroom with 2 pers sleepingcouch  <br />Kitchen,  <br />hallway,  <br />bathroom (bath)  <br />Balcony  <br />Storage  <br /> <br />Groundfloor appartment  <br />Location for googlemaps; Solebaystraat, bos en lommer, Amsterdam  <br /> <br />NO SMOKING  <br /> <br />Very nice appartment, perfect for small family. Lots of toys around.  <br />For further questions please e-mail; superjan350@gmail.com or call +31 6 52 45 82 16  <br /> <br />Greetings,  <br /> <",
@@ -1556,7 +1497,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "0",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -1569,8 +1509,6 @@ window.amsterdam = [
   {
     id: "64736",
     listing_url: "https://www.airbnb.com/rooms/64736",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Luxury Houseboat",
     description:
       "<b>The space</b><br />Beautiful houseboat in the center of Amsterdam looking onto the canal called kostverlorengracht.<br />This all private houseboat is a very clean and bright place. The location is ideal , it's only a 5 min walk to the Vondelpark or to the Overtoom. Also lots of public transport options to get to the museum area, shopping center, Damsquare or Leidseplein Leidsesquare in 5-10 min.<br /><br />The houseboat has a bedroom, kitchen, bathroom, toilet and livingroom. It's ideal to stay with 1 or 2 people.<br /><br />Some details: <br />- ground floor<br />- bright houseboat with big windows <br />- terras on the south/west side <br />- private shower/bath and toilet <br />- private fully equipped kitchen with washing machine and small oven <br />- double bed with view over the canal <br />- about 60 m2 <br />- 5 min. walk to Vondelpark/overtoom <br />- tram 1 and 17 around the corner (5-10 min ride to Leidsesquare and museum area) <br />- Schiphol is 15min with public tran",
@@ -1622,7 +1560,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "103",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -1645,8 +1582,6 @@ window.amsterdam = [
   {
     id: "67841",
     listing_url: "https://www.airbnb.com/rooms/67841",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Amsterdam - The Pijp Apartment 1A",
     description:
       "<b>The space</b><br />Your own private 1 bedroom apartment!!<br /><br />This one bedroom apartment is 40m2 with morning and afternoon sun and immaculately presented with modern designer and vintage furniture and lighting throughout. <br /><br />It is situated close to the Albert Cuyp Markets & Heineken Brewery located in De Pijp, Amsterdam South. <br /><br />This property is located in the lively area of De Pijp which is the most cosmopolitan and vibrant districts of Amsterdam. De Pijp is brimming with great cafÃ©s, restaurants and bars. <br /><br />The Albert Cuyp Market is 1 street away and the popular Sarphatipark is less then 2 minutes away. The apartment is only a 10 minute walk to Museumplein, Rembrandtplein, Dam Square and Trams 3, 12, 16 and 24 run past the corner of the street. <br /><br />It comes fully equipped with Wireless Broadband Internet and Cable TV. <br /><br />This apartment has a 3 night minimum stay.<br /><br /><b>Other things to note</b><br />Please be aware there",
@@ -1699,7 +1634,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "16",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -1722,8 +1656,6 @@ window.amsterdam = [
   {
     id: "70598",
     listing_url: "https://www.airbnb.com/rooms/70598",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Attic room with doublebed available",
     description:
       "Attic room with double bed available . The house is situated in the North of Amsterdam, free parking. You can reach the central station in just 20 minutes.<br /><br /><b>The space</b><br />I live in a nice neigborhood in the north of Amsterdam not so far from the central Station.<br />There is a nearby busstop (less than 1 minute walk). From this stop you can get to the centre of the city in 20 minutes. There is also a direct bus connection to Amsterdam Sloterdijk (35 minutes).<br /><br />Check in on Saturday and Sunday is flexible and sometimes on Fridays.<br /><br /><b>Other things to note</b><br />Check in on Saturday and Sunday is flexible and sometimes on Fridays.<br /><br /><b>License number</b><br />0363 C3A3 D38B 4644 BA93",
@@ -1778,7 +1710,6 @@ window.amsterdam = [
     availability_60: "2",
     availability_90: "2",
     availability_365: "2",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "107",
     number_of_reviews_ltm: "1",
     number_of_reviews_l30d: "0",
@@ -1802,8 +1733,6 @@ window.amsterdam = [
   {
     id: "75382",
     listing_url: "https://www.airbnb.com/rooms/75382",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Garden Suite Studiohttps://www.airbnb.com/manage-l",
     description:
       "A beautiful and spacious studio apartment that captures the true feeling of BB IJ. Featured is a double bed, sitting and eating area, with full kitchen. <br />Enjoy the views of the garden, canal, and historic windmill from inside or step out into the private garden.  This is an all private self-contained suite with private entrance, kitchen, and full private bathroom.  Nothing is shared!<br /><br /><b>The space</b><br />What you see in the pictures is what you get. <br />A beautiful and spacious self contained private accomodation (studio apartment) with private kitchen and bathroom inside our house that captures the true feeling of BB IJ. Featured is a double bed, sitting and eating area, with full kitchen. There is also a fold out bed for a third person.<br />The cottage room can be rented for larger groups.<br />Enjoy the views of the garden, canal, and historic windmill from inside or step out into the private garden to take it all in. Have breakfast in the garden, feed the swans,",
@@ -1859,7 +1788,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "254",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -1882,8 +1810,6 @@ window.amsterdam = [
   {
     id: "75444",
     listing_url: "https://www.airbnb.com/rooms/75444",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Cottage Room- Completely Private",
     description:
       'Relax in this intimate room with Dutch antique furnishings. This room has a double bed, eating area, with a gorgeous en-suite bathroom.   The room also has a white noise machine that helps you to sleep relaxed at anytime! Breakfast is not included in the price (â‚¬7,50 extra pp).<br /><br /><b>The space</b><br />The Cottage Room<br />Relax in this intimate room with Dutch antique  furnishings. This room has a double bed, eating area, with a gorgeous en-suite bathroom.   Also there is a "white-noise" machine in the room to ensure restful sleep"at anytime!   This room has no access to the garden.<br />Ammenities include:<br />-white noise machine<br />-water cooker<br />-fridge<br />-TV<br />-internet<br />-en suite bathroom with toilet, sink, and shower <br /><br />BB IJ is situated in the center of Amsterdam along the outer Singel canal. It is a dream location for tourists and businesspersons alike. BB IJ\'s garden lies along the water, which was the original IJ waterfront to the city.  J',
@@ -1939,7 +1865,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "324",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -1962,8 +1887,6 @@ window.amsterdam = [
   {
     id: "75499",
     listing_url: "https://www.airbnb.com/rooms/75499",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Red Studio Palamedes Amsterdam",
     description:
       "A Studio Apartment on a unique spot. We do not serve breakfast, the Studio Formula means \"Self Catering\". The studio-apartment (33 m2) has a privat bathroom and TV/CDR-set. Coffee, tea and microwave facility. Bed-and bath linen, free Wi-Fi, all taxes, is included. The Studios are on the 3rd floor so you'll have to climb stairs...<br /><br /><b>The space</b><br />THE COMFORTS OF HOME ON A GREAT LOCATION<br />This quiet situated Studio combines the comforts of home with a great location on the edge of the old city centre. <br />The Studio formula means Self Catering so we do'nt serve breakfast. The studios are on the 3rd floor, so you'll have to climb stairs. You'll have your own key of your Studio and the front door. Your Studio has its own private bathroom with shower, a kitchen, double bed and a TV/DVD/CDR-set and Wi-Fi to make your stay comfortable. Bed- and bath linen are included.<br />The Red Studio can accomodate 2 persons.<br /><br />CULTURE<br />Nearby there are the beautiful 1",
@@ -2018,7 +1941,6 @@ window.amsterdam = [
     availability_60: "13",
     availability_90: "26",
     availability_365: "280",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "35",
     number_of_reviews_ltm: "2",
     number_of_reviews_l30d: "1",
@@ -2042,8 +1964,6 @@ window.amsterdam = [
   {
     id: "76459",
     listing_url: "https://www.airbnb.com/rooms/76459",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Yellow Studio Palamedes Amsterdam",
     description:
       "The comforts of home on a unique spot.<br /><br /><b>The space</b><br />THE COMFORTS OF HOME ON A GREAT LOCATION <br />This quiet situated Studio combines the comforts of home with a great location on the edge of the old city centre.  <br />The Studio formula means Self Catering so we do'nt serve breakfast. The kitchen is fully equiped to prepare a breakfast, lunch or dinner. The studios are on the 3rd floor, so you'll have to climb stairs. You'll have your own key of your Studio and the front door. Your Studio has its own private bathroom with shower, a kitchen, double bed and a TV/DVD/CDR-set and Wi-Fi to make your stay comfortable. Bed- and bath linen are included. <br />The Yellow Studio can accomodate 2 persons. <br /> <br />CULTURE <br />Nearby there are the beautiful 17th century canals with their stately houses and the small shopping streets. In the museum quarter you'll find the famous Rijksmuseum, the Stedelijk- Diamond- and Van Goghmuseum as well as the Spiegel-quarter with ",
@@ -2098,7 +2018,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "16",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -2122,8 +2041,6 @@ window.amsterdam = [
   {
     id: "76668",
     listing_url: "https://www.airbnb.com/rooms/76668",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "studio INN, bright and spacious",
     description:
       "studio INN is situated on a very central spot in Amsterdam, in a pleasant and quiet neighbourhood, with lots of characteristic bridges and historic store-houses. From here, Amsterdam can be easily explored.<br /><br />studio INN is a modernly and tranquilly furnished bed+breakfast. As a special treat (and unlike many others!) we serve a good and tasty breakfast at the time of your convenience. <br />studio INN can be reached easily from the Central Station, it's just a 15 minutes walk.<br /><br /><b>The space</b><br />studio INN is located on the first floor of a monumental building.  The bed+breakfast has a private entrance, accessible from the staircase (there is no elevator). From the entrancehall, you enter the two bedrooms and bathroom.<br /><br />In the large room there is a comfortable double bed, an open wardrobe and a comfy chair by the window. You can make coffee and tea as much as you like, and use the small fridge for cold beverages. Also, there is a table with four chairs ",
@@ -2178,7 +2095,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "64",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -2202,8 +2118,6 @@ window.amsterdam = [
   {
     id: "80635",
     listing_url: "https://www.airbnb.com/rooms/80635",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "TOP LOCATED Canalhouse B&B Jordaan",
     description:
       "Superlocated on the canal, 5 min's Walk from central station in famous Jordaan area. Room has private ensuite facilities, the large kitchen is open al morning to start the day whilst overlooking the canal. From here you can Walk to all main Amsterdam attractions.<br /><br /><b>The space</b><br />Superb located room with ensuite bath, just 5 minutes walk from central station. <br /><br />Each room has it's private in-room shower and toilet, a complimentary coffee/tea can be enjoyed ANY time in the morning while overlooking the canal with its passing canalboats. <br /><br />Situated at the Brouwersgracht (appointed as the most beautifull canal and most postcardpictures taken here) in a traditional canalhouse, renovated in a sturdy classic style. <br /><br />The Jordaan starts at the opposite side of the canal and the trendy Haarlemmerstreet is my backstreet. All musea, such as Anne Frank House, van Gogh, Rijksmuseum, stedelijk museum, recently re-opened Scheepvaartmuseum and the Hermitag",
@@ -2256,7 +2170,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "219",
     number_of_reviews_ltm: "1",
     number_of_reviews_l30d: "1",
@@ -2280,8 +2193,6 @@ window.amsterdam = [
   {
     id: "82482",
     listing_url: "https://www.airbnb.com/rooms/82482",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "The Backroom - Central private appt",
     description:
       "Situated in the Jordaan, the coolest, hippest place in Amsterdam. Treat yourself to a self catering private guest quarters with: free coffee/tea, and a big comfy bed. Comfortable for 2 adults (and possibly up to max 2 more on another pull out bed).<br /><br /><b>The space</b><br />Located in the heart of the Jordaan, in city central Amsterdam. Our backroom, formally the guest quarters of an artist atelier, is on the ground floor, access to a garden, fully private and all main attractions, cafe's / restaurants, and shopping are within a walking distance.<br /><br />Our neighborhood rocks! There is always something going on. Festivals, concerts, and everyday shopping on the nine's streets, dining or getting a drink in the many bars and restaurants. <br /><br />You have a private, \"Amsterdam style\" ensuite bathroom (shower, toilet), a great real bed, a convection microwave /fridge/freezer, a Nespresso machine, hot plate, and a great skylight.<br /><br />The studio apartment can sleep up t",
@@ -2336,7 +2247,6 @@ window.amsterdam = [
     availability_60: "27",
     availability_90: "44",
     availability_365: "317",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "871",
     number_of_reviews_ltm: "21",
     number_of_reviews_l30d: "6",
@@ -2360,8 +2270,6 @@ window.amsterdam = [
   {
     id: "82748",
     listing_url: "https://www.airbnb.com/rooms/82748",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Bright apt in central Amsterdam",
     description:
       "Stay in the very centre of Amsterdam on arguably the most beautiful canal of the city. The apartment with canal view (80 sq. m) is located in the old city between Rembrandt Square and Waterloo Square (the flea market).<br /><br /><b>The space</b><br />Stay in the very centre of Amsterdam on arguably the most beautiful canal of the city. The apartment with canal view (80 sq. m) is located in the old city between Rembrandt Square and Waterloo Square (the flea market). The quiet Groenburgwal hardly has any traffic (mostly cyclists and pedestrians). The Opera House, Hermitage Museum, Rembrandt House, Amsterdam Zoo (Artis), cafes, restaurants and major shopping street are around the corner. There are no noisy cafes or restaurants on the Groenburgwal itself; that's all within a few minutes walking distance (but not on your doorstep). You are near Nieuwmarkt underground station (1st from Central Station) and Waterlooplein underground station (2nd from Central Station) and tram stops. <br />Th",
@@ -2413,7 +2321,6 @@ window.amsterdam = [
     availability_60: "59",
     availability_90: "89",
     availability_365: "364",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "131",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -2436,8 +2343,6 @@ window.amsterdam = [
   {
     id: "84057",
     listing_url: "https://www.airbnb.com/rooms/84057",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Bed&Bike SleepOnNature - free bikes",
     description:
       "At Bed&Bike you can use the available bikes whenever you like, or use the kitchen to cook your own meals, and feel like a local! Ideal for travellers who want to live in a peaceful area, live like a local, meet other travellers but be in 10 mins in the centre by bike. The room is private - Bathroom, kitchen and rest of the house are SHARED with me (when I am home) and the other guests who rent the other room (max 2). If you are 4 people you don't need to share anything if you book both rooms.<br /><br /><b>The space</b><br />Do you want to avoid the tourist traps, feel like a local and uncover the hidden gems of Amsterdam while cruising around with your bike?<br /><br />Are you looking for a relaxed stay far from the noise of the city but still want to be 10 mins by bike from the centre?<br /><br />You are on the right place then! Welcome to Bed&Bike, a safe haven filled with love and good energy. I (Stephi) would be more than happy to welcome you & give you plenty of tips on where to ",
@@ -2493,7 +2398,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "216",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "94",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -2516,8 +2420,6 @@ window.amsterdam = [
   {
     id: "85008",
     listing_url: "https://www.airbnb.com/rooms/85008",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Museum district/Vondelpark studio-apartment",
     description:
       "Side street leading straightly to the park entrance of famous Vondelpark. Simple home but well located in hype area<br /><br /><b>The space</b><br />START FOR YOUR LONG TERM IN AMSTERDAM Museum-/Vondelpark area <br /><br />Well-situated right at park entrance, very simple 48 m2 studio-apartment right at Vondelpark, 1 window at south side. Different furniture now!!!<br /><br />PLEASE NOTE: arrival to be agreed upon and departure before 10h <br /><br />New furniture now!!! Quiet neighbourhood without passing traffic right at park entrance. The surface is ca. 48 m2. Basic furniture available inclusive great sofa. Separate bed. ---- Living annex sleeping area, very simple kitchen, gas cooking, fridge, washing machine/dryer, simple toilet with shower. Linnen for 2 persons. Simple terrace outside (2,5 x 2,5 m) in the back on north. Wifi-Internet connection slow but works perfect with laptops.<br /><br /> The ideal infrastructure for this location: 15 meters into park entrance, near but not o",
@@ -2571,7 +2473,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "3",
     availability_365: "278",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "11",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -2594,8 +2495,6 @@ window.amsterdam = [
   {
     id: "91535",
     listing_url: "https://www.airbnb.com/rooms/91535",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: 'Privat room and shared Houseboat "Ramona" centre',
     description:
       'You can stay at this houseboat situated in the centre of Amsterdam near the all famous original Heineken brewery and on the otherside the very trendy old south area "de Pijp" with the very nice albert ceijp street market and a supermarket right there<br /><br /><b>The space</b><br />A houseboat with a nice terras, livingroom with tv and wifi and intergrated kitchen. Kitchen has dishwasher, microwafe,  electric stove and the whole houseboat (including your room) has central heating.<br />Shared Bathroom with bath with me and one privat bedroom with a double bed for you. Situated on the outer canal of the city centre and is in the visinity of the Albert Cuyp market and Heiniken brewery.<br /><br />Suitable for 1 up to 4 persons. No smoking!<br /><br /><b>Guest access</b><br />Your Privat bedroom and the shared living room/ kitchen and bathroom and toilet. And off course the shared outside terras<br /><br /><b>Other things to note</b><br />Its a houseboat. So still a boat. It may slightly',
@@ -2651,7 +2550,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "44",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -2675,8 +2573,6 @@ window.amsterdam = [
   {
     id: "97221",
     listing_url: "https://www.airbnb.com/rooms/97221",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Beautiful and spacious room",
     description:
       "Private room offered for B&B in a elegant furnished, clean and tidy apartment in a nice and quiet area close to the center<br /><br /><b>The space</b><br />Private room offered for B&B in a elegant furnished, clean and tidy apartment in a nice and quiet area close to the center with breakfast included.<br /><br />The room is very well connected by public transportations day and night also with the airport. <br /><br />The room is also provided with mini fridge, microwaves and water boiler.<br /><br />PLS PAY ATTENTION TO THE FOLLOWING INFO:<br /> <br />1) I rent private rooms and not the entire apartment, I need to live in the same apartment by law<br />2) The bathroom is shared.<br />3) There is no use of kitchen<br />4) There is no breakfast, just tea, coffee.                                                                         High speed WiFi connection available included in the price. <br /><br />There is a parking area downstairs and the price is 14 euros per day. Night and sun",
@@ -2729,7 +2625,6 @@ window.amsterdam = [
     availability_60: "60",
     availability_90: "90",
     availability_365: "365",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "196",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -2753,8 +2648,6 @@ window.amsterdam = [
   {
     id: "97476",
     listing_url: "https://www.airbnb.com/rooms/97476",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Urban Oasis~beautiful street in Old South",
     description:
       "Cozy,  70m2, spacious, light, fully equipped apartment in a calm, high class neighbourhood, very close to Vondelpark. Your home away from home!<br /><br />3rd floor, no elevator, no smoking, no party ;) <br /><br />Please also keep in mind you are renting somebodyâ€™s private apartment and not a hotel room, this means please respect the neighbors, donâ€™t make noise. I will make sure to leave you my house super clean please respect that. <br />Thank you!<br /><br /><b>The space</b><br />Looking for a great place to relax in busy Amsterdam? <br />If you're looking for a cozy apartment or a walk in the park; this is the place to be :) <br /><br />My apartment is ideal for couples. It has a bedroom with a double bed (1.60) and a large living room, private kitchen and bathroom. <br />It's situated in a beautiful, calm area in the fancy south part of Amsterdam, it's a green oasis surrounded by trees.<br /><br />I just renovated my apartment so some furniture might be different as shown on the p",
@@ -2809,7 +2702,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "18",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "53",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -2833,8 +2725,6 @@ window.amsterdam = [
   {
     id: "108890",
     listing_url: "https://www.airbnb.com/rooms/108890",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Amsterdam at its best",
     description:
       "My home is located very near the city centre, the Vondelpark. With a little garden, a very cosy living room and a great atmosphere it is the perfect place to stay when you are visiting Amsterdam. I'm a passionate Amsterdam lover, when you arrive I will share with you my favorite places to ensure you don't only see the touristy side of the city. <br />You could stay here as a couple, or as a bunch of friends. There is only one bedroom, but the couch can be made into a comfortable bed for 2 (or 3)/",
@@ -2887,7 +2777,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "3",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -2910,8 +2799,6 @@ window.amsterdam = [
   {
     id: "110246",
     listing_url: "https://www.airbnb.com/rooms/110246",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Modern High End Designer Duplex",
     description:
       "<b>The space</b><br />Great duplex apartment! Just meticulously renovated with top-of-the-line appliances and materials: Poggen Pohl Kitchen, Miele appliances, Philippe Starck Bathrooms. Everything is brand new! <br /> <br />Located on top two floors of corner building on tree-lined street with balcony. Fantastic light and spacious living and dining area. <br /> <br />This apartment, built in 1910 and renovated in 2010, has a modern interior style. The 130m2 completely furnished property has 2 bedrooms and 2 full bathrooms and a built-in steam room. <br /> <br />Features include: <br /> <br />- Open kitchen and separate toilet <br />- Washing machine <br />- Steam Dryer <br />- Large Oval Soaking Bathtub <br />- Large steam room with handmade italian mosaic tiles. <br />- Cable TV/ British Satellite TV <br />- Broadband Wireless Internet <br />- Apple TV <br />- Dual Microwave/Convection Oven <br />- Miele Dishwasher <br />- Oven <br />- DVD and surround sound system <br />- Balcony <b",
@@ -2963,7 +2850,6 @@ window.amsterdam = [
     availability_60: "43",
     availability_90: "73",
     availability_365: "348",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "4",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -2986,8 +2872,6 @@ window.amsterdam = [
   {
     id: "130390",
     listing_url: "https://www.airbnb.com/rooms/130390",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Large private room for rent Center / De Pijp",
     description:
       "<b>The space</b><br />This cosey and newly renovated private room (living + sleeping room) in De Pijp is for rent. Situated only two steps away from the lovely Albert Cuyp market, and many nice bars, you will experience Amsterdam at it's best!<br /><br />The city centre is nearby, and the Van Gogh Museum and Rijksmuseum are at 10 min. distance walking. An excellent place to stay. If you come by car we can suggest a cheap and safe place to park.<br /><br />Th place is perfect for one or two persons. The apartment has a small bathroom (shower&toilet), modern open kitchen, living room and one bedroom with total surface of 35 m2.",
@@ -3040,7 +2924,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "29",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -3063,8 +2946,6 @@ window.amsterdam = [
   {
     id: "137026",
     listing_url: "https://www.airbnb.com/rooms/137026",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Entire house with garden in De Pijp",
     description:
       "This lovely, three story monumental house is located in De Pijp, also known as the 'Quartier Latin' of Amsterdam. It is owned by Federica and Ton, an Italian/Dutch couple with three kids.<br /><br /><b>The space</b><br />This lovely, three story monumental house is located in De Pijp, also known as the 'Quartier Latin' of Amsterdam. It is owned by Federica and Ton, an Italian/Dutch couple with three kids.<br /><br />The ground floor has a large living room with a kitchen. Two spacious doors lead into the well taken care of garden, where breakfast or dinner can be enjoyed in the sun. There is also a barbecue available. <br />On the first floor there is a bedroom with a bathroom 'en suite'. On the second floor you will find two additional bedrooms, with an additional bathroom including a bath tub. <br /><br />Features: <br />First floor: Living room, kitchen, toilet and garden<br />Second floor: Bedroom (Queen bed 140 x 200) with bathroom en suite, open studio, baby bedroom<br />Third fl",
@@ -3119,7 +3000,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "9",
     availability_365: "114",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "97",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -3143,8 +3023,6 @@ window.amsterdam = [
   {
     id: "141708",
     listing_url: "https://www.airbnb.com/rooms/141708",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "light modern & cosy apartment",
     description:
       "<b>The space</b><br />****update: I have a cat. A wonderful and easygoing cat -2 years old, clean and friendly- that likes to play and being pet. She only needs to be fed ones a day. Catlovers wanted!<br /><br />If you plan on visiting Amsterdam this apartment is a great place to stay. It's light, modern & cosy. <br /><br />-free Wi-Fi (fast!)<br />-I provide clean bedsheets/ plenty fresh towels<br />-coffee, espresso, tea included <br />-I gladly give you local tips and advice for your trip<br />-bus and tram stop just 50/150mtrs away(10 minutes to downtown)<br />-the whole place for yourself(s)<br /><br />This 55m2 apartment is recently restored, there is one double bed that sleeps two, and an extra mattress can be turned into a comfy bed to facilitate a third person or child in the other (small) bedroom. The bed is140x200cm + matrass 90x200cm. Itâ€™s on the third floor of a historic building (no lift!) after you climb the stairs you find a cosy & modern apartment, with lots of light. ",
@@ -3199,7 +3077,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "86",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -3222,8 +3099,6 @@ window.amsterdam = [
   {
     id: "148132",
     listing_url: "https://www.airbnb.com/rooms/148132",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Bright room in lively Kinkerbuurt",
     description:
       "Lovely, bright room in the heart of the lively Kinkerbuurt district. Around the corner you'll have a fresh food market where you can buy fresh fruit, artisanal bread, cheese and other local delicacies. A bit further down are the Food Hallen with a fantastic cinema. Areas like Vondelpark, De Jordaan, the great museums and the old city centre are all roughly 10 minutes away by tram.<br /><br /><b>The space</b><br />The room is on the second floor of an authentic 1930s house which I share with two charming female flatmates. The  modern kitchen is equipped with an oven, a gas stove, a fridge and everything else you need to not go hungry during your stay. The same goes for the large bathrooms which has a bath tub and  a regular shower. Towels will be there for you.",
@@ -3279,7 +3154,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "4",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -3302,8 +3176,6 @@ window.amsterdam = [
   {
     id: "150634",
     listing_url: "https://www.airbnb.com/rooms/150634",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Lovely apartment near Vondelpark",
     description:
       "Comfortable very bright and charming apartment in a great little neighbourhood just 5 minutes away from the Vondelpark, Leidseplein and Jordaan area.<br />Situated in a young and lively neighbourhood, near a local market, shops, little restaurants and breakfast/lunch places. <br /> Enjoy your stay!<br /><br /><b>The space</b><br />Very bright, fresh and beautifully decorated apartment just 5 minutes away from the Vondelpark, Leidseplein and Jordaan area. It is situated in a young and lively neighbourhood, near a local market, shops, little restaurants and breakfast/lunch places. It has a separate toilet and two balconies. Very comfortable and entirely renovated so the building is from 1900 but  kitchen/bathroom are all new.<br /><br />Recently fully renovated, on third floor so lots of light. Open kitchen/living room, big bathroom with shower, and one bedroom with balcony. Includes everything needed for daily life-- all linens, fully equipped kitchen, high-speed WiFi internet, utilitie",
@@ -3359,7 +3231,6 @@ window.amsterdam = [
     availability_60: "56",
     availability_90: "86",
     availability_365: "361",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "61",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -3382,8 +3253,6 @@ window.amsterdam = [
   {
     id: "155548",
     listing_url: "https://www.airbnb.com/rooms/155548",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Apartment 2 minutes from Centrum!",
     description:
       "<b>The space</b><br />Centrally placed beautiful apartment 2 minutes walk from the Artis Zoo and the Ortus Botanicus, Dappermarkt and Oosterpark. Strategically placed, close to main public transports, several tramways (14, 9, 10, 3, 7, 22) and Muiderpoort train station. You can walk from here in just 20 minutes to the magic Waterlooplein (doorstep of Rembrandtplein and the Nieuwmarkt) and do all your shoppings in the most multicultural and convenient market in town, the Dappermarkt, your backyard. Or you can stay at home, in a great neighborhood, enjoying the local jazz bars and traditional mill powered breweries, a visit to the amazing Tropics Museum, or a stroll in one of Amsterdam's favourite parks. Fully furnished, with wooden floors, a confortable sleeping room, a large living room and a fully equipped kitchen. Bathroom with bathtub and shower, separate toilette and spacious balcony overlooking the private gardens. Includes:<br />- free WiFi internet<br />- dish washer<br />- wash",
@@ -3434,7 +3303,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "21",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -3457,8 +3325,6 @@ window.amsterdam = [
   {
     id: "162467",
     listing_url: "https://www.airbnb.com/rooms/162467",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Modern app. with brand new design bathroom",
     description:
       'Stylish (recently painted and redecorated) ground floor apartment. Living room with a huge and comfy couch and big screen tv (with Netflix) Sonos sound system) One bedroom with a double bed. IThe bathroom is completely renovated and looks amazing.!<br /><br /><b>The space</b><br />I have a modern and clean ground floor apartment (no steep stairs are rare in amsterdam) in \'Amsterdam West\'.<br />(just a few minutes from the Vondelpark and City Center) <br /><br />You can use my bike (the best way to get around in Amsterdam) but the tramstop (7&17 tram) is only a few steps from my house, <br />which takes you into the center of Amsterdam within 10 min. Parking isn\'t free in front of my house but there are free parking possibilities nearby.<br /><br />Just around the corner there is a very long <br />"shopping" street the "Kinkerstraat" for all your daily needs and more. My apartment is only 20 min. from the airport or central station,<br /><br />Main attractions like the Leidseplein, Vond',
@@ -3514,7 +3380,6 @@ window.amsterdam = [
     availability_60: "46",
     availability_90: "76",
     availability_365: "351",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "58",
     number_of_reviews_ltm: "3",
     number_of_reviews_l30d: "1",
@@ -3538,8 +3403,6 @@ window.amsterdam = [
   {
     id: "165833",
     listing_url: "https://www.airbnb.com/rooms/165833",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Amsterdam at your feet",
     description:
       "<b>The space</b><br />My 3rd floor apartment is 20 minutes walk from Amsterdam city centre, off the main road in a quiet and relaxed neighborhood, with a playground across the road. Pubs, supermarket and shops near by and public transport 2 min walk where the tram stops to take you to either the trainstation or city centre.<br />Sleeping arrangements are a bunk bed and a kingsize bed in the master bedroom and a spare fold up bed. There is a toilet separate to the bathroom, which has a bath and shower. fully equiped kitchen and peacefull balcony overlooking a lush green garden. Very close to the center and yet far enough to enjoy the best the city has to offer. Parking is no problem, either in the neighborhood or a parking garage 5 minute walk from here, both are paid. Amsterdam has a lot to offer: Good varied restaurants and a diversity of museums. You can have fun shopping and do many thing the locals do, like going to the Amsterdam Markets which are on throughout the week, Weather pe",
@@ -3595,7 +3458,6 @@ window.amsterdam = [
     availability_60: "4",
     availability_90: "9",
     availability_365: "9",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "41",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -3619,8 +3481,6 @@ window.amsterdam = [
   {
     id: "168769",
     listing_url: "https://www.airbnb.com/rooms/168769",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "SUPERLOCATED Room in  CANALHOUSE, Private bath",
     description:
       "5 min's Walk from Central Station, on famous Brouwersgracht, comfy room with private ensuite faciliteit in  canalhouse. All main attractions within walkingdistance. Located in Jordaan, trendy Haarlemmerstraat around the corner. Kitchen open in the morning.<br /><br /><b>The space</b><br />Superb located, just 5 minutes walk from central station. Situated at the Brouwersgracht (appointed as the most beautifull canal) in a traditional canalhouse, decorated in a sturdy classic style.<br /><br />Large Room which has it's private in-room shower and toilet, this specific room is very suitable for longer Stays for individual travellers. <br /><br />Very trendy Haarlemmerstraat and -dijk, right behind, offers many breakfastoportinities to kick start your day. <br /><br />All musea, such as Anne Frank House, van Gogh, Rijksmuseum, stedelijk museum, Scheepvaartmuseum and the Hermitage are within walking distance. <br /><br />Lots of possibilities around to rent a bike and explore the city in thi",
@@ -3673,7 +3533,6 @@ window.amsterdam = [
     availability_60: "33",
     availability_90: "33",
     availability_365: "33",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "257",
     number_of_reviews_ltm: "1",
     number_of_reviews_l30d: "1",
@@ -3697,8 +3556,6 @@ window.amsterdam = [
   {
     id: "169356",
     listing_url: "https://www.airbnb.com/rooms/169356",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Central,Rooftop 360',Zen,Canal-View, Bright,Quiet",
     description:
       "DESIGN, CENTRAL, ZEN, QUIET, BRIGHT flat with the most amazing PRIVATE ROOFTERRACE 360' view of central Amsterdam skyline, in the best central canals area: Jordaan. Superb views. Very rare find (and better than anything else in this price range)<br /><br /><b>The space</b><br />This is a one bedroom 'design' flat situated on the top floor of a fully renovated 1899 building,  with old wooden beams and wooden floors <br /><br />Private roofterrace with amazing 360' views on central Amsterdam skyline. This is a unique roofterrace without any higher buildings around.<br /><br />Very quiet yet very centrally located in the best central (canals) Amsterdam area: De Jordaan <br /><br />It is situated in front of a small park and in between two canals with views on canals, houseboats and on two (!) drawbridges (one modern, one old). <br /><br />It is a very bright flat, being on the 4th FLOOR  and having many small roofwindows. Note there is NO ELEVATOR and stairs are typical Amsterdam, quite s",
@@ -3753,7 +3610,6 @@ window.amsterdam = [
     availability_60: "15",
     availability_90: "15",
     availability_365: "112",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "22",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -3777,8 +3633,6 @@ window.amsterdam = [
   {
     id: "171054",
     listing_url: "https://www.airbnb.com/rooms/171054",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Spacious apartment next to center",
     description:
       "Popular neighbourhood close to the city's center. Sleeps 3, 4 people. The place is clean, the furniture is basic. No cleaning cost.<br /><br /><br />Check-in Monday through Thursday from 18:00, flexible on Friday, Saturday and Sunday.<br /><br /><b>The space</b><br />Well kept 3-room apartment near the city's center, next to lively market and shops. Bath, separate shower, balcony, dishwasher, washing machine, cable, wifi. No cleaning cost!<br /><br />Trams stop close to the house to take you anywhere. A five minute tram ride takes you to the popular Jordaan district, a ten minute tram ride to either Central Station or Sloterdijk (train to airport).<br /><br />Ideal for three adults or a small family. One double bed, one low bed  (to sleep 3 adults or 2 adults plus a kid).<br />There's an airbed in case three adults rather sleep alone.<br /><br />The apartment is in a popular neighbourhood with divers shops and a lively market just a minute away. Recently the neighbourhood became very p",
@@ -3832,7 +3686,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "103",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -3855,8 +3708,6 @@ window.amsterdam = [
   {
     id: "171631",
     listing_url: "https://www.airbnb.com/rooms/171631",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Pleasant,cosy & crazy apartment with small balcony",
     description:
       'The best place to relax after a long day of sightseeing in the great city of Amsterdam.<br />The best thing about our very clean house is the interior, very special and crazy chic.<br />The apartment has everything you need.<br />Bedlinnens & towels are included.<br /><br /><b>The space</b><br />After a long day in the city, our newly decorated and rebuild apartment is the best place to come home to!<br />We get lost of compliment about the interior. The old tiles in the toilet and bathroom, the green bedrooms and the pink livingroom with crazy details. <br />And of course our third "wooden" bedroom. This space gives you the feeling of being in a treehouse, but than very cosy and warm!<br />You will discover new cute things, funny corners and sweet decoration stuff every day :) .<br /><br />We have three seperated bedrooms with two double beds each and for extra guests we have extra mattresses.  <br /><br />The kitchen is fully equiped with a dishwasher, gas cooker and oven/microwave. ',
@@ -3911,7 +3762,6 @@ window.amsterdam = [
     availability_60: "50",
     availability_90: "76",
     availability_365: "351",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "48",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -3934,8 +3784,6 @@ window.amsterdam = [
   {
     id: "174592",
     listing_url: "https://www.airbnb.com/rooms/174592",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Cosy Apt | IN CITY CENTRE | Close to Artis Zoo",
     description:
       "APARTMENT HIGHLIGHTS<br />â˜…CITY CENTRE APARTMENT<br />â˜…Close to Artis Zoo <br />â˜…Close to Subwaystation Weesperplein ( goes EVERYWHERE)<br />â˜…Fully equipped kitchen <br />â˜…Washing machine & Dryer Available<br />â˜…Fast & Free WIFI<br />â˜…Popular East Centre Area<br /><br /><b>The space</b><br />Welcome to my fully equipped yet cosy apartment. In the living-area there is a sitting area, dining table and fully-equipped open-planned kitchen. Feel free to cook yourself a wonderful meal!<br /> <br />There is one double-bed available, so the apartment is suitable for 2 people. Perfect for couples! The bathroom has a shower, washbasin and a toilet. Additionally, a washing machine and dryer are available.<br />I'm sure you will enjoy your stay at my place.<br /><br /><b>Guest access</b><br />Guests are invited to enjoy the whole apartment. Make yourself at home!<br /><br /><b>Other things to note</b><br />Freshly made up beds will be waiting for you upon arrival",
@@ -3990,7 +3838,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "139",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -4013,8 +3860,6 @@ window.amsterdam = [
   {
     id: "175989",
     listing_url: "https://www.airbnb.com/rooms/175989",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Cat lover's paradise in Amsterdam's hottest street",
     description:
       "Spatious, sunny and quiet apartment in one of the cities most happening streets, Great restaurants, bars and shops! 2 balconies to chill on and a huge terrace to enjoy views over the whole city.  <1 minute walk to the Vondelpark and <5 min tram ride to citycenter. You share the space with two lovely young cats, who will warm your laps and steal your hearts.. As i have a 6 year old, there is an optional playroom full of toys and stuff..<br /><br /><b>The space</b><br />Artist rents out a quiet, sunny and spacious apartment in the wonderful Old-West area, on walking distance from the center. It's on the top floor of the most exciting street, full of nice shops, bars and restaurants, only a stones throw away from the Vondelpark, which is perfect for a stroll or a run. The tram stop is practically in front of the house and the Leidseplein in only three stops away. Our apartment has two nice balconies to relax on in the afternoon sun and a huge rooftop terrace that overlooks the entire city",
@@ -4070,7 +3915,6 @@ window.amsterdam = [
     availability_60: "45",
     availability_90: "75",
     availability_365: "350",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "107",
     number_of_reviews_ltm: "5",
     number_of_reviews_l30d: "3",
@@ -4093,8 +3937,6 @@ window.amsterdam = [
   {
     id: "179528",
     listing_url: "https://www.airbnb.com/rooms/179528",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Authentic Amsterdam apartment RAI",
     description:
       'We are taking extra care to disinfect the apartment between renters due to COVID-19!<br /><br />Beautiful apartment in the peaceful "Amsterdamse School" Style neighbourhood.<br />Close to everything Amsterdam has to offer and next to the RAI congress building.<br /><br /><b>The space</b><br />The apartment is on the second floor with windows all<br />around.<br />The master bedroom has a double bed 160x200cm <br />and the second bedroom a 90x200cm bed<br />Jointly use of kitchen.<br /><br />The apartment is situated in the classic Amsterdam-Style housing area, the Rivierenbuurt, 10 minutes walk from the hippest area of Amsterdam â€œde Pijp" and the most famous market of Holland, the Albert Cuyp market. 10 minutes on bicycle or public transport from center and Van Gogh museum and Rijksmuseum.<br /><br />Situated 350 metres to the RAI - exhibition Center with public car parking<br />and 4 minutes by metro to the center. Metro stop at the corner.<br />Schiphol Airport 2 stops by train, 10 m',
@@ -4149,7 +3991,6 @@ window.amsterdam = [
     availability_60: "25",
     availability_90: "55",
     availability_365: "330",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "27",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -4173,8 +4014,6 @@ window.amsterdam = [
   {
     id: "182839",
     listing_url: "https://www.airbnb.com/rooms/182839",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Central, quiet, design apartment",
     description:
       "<b>The space</b><br />FOR RENT - FABULOUS LUXURIOUS DESIGN APARTMENT IN AMSTERDAM <br /><br />A very luxurious way to enjoy your stay in the center of Amsterdam. For guests that value design, safety, space and peacefullness. Situated in a contemporary building designed by famous Dutch architects in a brandnew architectural hotspot called 'Overhoeks\" on the shore of the river â€˜Het IJâ€™ (no riverview).The location is very quiet though within 10 minutesâ€™ walk from Amsterdam's finest and most famous areas, The Center and The Jordaan. <br /><br />A free 3-minute ferry is around the corner and will take you right to the heart of the center and Central Station (where you can rent bicycles and find all public transport, buses, trams and subway). Center, shoppingarea  and the canals  are all within 10-minutes' walk away. And so is the 'Haarlemmerstraat' (voted best shoppingstreet of Holland in 2011) with many deli's and design shops, excellent places for breakfast, coffee corners, quality design",
@@ -4225,7 +4064,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "15",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -4248,8 +4086,6 @@ window.amsterdam = [
   {
     id: "188347",
     listing_url: "https://www.airbnb.com/rooms/188347",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Clean & Cozy room in The Baarsjes",
     description:
       "My cozy, 2-bedroom apartment is located on a quiet street (10-15 minutes bike or 20 min tram ride from the center of Amsterdam!), in a diverse, young, and vital neighborhood. Grocers, supermarkets, bakeries/cafes, and great affordable restaurants and bars can be found just around the corner. Easy to get to and from with public transportation.<br />You will be staying in a well-lit bedroom (see pictures), facing the living room.<br /><br /><b>The space</b><br />Highlights:<br />************<br />â˜…Great location<br />â˜…Easy access to city center<br />â˜…Easy to reach from Schiphol Airport<br />â˜…Great connectivity with public transport (buses and trams a few minutes walk away)<br />â˜…Young, up-and-coming neighborhood with affordable bars and  restaurants within walking distance <br />â˜…Sunny, well-lit room<br />â˜…Fresh towels and sheets provided<br />â˜…WiFi<br /><br />â˜…â˜… Please read the whole description before submitting a reservation request. If you have any questions don't hesitate to send us",
@@ -4304,7 +4140,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "369",
     number_of_reviews_ltm: "4",
     number_of_reviews_l30d: "3",
@@ -4328,8 +4163,6 @@ window.amsterdam = [
   {
     id: "189754",
     listing_url: "https://www.airbnb.com/rooms/189754",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Metropolitan B&B centre Amsterdam",
     description:
       "Metropolitan B&B is a nice place in the centre of Amsterdam near Dam square. There is a private garden to relax and forget you are in the middle of the city. The room has a kingsize double bed and a private bathroom. We can add two extra single beds so 4 person can sleep in the same room<br /><br />*It is on ground floor and is accessible with a wheelchair<br /><br /><b>The space</b><br />The Metropolitan is a spacious place with a quiet garden in the centre of Amsterdam. It is only five minutes walk from the Central Station. The place has a king-size bed and a private bathroom. We can add 2 extra beds. <br /><br />*It is perfect for a couple or a family with two children. <br />*It is also suitable for three or four adults when we provide extra beds. <br />*The B&B is located very central halfway between the Dam square and the Central Station. <br /><br />All main shops and musea you can easily reach by foot. This is the area you want to stay in â€“ it's right in the historical center o",
@@ -4385,7 +4218,6 @@ window.amsterdam = [
     availability_60: "6",
     availability_90: "18",
     availability_365: "263",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "193",
     number_of_reviews_ltm: "8",
     number_of_reviews_l30d: "2",
@@ -4409,8 +4241,6 @@ window.amsterdam = [
   {
     id: "190943",
     listing_url: "https://www.airbnb.com/rooms/190943",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Lovely light appartment with garden",
     description:
       "<b>The space</b><br />Welcome! We are offering you our very nice (bit 70's style) furnished appartment in Amsterdam Old South for rent. It is 80 square metres and has a living room from which you can look out over the garden. The garden is south facing and has a spacious veranda. <br /><br />Of course, all kinds of facilities are available for you during your stay such as central heating, wifi and we have 2(!) dishwashers. We also have a nice designer kitchen and a good shower and bath. <br />The master bedroom has a double bed and in the smaller bedroom you will find a single bed (which you can also use for children; not possible to fall out)<br /> <br /><br />Our house is near the Vondelpark and tram 2 stops in front and takes you to everywhere you want to go in central Amsterdam in less than 10 min!<br />Nice coffee corners and restaurants serving fresh food are only 100 meters away.<br />For grosery shopping you can go to the cosy square 150 meters from the house.<br /><br /><b>Gue",
@@ -4465,7 +4295,6 @@ window.amsterdam = [
     availability_60: "6",
     availability_90: "6",
     availability_365: "6",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "10",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -4488,8 +4317,6 @@ window.amsterdam = [
   {
     id: "193038",
     listing_url: "https://www.airbnb.com/rooms/193038",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Private Loft&Bathroom  Ensuite Studio Ctr Amsterda",
     description:
       "This former artist's studio with bathroom takes up the third  (and top) floor of my 17th century Amsterdam bell gable house.<br /><br /><b>The space</b><br />The studio - including it's bathroom- consists of the top floor (=3d)  of my Amsterdam 17th century clock gable house. <br /><br />It has the following features: <br /><br />- two flights of stairs to get there, although for Amsterdam standards not    very long or steep,<br /> -  they are a bit narrow and winding..!!<br />- 34m2<br />- Possibility to store  luggage downstairs when arriving early or leaving late.<br />- Bathroom with shower, wash basin and toilet.<br />- Hair dryer<br />- Bed - and bathroom linen.<br />- Fridge and microwave combi oven.<br />- Nespresso (machine and capsules) and tea included.<br />- King size bed: 200 x 180 cm<br />- Comfy reading chairs at a large window overlooking the typical Amsterdam street<br />- TV / DVD Player<br />- Stereo with bluetooth connection<br />- Wifi (free)<br />- Central locati",
@@ -4544,7 +4371,6 @@ window.amsterdam = [
     availability_60: "29",
     availability_90: "42",
     availability_365: "210",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "602",
     number_of_reviews_ltm: "11",
     number_of_reviews_l30d: "3",
@@ -4568,8 +4394,6 @@ window.amsterdam = [
   {
     id: "199844",
     listing_url: "https://www.airbnb.com/rooms/199844",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "ART & DESIGN APARTMENT",
     description:
       "Very quiet, light and spacious design apartment in the center. Westerpark and Jordaan are just 500 meter away and public transport takes you everywhere in the city. If you stay in: 100's of books and magazines about art and design for you to enjoy.<br /><br /><b>The space</b><br />BRAND NEW APARTMENT in a creative, young neighborhood within 500 meter from the center/Jordaan. Supermarkets, restaurants, public transport and a lovely park are all around the corner. Central station, the museum district, shopping areas and Amsterdam's bustling nightlife are all easy accessible by foot, bike or public transport.<br /><br />This brand new apartment, 65 m2 in total, is located on the 3rd and 4th floor. Hundreds of fashion, design & photography books and magazines available to read. Very bright and sunny living room with a large lounge sofa which can also be used as a second bed (110x200cm). You can use the fully equiped kitchen and enjoy your dinner on the flowery balcony (please only smoke ou",
@@ -4621,7 +4445,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "42",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -4644,8 +4467,6 @@ window.amsterdam = [
   {
     id: "203658",
     listing_url: "https://www.airbnb.com/rooms/203658",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Best Area - Large Luxury 3 Bdr Home",
     description:
       "Your safe and luxury apartment has three bedrooms and combines authentic historic features with all modern necessities. You are in the nicest area in town with parks, water and public transport in close walking distance. Everything for a great stay.<br /><br /><b>The space</b><br />Large Luxury 3 Bedroom Apartment located in one of the best neighbourhoods to stay in Amsterdam.<br /><br />Hereunder I will describe the 120 square meter (1,300 square feet) apartment. If you have any questions please send me a message and I will quickly respond to you.<br /><br />What makes the place unique is that you will have the full enjoyment of being right in the middle of the buzz of Amsterdam without the annoyance of staying in the tourist areas.<br /><br />For a guaranteed pleasurable stay in beautiful Amsterdam.<br /><br />Close to the famous museums (Van Gogh, Rijksmuseum and Stedelijk Museum), restaurants and historic center including the canals.<br /><br />Close to Airport, Train Station (Worl",
@@ -4701,7 +4522,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "24",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -4724,8 +4544,6 @@ window.amsterdam = [
   {
     id: "205759",
     listing_url: "https://www.airbnb.com/rooms/205759",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Central yet quiet studio apartment",
     description:
       "Experience true Amsterdam city life in this quiet studio apartment at a great location in the historic and charming Oud-West neighbourhood, just a couple of minutes by bike or tram from the world-famous canals, Jordaan, Vondelpark and Leidseplein.<br /><br /><b>The space</b><br />The apartment originally had two rooms, but has been transformed into a one-room studio layout (about 40+ m2). It has recently been renovated entirely, so not only does it offer all the basic facilities, it also includes a well equipped kitchen (microwave/oven, refrigerator, freezer, ceramic cooktop, dishwasher), a washing machine, tumble dryer, central heating, double glazed windows, wireless internet and a nice sound system ;).  It also has a balcony with a view on a cute little city park where kids play and the chickens of the adjacent children's farm run freely.<br /><br />The furniture includes a comfortable double bed, a sturdy table/desk with four chairs and a two/three-person couch.",
@@ -4779,7 +4597,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "2",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -4802,8 +4619,6 @@ window.amsterdam = [
   {
     id: "212050",
     listing_url: "https://www.airbnb.com/rooms/212050",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Spacious home w roof garden",
     description:
       "Our home in Amsterdam is a real lifestyle apartment, just a stone's throw from the Jordaan - and situated within the new trendy area known as De Hallen. The house features two bedrooms, open plan living, a fabulous roof terrace, and afternoon sun!<br /><br /><b>The space</b><br />A light and bright, spacious open plan apartment with rooftop garden in a great location (around the corner of the new hip 'De Hallen', walking distance to the Jordan, museum quarter and Vondel Park).<br /><br /><br />THE APARTMENT:<br />The apartment is spread over two floors, with outdoor space on every level including a huge roof terrace.<br /><br />The first floor is an open plan space with living, dining, kitchen and kids play corner. Leading from the open plan floor is a verandah which offers the opportunity for outdoor wining and dining. The kitchen is state-of-the-art with all the mod cons you would expect for a property of this standard.<br /><br />Up to the second floor you have the master bedroom, w",
@@ -4859,7 +4674,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "195",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "20",
     number_of_reviews_ltm: "1",
     number_of_reviews_l30d: "0",
@@ -4882,8 +4696,6 @@ window.amsterdam = [
   {
     id: "213371",
     listing_url: "https://www.airbnb.com/rooms/213371",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Spacious apartment, great location in De Pijp!",
     description:
       "De Pijp is a very popular area which has a lot of life (restaurants, bars, Albert Cuyp market). in our apartment you are just outside the busy area. Public transport is great but if you're healthy on your feet, you can even walk to some of the most important attractions of Amsterdam such as Museumplein and Rembrandtplein. <br /><br />Oh and one extra plus: we have roof-windows so if you're lucky and the weather is clear, you can watch the stars at night right from your bed!<br /><br />You're welcome!<br /><br /><b>The space</b><br />My apartment is located in De Pijp, an area between the city center and the south-side (RAI, WTC). There are lots of bars and restaurants within 2 minutes walking distance.  <br /> <br />Included in the rent of a room is the use of all facilities such as kitchen, bath, shower, living room with cable tv and spacious roof terrace facing south. <br /> <br />Our apartment consists of two floors, the third and fourth floor of the building. Upstairs there is the ",
@@ -4936,7 +4748,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "137",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "22",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -4960,8 +4771,6 @@ window.amsterdam = [
   {
     id: "213721",
     listing_url: "https://www.airbnb.com/rooms/213721",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Amsterdam Apartment (waterview)",
     description:
       "Welcome to a spacious, sun filled corner apartment with view on water (canal) and long balcony. It is located in trendy 'Hoofddorpplein buurt' next to Amsterdam Vondelpark, and you'll be in immediate proximity to stores, cafe's and restaurants. Tram stop right in front of my place and takes 10-20 min to the center. My guests have said it is an oasis in the middle of the city.<br /><br /><b>The space</b><br />Welcome to my apartment. It is sun-filled and looks out on the green trees surrounding the house, feeling like you are in nature. It has a little nook, with view on water (canal) with boats. The long balcony is on the sunny side during the entire day. I live close to neighbourhood stores, traiteurs, cafe's and restaurants which I indicate on Airbnb neighborhood map. <br /><br />The interior is a mix of vintage Scandinavian and modern design, street-art and things I bring from my travels. <br /><br />GOOD for:<br />ideal for professional, couple or friends. 1 bedroom. Situated on th",
@@ -5016,7 +4825,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "41",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -5039,8 +4847,6 @@ window.amsterdam = [
   {
     id: "214531",
     listing_url: "https://www.airbnb.com/rooms/214531",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "LUXURIOUS GUESTHOUSE in CITY CENTER",
     description:
       "Just 1 minute from the Damsquare in Amsterdam (central point) a quiet guesthouse 35 m2 (own bedroom, living room & bathroom). It is a typical old house in Amsterdam, but recently renovated. Read all the reviews and the other guests will convince you.<br /><br /><b>The space</b><br />On the top floor (3d) of our unique historic storage house, built in 1737, we are offering an unique guesthouse. It is located just a few meters away from Damsquare, in the heart of Amsterdam and within walking distance from the train station, shopping streets, museums, bars and restaurants, etc. It is the perfect location for sure!! This is a street where origins go back well before 1342,  Nieuwezijdsvoorburgwal, the oldest city walls of Amsterdam. From that time nothing was in Amsterdam, a few pieces of Old Church after. The oldest building in the Pieter Jacobsz Street, between 17th-or 18th-century.<br /><br />We are offering a bedroom, a living room with tv/dvd and minibar, and a bathroom with sink, toil",
@@ -5095,7 +4901,6 @@ window.amsterdam = [
     availability_60: "1",
     availability_90: "3",
     availability_365: "188",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "169",
     number_of_reviews_ltm: "3",
     number_of_reviews_l30d: "1",
@@ -5119,8 +4924,6 @@ window.amsterdam = [
   {
     id: "219276",
     listing_url: "https://www.airbnb.com/rooms/219276",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Suite in Canalhouse with Jacuzzi",
     description:
       "<b>The space</b><br />Amsterdam Boutique Apartments, private design suite (55m2) with king size bed, jacuzzi  & rainshower.  <br /> <br />Located on the ground floor of a monumental canal house 1 minute walk from the floating flower market. Free Wifi, Stocked fridge & Nespresso capsules and fruitbasket upon arrival. Ipod dock & PC available. This apartment is No Smoking! <br /> <br />Spui (30 seconds) <br />Dam square (10 minutes) <br />Central station (15 minutes) <br />Rembrandt Square (7 minutes) <br />Munt (5 minutes) <br />Flower Market ( 2 minutes) <br />Leidse Square (10 minutes) <br />Waterloo square (flea) market (10 minutes) <br />9 Streets shopping area (1 minute, just accross the bridge) <br />Hermitage Amsterdam (15 minutes) <br />Amsterdam Historical museum ( 2 minutes) <br />Van Gogh museum (15 minutes) <br />Rijks museum (15 minutes) <br />Stedelijk museum, (15 minutes) <br />FOAM photo museum (10 minutes) <br />RAI conference center (tram 4 which is around the corner t",
@@ -5172,7 +4975,6 @@ window.amsterdam = [
     availability_60: "51",
     availability_90: "80",
     availability_365: "352",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "10",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -5196,8 +4998,6 @@ window.amsterdam = [
   {
     id: "222516",
     listing_url: "https://www.airbnb.com/rooms/222516",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Cosy apartment in West | Quiet street | Netflix",
     description:
       "Well, no one saw that one coming. But as we slowly emerge from lockdowns and travel bans are lifted, we hope to welcome back friendly and kind visitors.<br /><br />If you want to stay in a cosy and tastefully decorated apartment in one of Amsterdam's loveliest neighbourhoods? We welcome you to stay in our home and make your time in the Dutch capital one to remember. <br /><br />This apartment is best suited for couples. We welcome all people. LGBT-friendly.<br /><br /><b>The space</b><br />We travel a lot and know how hard it can be to find the right accommodation. Amsterdam is particularly bad sometimes. Overpriced and trashy hostels, miniature hotel rooms and limited availability can really make your trip a nightmare.<br />Therefore we'd like to offer our stylish and cosy apartment to other travelers when we're away.<br /><br />The apartment is located on the border of Oud West / De Baarsjes neighbourhoods and is excellently connected to the airport (Schiphol Amsterdam), Centraal and",
@@ -5252,7 +5052,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "135",
     number_of_reviews_ltm: "7",
     number_of_reviews_l30d: "0",
@@ -5276,8 +5075,6 @@ window.amsterdam = [
   {
     id: "230710",
     listing_url: "https://www.airbnb.com/rooms/230710",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Jordaan apt with views of canals and Westerkerk",
     description:
       "Beautiful located and bright modern furnished apartment. Second floor with nice view of the canals and Westertoren next to the Anne Frank house. At a corner, so a lot of sunlight and wide views. Sleeps 4 in 2 rooms with separate badroom and toilet.<br /><br /><b>The space</b><br />In a quiet part of the city centre of Amsterdam (border of de Jordaan & Oud West). 53m2 with a great view: Canals and the Westertoren (church next to the Anne Frank house).<br /><br />Best suited for one (or two) couple(s) because of two double beds. One room is convertible into an office.<br /><br />The apartment is redeveloped in 2010, so the kitchen, bathroom and toilets are in good condition and comfortable. It is very light because the walls are clean white and there are three big windows in the living room.<br /><br />There are two bikes you can use.<br /><br />Pros:<br />- quiet<br />- great view<br />- close to everything<br />- bright<br />- a desk for teleworking: Extra 4k screen you can hook up to ",
@@ -5332,7 +5129,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "16",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -5355,8 +5151,6 @@ window.amsterdam = [
   {
     id: "245927",
     listing_url: "https://www.airbnb.com/rooms/245927",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Sonnenberg - Canal side & view - Private & Central",
     description:
       "This unique property is a prime example of a 16th century canal house. With private entrance and use of two whole floors of this gorgeous house.<br /><br />The owner lives on the bottom two floors of the house, so is always close-by to assist and help out with tips and recommendations. It also means no-party policy is strictly observed.<br /><br />The seating lounge area is warm and cozy, and has awesome views of the most beautiful canal of Amsterdam.<br /><br /><b>The space</b><br />Sonnenberg is located on the Herengracht, in the historic centre of Amsterdam. Surrounded by the famous nine-streets, this historic canal house was built in 1649 for the Sonnenberg family. It is one of the few houses that still boast its original gable, which is a classical renaissance crow-stepped gable; this is a stair-step type of design at the top of the triangular gable-end of a building.<br /><br />Not only the gable is still original, the interior with its solid oak beams as well as the winding stai",
@@ -5412,7 +5206,6 @@ window.amsterdam = [
     availability_60: "46",
     availability_90: "76",
     availability_365: "346",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "108",
     number_of_reviews_ltm: "14",
     number_of_reviews_l30d: "2",
@@ -5436,8 +5229,6 @@ window.amsterdam = [
   {
     id: "247805",
     listing_url: "https://www.airbnb.com/rooms/247805",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Bellavista, central,with canal view",
     description:
       "Our lovely studio apartment is located near the city center in a quiet neighborhood. Enjoy the view on the canal while having your breakfast in this well equipped studio. Walk to the major museums or the city center in 10 minutes.<br /><br /><b>The space</b><br />Clean studio with lovely view on the canal very near city center. The studio has a private entrance. Guests have access to free wifi internet & cable TV included. There is a two person/double bed, kitchenette with utensils and stove, an electric kettle and coffee machine, a refridgerator, a separate (private) bathroom ensuite (with bath and separate shower), central heating.<br />It is close to all major tourist attractions (Van Gogh Museum, Rijksmuseum, in walking distance of Leidseplein and the three major canals). Public transport is around the corner (tram 3,12,7 and 17) and busstation Marnixstraat in walking distance. <br />The studio itself is in walking distance of the city center.<br /><br />Bellavista is a studio apar",
@@ -5489,7 +5280,6 @@ window.amsterdam = [
     availability_60: "51",
     availability_90: "81",
     availability_365: "356",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "343",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -5513,8 +5303,6 @@ window.amsterdam = [
   {
     id: "250751",
     listing_url: "https://www.airbnb.com/rooms/250751",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Modern studio near central AMS",
     description:
       "<b>The space</b><br />This recently renovated 3rd floor studio apartment is in a classic Amsterdam-style building in a vibrant and interesting part of town. The apartment is clean and modern with a warm, light and colourful touch. The room has a large and comfortable Queen-size bed, fast internet (wifi & cable), central heating, small kitchen/fridge/combioven/washing machine etc and a separate small bathroom with a shower. One whole wall of the studio consists of two large windows and double-doors for plenty of light and fresh air. <br />It would suit someone looking for their own personal space and privacy or a couple; with the ability to add up to two extra persons on the couch that folds out to become a second bed.  <br /> <br />The location offers the best of both worlds for busy Amsterdam. It is situated in a very quiet street/area yet is close to the Centre of town to be only 15 minute bike or tram ride away. The no. 14 tram stops right in front of the house, which will take you ",
@@ -5567,7 +5355,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "102",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -5590,8 +5377,6 @@ window.amsterdam = [
   {
     id: "252080",
     listing_url: "https://www.airbnb.com/rooms/252080",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Amazing apartment historical centre",
     description:
       "<b>The space</b><br />Welcome to our house.  <br /> <br />The apartment is 210 square meters and on the ground and first floor of an historical house in the city centre of Amsterdam. (Golden Age architecture). It has an luxurious large open livingroom/kitchen, an open livingspace on the groundfloor (with playing area and extra small kitchen), 2 modern bathrooms (2 showers and bath) and 1 master bedroom, 1 guestroom and 2 childrens rooms. Perfect for 1 or 2 couples and/or a family.   <br />You'll find that it's fully redecorated and very clean.  <br /> <br />It is located in a quiet part of the historical city centre, just around the corner of the beautifull Amsterdam canals and sites like the Hermitage and Maritime museum. The area walking away from the centre is great for kids. With the zoo, park and quiet streets. It's ten minutes walking to the nightlife district and all the great shops. And using a bike everything is just 5 minutes away! <br /> <br />Amsterdam central station is on",
@@ -5643,7 +5428,6 @@ window.amsterdam = [
     availability_60: "60",
     availability_90: "90",
     availability_365: "365",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "11",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -5666,8 +5450,6 @@ window.amsterdam = [
   {
     id: "254104",
     listing_url: "https://www.airbnb.com/rooms/254104",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "The Flying Pancake B&B Amsterdam",
     description:
       "You will have your own private floor with large double bed, bathroom with steam shower, sitting area with fireplace and pantry.<br /><br /><b>The space</b><br />The Flying Pancake B&B offers two independant spacious suites in a monumental house in the  City Center of Amsterdam between mayor places of interest and public transport.<br /><br />The Captain's Suite gives the possibility, through its luxurious furnishing combined with historical elements to experience the ambience of a typical home in Amsterdam. <br />The historical roof construction in the Cook's suite gives this suite its specific character and with only a few adjustments it has resulted in a spacial livingroom with exciting views and a beautiful play with natural light.<br /><br />Both suites are equipped for one or two persons: with a double bed, a sitting area with fireplace, a pantry with espresso machine, tea, a microwave and mini-bar. <br />Both suites have their own luxurious bathroom in the suite, with a shower an",
@@ -5722,7 +5504,6 @@ window.amsterdam = [
     availability_60: "60",
     availability_90: "90",
     availability_365: "365",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "81",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -5745,8 +5526,6 @@ window.amsterdam = [
   {
     id: "254800",
     listing_url: "https://www.airbnb.com/rooms/254800",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Amazing apartment in city center",
     description:
       "Great place to stay in the middle of the city center. Close to the Ann Frank house and with a view on the canals.<br /><br /><b>The space</b><br />Stylish and cosy apartment (70m2) in the Center of Amsterdam. <br /><br />The apartment is has the following facilities: <br />* Modern kitchen<br />* Design Bathroom with a Rain Shower <br />* Dishwasher<br />* Microwave<br />* Coffee and tea <br />* Fridge <br />* Washing machine <br />* 2-persons Kingsize quality bed with linnen and 4 pillows<br />* Free towels <br />* Free Shampoo & shower gel <br />* Smart TV<br />* Free WIFI<br />* Hairdryer<br />* Iron and iron board<br />* Huge private (sun) terrace with lounge bed and dinning table<br /><br />(URL HIDDEN) AND a great view of the Canal! <br /><br />Just get in touch if you have questions and read on for some general information about the neighborhood.<br /><br />The Prinsengracht is one of the 3 historic canals with many restaurants, small cafes, the Anne Frank house (2 min. walk) an",
@@ -5802,7 +5581,6 @@ window.amsterdam = [
     availability_60: "23",
     availability_90: "53",
     availability_365: "328",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "49",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -5826,8 +5604,6 @@ window.amsterdam = [
   {
     id: "255809",
     listing_url: "https://www.airbnb.com/rooms/255809",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "stylish apartment free car parking and 2 bikes",
     description:
       "The apartment is part of ground floor of our house.<br /><br /><b>The space</b><br />This cosy and modern apartment is for four persons. There are 2 comfortable queen size beds. They can be separated on request. There is one bathroom and a little kitchenette with coffee -and tea facilities.<br />'the house of finer'  is situated across from the Amsterdam Convention Centre RAI and the gorgeous Beatrixpark. The B&B is appropriate for visitors that go to conventions and fairs in the RAI or for guests who come by car to Amsterdam but decide to go into town by bike or tram.  This holiday B&B rental is only two minutes from the highway A10 and fifteen minutes from Amsterdam Schiphol Airport. Included in the price is free parking of one car.<br /><br /><b>Guest access</b><br />There is a small terrace at both rooms which can be used, but no smoking is allowed in the garden.<br /><br /><b>Other things to note</b><br />The 2 rooms are part of a family house on the ground floor and they form a s",
@@ -5883,7 +5659,6 @@ window.amsterdam = [
     availability_60: "28",
     availability_90: "51",
     availability_365: "306",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "93",
     number_of_reviews_ltm: "5",
     number_of_reviews_l30d: "2",
@@ -5907,8 +5682,6 @@ window.amsterdam = [
   {
     id: "256670",
     listing_url: "https://www.airbnb.com/rooms/256670",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Caracteristic, family apartment",
     description:
       "<b>The space</b><br />SPACIOUS FAMILY APARTMENT (160 M2) NEAR VONDELPARK <br />Double, spacious apartment on 3th floor. The house is in a friendly and atmospheric neighbourhood (called Golden West), 100 metres from the famous Vondelpark. The tram is at the corner, but you can also go by foot or bike through the Vondelpark to the centre: Van Gogh Museum, Rijksmuseum, Leidseplein. Itâ€™s a very safe area. <br />We have a large, comfortable living room with sight to the Vondelpark and lots of sunlight falling inside. High ceilings with original details. In the front is a stylish, 19th century balcony. Kitchen with all equipment (coffee maker, microwave, dishwasher, water boiler, cooker, fridge) and doors to big balcony.  <br />Because itâ€™s a double apartment, itâ€™s a perfect place to stay with more people, for example a family. There are 3 bedrooms, one of them with a double bed (Auping). The other two rooms are for kids but the beds have the normal size, so also adults can sleep here. One o",
@@ -5961,7 +5734,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "7",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -5984,8 +5756,6 @@ window.amsterdam = [
   {
     id: "258273",
     listing_url: "https://www.airbnb.com/rooms/258273",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Great CENTRAL apartment De Pijp",
     description:
       "<b>The space</b><br />This is a lovely comfortable three room first floor light filled apartment with everything you need, perfect for a couple or two friends. Two extra people could also sleep on the fold out sofa bed.  It has facilities such as wireless internet, TV, an equipped kitchen, a dining table for four people. Everything else is right around the corner as the apartment is located in the heart of â€œDe Pijpâ€, one of the coziest and funkiest neighborhoods of Amsterdam.  <br /> <br />De Pijp is well known for its lively streets, small shops, intimate restaurants, cozy cafes, many terraces and authentic Amsterdam charm. It is the place that Amsterdamerâ€™s love to go out and catch a drink or just grab a bite to eat. This apartment is ideally located just around the corner from bars and restaurants.  <br /> <br />The apartment is located in walking distance of the popular attractions; Rijks Museum, Van Gogh Museum, Vondel Park, Sarphati park, Leidse Square (bar/cafÃ©/club scene) and t",
@@ -6037,7 +5807,6 @@ window.amsterdam = [
     availability_60: "60",
     availability_90: "90",
     availability_365: "365",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "8",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -6060,8 +5829,6 @@ window.amsterdam = [
   {
     id: "262394",
     listing_url: "https://www.airbnb.com/rooms/262394",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Charming Studio with Roof Terrace",
     description:
       "Charming Studio  with beautiful Sunny Rooftop Terrace centrally located (5 min Vondelpark / 10 min Rijksmuseum / Leidseplein)! Your realy have the feeling living in a residential save area with nice trendy local cafes and restaurants on the corner.<br /><br /><b>The space</b><br />Charming Studio with Rooftop Terrace centrally located. A 4 minutes walk to the Vondelpark. Nearby are several trendy cafes and  restaurants where you may go for drinks, lunch or dinner. A 10 minutes walk to the heart of the city centre. Tram and bus lines are nearby and so are the Van Gogh Museum, Rijks Museum, the Concert Gebouw and the Entertainment Area (Leidse Plein). You can rent a bike and experience Amsterdam as a native.   <br /><br />The Studio is on the third and fourth floor. I live downstairs. There is a flat screen TV and wireless internet. The terrace is large and comfortable. And when the weather is nice, you can dine outside. In the summertime you will have sun on the terrace from 10.30 am ti",
@@ -6117,7 +5884,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "113",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -6141,8 +5907,6 @@ window.amsterdam = [
   {
     id: "265349",
     listing_url: "https://www.airbnb.com/rooms/265349",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Private, central & luxurious apment",
     description:
       "<b>The space</b><br />Spacious ground floor apartment with private entrance and garden in quiet street in lively, popular and friendly Old West neighborhood. <br /> <br />Ten minutes walking distance from Leidseplein, Rijks and Van Gogh Museum and Ten Kate market. Next to Vondelpark and lots of nice restaurants, small shops and cafes close by. From farmhouse cheese & dairy store, Italian coffee corner, chocolaterie and good luch room to trendy bar with excellent cocktails, tipical 'brown Amsterdam cafe', best pizza restaurant, bike shop and exclusive clothing boutiques... all just around the corner!  <br /> <br />Apartment is recently renovated with central heating, oak wooden floor, floor heated bath room with big bathtub and separate toilet. <br />  <br />It contains 2 rooms: one large living space with open kitchen and one small, cosy bedroom with double Queensize bed (brand new mattress). One extra mattress for a third person is present. The sunny garden is a sheltered place to dri",
@@ -6194,7 +5958,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "187",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "22",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -6217,8 +5980,6 @@ window.amsterdam = [
   {
     id: "272597",
     listing_url: "https://www.airbnb.com/rooms/272597",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Luxury appartm, good neighbourhood",
     description:
       "Wake up in the popular, affluent (posh) 'old south' (oud zuid) neighbourhood - next to a canal (no traffic!) and the Olympic stadium. Luxurious and spacious appartment includes all the facilities you need. Very centrally located.<br /><br /><b>The space</b><br />New appartment in popular, affluent (posh) 'old south' (oud zuid) neighbourhood - next to a canal (no traffic!). Includes all the facilities you need - internet, walk in shower, parking space, bicycles, located near every possible kind of public transport (tram, subway, train). Walking distance from the famous Vondelpark and the historic Olympic stadium.<br /><br /><b>Guest access</b><br />You will have access to the entire appartment (excluding some cupboards).<br /><br /><b>Other things to note</b><br />The appartment is located on the first floor which can be reached via the escalator.<br /><br /><b>License number</b><br />0363 0452 B92B 2DCE 4CB9",
@@ -6274,7 +6035,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "6",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -6298,8 +6058,6 @@ window.amsterdam = [
   {
     id: "274688",
     listing_url: "https://www.airbnb.com/rooms/274688",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Cozy sleeping in popular Amsterdam West",
     description:
       "My trendy and comfortable apartment on the westside of Amsterdam will give you a perfect stay in a great neighborhood. Within 5 minutes you can have a picknick in the famous Erasmusparc, have a nice drink on a terrace or eat at a cozy restaurant!<br /><br /><b>The space</b><br />This apartment has one bedroom,a bathroom, a huge living room, a kitchen and two balconies and is about 60m2. There is free internet.<br /><br />The apartment is 3 minutes from the Erasmuspark, nearby the famous West area Baarsjes, Westerpark and cosy Jordaan district. From the apartment to the city centre (Dam-square) it's only ten minutes with the tram or bus. Public transport is on the corner and bike renting is also on the corner.<br /><br />Around Westerpark you find some interesting shops, restaurant and long canals where is great to visit during the summer and some lovely pubs. The Jordaan is ofcourse the heart of the city and is an attraction you must not miss.<br /><br />The neighbourhood is called Bos",
@@ -6354,7 +6112,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "43",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -6378,8 +6135,6 @@ window.amsterdam = [
   {
     id: "277011",
     listing_url: "https://www.airbnb.com/rooms/277011",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "nice apartment in centre amsterdam",
     description:
       "<b>The space</b><br />This beautiful apartment has a spacious living and cosy dining room, kitchen with all the facilities you need, separate bedroom and bathroom with shower and bathtub. There are two balcony's, one on the south side so there's always sun. <br />The house is located next to the famous Vondelpark, in a quiet street in a cosy neighbourhood with a variety of shops and restaurants. The area is on walking distance from the city centre and there are many public transport facilities.<br />There is no longer a cat to be taken care of (if you read my reviews).",
@@ -6432,7 +6187,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "20",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -6455,8 +6209,6 @@ window.amsterdam = [
   {
     id: "282269",
     listing_url: "https://www.airbnb.com/rooms/282269",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Your central home in wonderful AMS!",
     description:
       "I love our place as it's light, spacious, and very easy going: central location yet quiet and relaxing, comfy beds, and 2 balconies where birds are singing. <br />It's at the 3rd en 4th floor; at street level there is a bike shop to rent your bike!<br /><br /><b>The space</b><br />Very comfortable, sunny and stylish apartment (130 m2) in the popular 'Schinkelbuurt' neighborhood ('Oud Zuid'), on 3rd and 4th floor of a charming building. <br /> <br />Looking for a place at a perfect location for the city center, the Vondelpark, and public transport? Love to discover a lively but relaxed neighbourhood with restaurants and cafes, and stay in a quiet, stylish apartment with the most comfortable bed in the world? You have found it!   <br /> <br />Details 3rd floor <br />Entry to a hall way with toilet and storage closet. Light and spacious living / dining room with large design sofa and 6-p dining table. The living is attached to the large kitchen, with all the equipment needed (dish washer,",
@@ -6507,7 +6259,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "3",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -6530,8 +6281,6 @@ window.amsterdam = [
   {
     id: "283170",
     listing_url: "https://www.airbnb.com/rooms/283170",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "5-bedrooms house; central location",
     description:
       "The apartment is a modern five bedroom apartment with large (55 m2) living/dining room with Yamaha U1 piano. Sleeping up to twelve, the apartment is perfect for big groups and families. The location is very close to Museum Square.<br /><br /><b>The space</b><br />The Adam apartment is a modern five bedroom apartment with large (55 m2) living/dining room with Yamaha U1 piano. Sleeping up to twelve, the apartment is perfect for big groups and families. The location is close to Museum Square and is within walking distance of the city center.<br /> <br />This apartment is situated on the first two floors. The living room downstairs is bright and spacious. There is a large table capable of seating twelve. The kitchen is fully equipped with an (microwave) oven, dishwasher, coffee-maker, Nespresso and other essential electrical appliances and kitchenware. The first and second bedroom have double beds. The third, fourth and fifth bedroom all have bunk beds. The bathroom is equipped with a bath",
@@ -6584,7 +6333,6 @@ window.amsterdam = [
     availability_60: "26",
     availability_90: "38",
     availability_365: "170",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "109",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -6608,8 +6356,6 @@ window.amsterdam = [
   {
     id: "286374",
     listing_url: "https://www.airbnb.com/rooms/286374",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Cozy and quiet 1 bedroom apartment",
     description:
       "<b>The space</b><br />Cozy, quiet and always clean upon arrival one bedroom apartment in west of Amsterdam suitable for 1-2 people for long stay and up to 4 for shorter stay. <br /> <br />It has the following features:  <br />- 48 m2 <br />- Recently renovated bathroom with rainforest shower. Towels and bathrobes provided <br />- Separate toilet <br />- Hair dryer  <br />- Iron and ironing board <br />- Bedroom: Queen size bed: 200 x 160 cm with bed linen, pillows and duvets. Wardrobe, chest of drawers and a mirror. <br />- Kitchen: Fully equipped with fridge-freezer, oven, stove, coffeemaker, kettle, microwave oven and washing machine.  <br />- Internet <br />-  2 balconies, smaller one entry from the living room, big one from the kitchen facing  south. <br />- Living room: Sofa bed (sleeps 2), TV, DVD player, selection of DVDâ€™s, dining table for 4, bookcase. Books and guides about Amsterdam <br />- Free parking <br /> <br />Apartment is about 15-20 mins to the centre by public transp",
@@ -6662,7 +6408,6 @@ window.amsterdam = [
     availability_60: "16",
     availability_90: "23",
     availability_365: "298",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "2",
     number_of_reviews_ltm: "1",
     number_of_reviews_l30d: "0",
@@ -6686,8 +6431,6 @@ window.amsterdam = [
   {
     id: "286500",
     listing_url: "https://www.airbnb.com/rooms/286500",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Center,Canal View, Private Bathroom",
     description:
       "((I have a minimum 3 night stay policy. 1 or 2 night stays is available on request only, send me email))<br /><br />The room is on the first floor at the front side of our four floor apartment in a renovated canal house, which dates from 1930. It has a lovely canal view. <br /><br />The room (22m2)has a private shower and toilet, directly accessible from the room; tv, free WI-FI, a king size double bed, fridge, coffee and tea facilities. Weekly and monthly rate available.<br /><br /><b>The space</b><br />((I have a minimum 3 night stay policy. 1 or 2 night stays is available on request only, send me email))<br /><br />The room is on the first floor at the front side of a renovated canal house, which dates from 1930. It has a lovely canal view. <br /><br />The room (22m2)has a private shower and toilet, directly accessible from the room; tv, free WI-FI, a king size double bed, fridge, coffee and tea facilities. <br /><br />Weekly and monthly rate available. <br /><br />Our home is locat",
@@ -6742,7 +6485,6 @@ window.amsterdam = [
     availability_60: "9",
     availability_90: "15",
     availability_365: "231",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "288",
     number_of_reviews_ltm: "10",
     number_of_reviews_l30d: "3",
@@ -6766,8 +6508,6 @@ window.amsterdam = [
   {
     id: "290701",
     listing_url: "https://www.airbnb.com/rooms/290701",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Center, Large&Sunny Room,Pvt Bathrm",
     description:
       "((I have a minimum 3 night stay policy. 1 or 2 night stays is available on request only, send me an email))<br /><br />Big bed quiet room, private bathroom + mini fridge, tea and coffee making facilities. I provide towels and hair-dryer and bed are made.<br /><br /><b>The space</b><br />((I have a minimum 3 night stay policy. 1 or 2 night stays is available on request only, send me email))<br /><br />The room is on the first floor up without lift at the quiet rear side of our four floor apartment in a renovated canal house, which dates from 1930. If this room is not available, we also have a room at the front side of the building with a lovely canal view (check Center,Canal View, Private Bathroom)<br /><br />The room (24 m2)has a private shower and toilet, directly accessable from the room; TV, free WI-FI, quality king-size bed, fridge, coffee and tea facilities. <br /><br /><br />Weekly and monthly rate available. <br /><br />Our home is located in the old town centre of Amsterdam, on",
@@ -6822,7 +6562,6 @@ window.amsterdam = [
     availability_60: "7",
     availability_90: "15",
     availability_365: "231",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "336",
     number_of_reviews_ltm: "16",
     number_of_reviews_l30d: "7",
@@ -6846,8 +6585,6 @@ window.amsterdam = [
   {
     id: "291637",
     listing_url: "https://www.airbnb.com/rooms/291637",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "cosy bedroom | garden | near center | breakfast",
     description:
       "WELCOME TO TRANQUIL GARDEN BED & BREAKFAST  :  Cozy bedroom in a spacious ground-floor apartment with a lovely garden: perfect for couples who are looking for a quiet place to rest after a busy day visiting Amsterdam - or business people who need some space to work in a calm environment.<br /><br /><b>Guest access</b><br />PRIVATE FOR YOU:<br />* Master bedroom with comfortable Queen Size bed and Zen atmosphere <br /><br />SHARED WITH OWNER:<br />* Large living-room with natural feel and direct access to the garden <br />* Modern bathroom with spacious shower<br />* Large garden with hammock, trees, birds (and possibility of breakfast)<br />* Kitchen for making tea/coffee & storing food - not for cooking.<br /><br /><b>Other things to note</b><br />PRACTICALITY:<br />* Breakfast (tea, coffee, muesli, fresh fruits, croissants, toasts, and jam (INCLUDED)<br />* TV with interactive TV<br />* Free WiFi internet<br />* Linen, towels, hairdryer, slippers<br />* Supermarket 2 minutes walk<br ",
@@ -6903,7 +6640,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "8",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -6926,8 +6662,6 @@ window.amsterdam = [
   {
     id: "291752",
     listing_url: "https://www.airbnb.com/rooms/291752",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Cozy & large bohemian style room",
     description:
       "<b>The space</b><br />Cozy spacious room in a beautiful and spiritually decorated apartment. The apartment is situated on the 3rd and 4th (top) floor of a traditional Amsterdam brick building built in the early 20th century.  <br /> <br />The room <br /> <br />The room is is located on the 3rd floor and is light and very spacious. It has a comfortable king size double bed and an option for an extra futon that sleeps two. The room has a dining area with a small fridge and facilities to make coffee and tea, which are provided, and there is free use of wifi internet. You can also browse through the interesting spiritual, photo and art book collection. <br />The exotic bathroom is located on the same floor and is shared with the friendly host. Towels, shower gel and shampoo are provided. From the shower you can enjoy the view of the park on the backside of the building. <br />In the summer you are free to chill out and get a tan on the lounge beds on the roof terras. You can also enjoy you",
@@ -6979,7 +6713,6 @@ window.amsterdam = [
     availability_60: "60",
     availability_90: "90",
     availability_365: "365",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "209",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -7002,8 +6735,6 @@ window.amsterdam = [
   {
     id: "293337",
     listing_url: "https://www.airbnb.com/rooms/293337",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Sunny Apartment along river IJ",
     description:
       "Great location opposit Central Station. Just a pleasant (free) ferry ride away.<br />Lovely bright apartment; perfectly suitable for single travellers or couples.<br />Free parking in the close area.<br /><br />Sit on my sunny balcony and watch all kinds of ships sailing by.  Enjoy the village vibe from the hip & happening North part of Amsterdam  and dive into the old city center whenever you feel up for it!<br />Relax at home with free Netflix, cook up something in my very well equipped kitchen!<br /><br /><b>The space</b><br />Just opposite central station, passengers cruise terminal (PTA) & Music-hall (Muziekgebouw aan het IJ) across the river IJ we live in a modern, comfortable, bright and quiet apartment ( 60 m2, 1 bedroom,  1 balcony, 1 bathroom) perfectly suitable for single travellers or couples. Very close to the citycenter and yet very quite. <br /><br />The ferry between central station and my hood is available 24/7 takes only 4 minutes and is for free. <br />A Taxi from Le",
@@ -7058,7 +6789,6 @@ window.amsterdam = [
     availability_60: "53",
     availability_90: "83",
     availability_365: "358",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "25",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -7081,8 +6811,6 @@ window.amsterdam = [
   {
     id: "293514",
     listing_url: "https://www.airbnb.com/rooms/293514",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Volledig huis-apartement",
     description:
       "Nice, little house, nearby Amsterdam Central Station. With garden. Nice, upcoming neighbourhood; nearby (vintage) shops, markets, nice cafes and restaurants. Including wireless internet and television. Two bedrooms.<br /><br /><b>The space</b><br />Nice Small huis; 2-3 beds<br />you can use all the facilities of my house; living room, wireless internet, television, kitchen, bathroom and garden.<br /><br />Nearby Amsterdam Central Station. Nearby public transport and shops.",
@@ -7133,7 +6861,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "5",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -7156,8 +6883,6 @@ window.amsterdam = [
   {
     id: "297220",
     listing_url: "https://www.airbnb.com/rooms/297220",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Modern apartment + rooftop terrace @city centre",
     description:
       "Located in the 'quartier latin' of Amsterdam (De Pijp), a popular neighborhood full of bars, restaurants and just a few minutesâ€™ walk to the canal belt with its many sights and attractions. The recently renovated 60m2 private apartment is located on the fourth floor of a typical Amsterdam style building (built in the late 19th century, no elevator). You will be renting the entire apartment, nothing is shared.<br /><br /><b>The space</b><br />Living room: <br />Comfortable couch<br />Dining table<br />Television 42\"<br />Media player <br />WIFI internet<br /><br />Open kitchen: <br />Fridge <br />Cooking stove<br />Oven<br />Microwave<br />Dishwashes<br />Bread toaster<br />Washer + dryer<br />Iron + ironing board<br />Nespresso coffee machine including coffee<br />Water boiler including tea<br /> <br />Bedroom: <br />Double bed (160x200)<br />Clean bed linnen provided<br />closet + hanging space and hangers<br /><br />Bathroom: <br />Shower + bathtub<br />Clean towels provided (includi",
@@ -7212,7 +6937,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "218",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "91",
     number_of_reviews_ltm: "1",
     number_of_reviews_l30d: "0",
@@ -7236,8 +6960,6 @@ window.amsterdam = [
   {
     id: "301220",
     listing_url: "https://www.airbnb.com/rooms/301220",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Cosy apartment in charming Jordaan",
     description:
       "Cosy apartment with all mod cons located in the charming Jordaan area. 5-10 minutes walking distance to the Anne Frank house and the 9 Streets. It comfortably fits four persons. Cafes, restaurants and public transport just around the corner.<br /><br /><b>The space</b><br />The apartment has a cosy and light living area, a kitchen with microwave oven, fridge/freezer, washer/dryer, pots, pans and cutlery, a separate bedroom and bathroom. The apartment can comfortably sleep up to 4 persons as the sofa in the living room converts easily into a double bed. Fast wireless internet, cable TV and stereo are also available in the apartment.<br /><br />This apartment is located on a quiet street in a friendly neighbourhood, within 5-10 minutes walking distance to attractions, such as the Anne Frank house and the 9 Streets (the nine cosy and picturesque shopping streets in the Unesco Heritage listed Amsterdam Canal Belt). There are lots of nice cafes, bars and restaurants scattered around the are",
@@ -7292,7 +7014,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "83",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -7315,8 +7036,6 @@ window.amsterdam = [
   {
     id: "302426",
     listing_url: "https://www.airbnb.com/rooms/302426",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Sunny family flat in the Jordaan!",
     description:
       "Our 'gezelig' (Dutch: warm-hearted atmosphere) and convenient two-bedroom apartment is perfect for a couple or family with young children. Situated in the heart of the Jordaan, come experience the most charming part of Amsterdam.<br /><br /><b>The space</b><br />Our apartment is located on a quiet street in the heart of the Jordaan, on the top floor. <br /><br />The apartment has two bedrooms. The master bedroom has a king sized  bed opening to a long balcony facing the quiet interior of the block. The second bedroom is a nursery with a bunk bed and a crib and also opens to the courtyard balcony. <br /><br />The open concept kitchen/living room has a French balcony to the street, a couch (the couch is old and torn, but covered with a sheepskin), wireless internet, Chromecast (to stream directly from your phone to the TV), dishwasher, 5-burner gas stove, oven, refrigerator with freezer, and a large dining room table. The bathroom includes a bath with shower, washing machine and dryer.<b",
@@ -7371,7 +7090,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "14",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -7394,8 +7112,6 @@ window.amsterdam = [
   {
     id: "304082",
     listing_url: "https://www.airbnb.com/rooms/304082",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Quiet studio in the heart of town with Garden!",
     description:
       "<b>The space</b><br />The One Roomed Guesthouse-B&B offer a lovely studio in the very heart of Amsterdam.<br />Located in a old trading building on the famous Amsterdam canals.<br />The Studio Apartment has a private garden, great to use in the summer to have breakfast. You can smoke cigarettes but no weed unfortunately. <br />It has its own private shower and toilet. The studio is near the red light district and in a very urban neighborhood. Shops, bars, restaurants, markets, and museums are all within a walking distance. <br /><br />We are gay-friendly, the best gay bars are just around the corner!<br /><br />Public transport is within a 2 minute walk.<br />And it is a 5 minute walk to Central Station.<br /><br />Check out our GUIDEBOOK, We've put in our favorites! <br /><br />Places that are within a 10 minute walk distance: <br />- waterloo flea market <br />- red light district<br />- amsterdam shopping area <br />- flower market <br />- Leidse square entertainment area <br />- da",
@@ -7448,7 +7164,6 @@ window.amsterdam = [
     availability_60: "19",
     availability_90: "40",
     availability_365: "315",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "119",
     number_of_reviews_ltm: "30",
     number_of_reviews_l30d: "3",
@@ -7472,8 +7187,6 @@ window.amsterdam = [
   {
     id: "304143",
     listing_url: "https://www.airbnb.com/rooms/304143",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Unique Beautiful Houseboat (ship) in Center",
     description:
       "The best way to experience Amsterdam-City. Living on a Houseboat with a garden  in a quiet and green neighborhood ('de Plantage'). Please compare this location with other offers on AirBNB and make sure you don't end up in some awful suburb with less privacy!<br />Incredible view from the boat. Public transport with direct connection to Central Station (15 mins) and all major museums (15 mins) at 100 meters. Restaurants, bars, daily shopping, and a great market nearby.<br />One bike free use.<br /><br /><b>The space</b><br />Situated on the outer canal in the center of Amsterdam. Entrance through our private garden. Splendid view on Tropical Museum (regular nice exhibitions. Good for a rainy day. Only two  mins walk) and Oosterpark. Central Heating and wood burning stove. Double bed (140*200). Shower. Small toilet (see the end). Television. WiFi. <br />Very good high frequent public transport within 100 meters. Tram line 14 brings you in 10 minutes in the city center. Tram lines 10  and",
@@ -7528,7 +7241,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "0",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "52",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -7552,8 +7264,6 @@ window.amsterdam = [
   {
     id: "304189",
     listing_url: "https://www.airbnb.com/rooms/304189",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Smack dab middle of Amsterdam",
     description:
       "Small apartment in the Jordan, the trendy district of  Amsterdam, 5-minute walk to Anne Frank House, easy access to public transportation, supermarkets, and the 9-allies shopping area. Apartment sleeps maximum 3.<br /><br /><b>The space</b><br />This quiet, cozy apartment in the center of Amsterdam offers travelers the comfort of a home while at the same time having only a 5-min walk to the Anne Frank House and shopping district '9 Straatjes' (9 Streets), a 10-min walk to the center of Amsterdam's nightlife,  the Leidseplein, and a 15- min walk to the Netherlands' world renown Rijksmuseum and Van Gogh Museum. The apartment is in the heart of the trendy Jordaan District, known for its Gingerbread-like houses and quaint restaurants, cafes and boutiques.<br /><br />Located on the second floor of a 19h century building, the apartment has a living room, a bedroom with 160 x 200cm sized-bed, a kitchen, and bathroom. It can sleep 3 people in total (living room has sleeper couch with a 140 x 2",
@@ -7608,7 +7318,6 @@ window.amsterdam = [
     availability_60: "0",
     availability_90: "0",
     availability_365: "66",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "89",
     number_of_reviews_ltm: "1",
     number_of_reviews_l30d: "0",
@@ -7631,8 +7340,6 @@ window.amsterdam = [
   {
     id: "305809",
     listing_url: "https://www.airbnb.com/rooms/305809",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "Canal & Parkview Apartment",
     description:
       "Your Canal home with a wide view of the Westerpark, nearby shops and many restaurants! A 2 min walk to the bus/tram stop. Stay in comfort with our highspeed WIFI, gourmet kitchen, modern bathroom and a spacious balcony overviewing the inner garden!<br /><br /><b>The space</b><br />Your private apartment for business or holidays in Amsterdam<br /><br />Located in Central Amsterdam, this 900 sq feet (80m2) 3rd floor apartment combines a Canal view with a wide view of the large and versatile Westerpark. In and around this Culture Park you will find trendy bars, all kinds of restaurants, galleries, a cinema and several park terraces. The park is perfect for jogging in the morning or evening walks and has 3 sections: a historic/romantic park, a modern section with cultural institutions and restaurants and a wildlife section.<br /><br />The apartment is conveniently located in the city center, close to the old city. A 10 minute walk and you are in the historic Jordaan area. Here you can walk",
@@ -7688,7 +7395,6 @@ window.amsterdam = [
     availability_60: "58",
     availability_90: "88",
     availability_365: "363",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "129",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
@@ -7711,8 +7417,6 @@ window.amsterdam = [
   {
     id: "306852",
     listing_url: "https://www.airbnb.com/rooms/306852",
-    scrape_id: "2.0218E+13",
-    last_scraped: "8/7/21",
     name: "SunShine, A Sunny Amsterdam Center Special",
     description:
       '<b>The space</b><br />IMPORTANT INFORMATION: DURING COVID-19 TIMES THE APARTMENT WILL NOT BE RENT 48 HOURS BEFORE YOUR ARRIVAL!!!<br /><br />SunShine is a sunny apartment situated on the second floor in a quiet street in Amsterdam Centre. <br /><br />The apartment consists of a living room, kitchen, two separate bedrooms, hall and a bathroom with bath and shower. <br /><br />The kitchen is fully equipped with a oven, fridge, toaster, juice maker, kitchen machine, dishwasher and with basic foods such as olive oil, sugar, salt, spices, coffee, tea and of course some fine Dutch cheese etc.<br /><br />The second bedroom which is on the third floor, has a double bed (190 x 210 cms; 75 x 83") and private shower and toilet. In this second bedroom you will find a second toaster, water cooker, small fridge, coffee, tea, sugar, which gives a party of four full privacy in the mornings when waking up. <br /><br />Bed linen, bath towels and bathrobes are waiting for you to be used, the washing mach',
@@ -7765,7 +7469,6 @@ window.amsterdam = [
     availability_60: "24",
     availability_90: "39",
     availability_365: "163",
-    calendar_last_scraped: "8/7/21",
     number_of_reviews: "21",
     number_of_reviews_ltm: "0",
     number_of_reviews_l30d: "0",
