@@ -1,6 +1,6 @@
 window.amsterdam = [
   {
-    id: "2818",
+    listing_id: "2818",
     listing_url: "https://www.airbnb.com/rooms/2818",
     name: "Quiet Garden View Room & Super Fast WiFi",
     description:
@@ -78,7 +78,7 @@ window.amsterdam = [
     reviews_per_month: "2.88",
   },
   {
-    id: "20168",
+    listing_id: "20168",
     listing_url: "https://www.airbnb.com/rooms/20168",
     name: "Studio with private bathroom in the centre 1",
     description:
@@ -154,7 +154,7 @@ window.amsterdam = [
     reviews_per_month: "3.68",
   },
   {
-    id: "25428",
+    listing_id: "25428",
     listing_url: "https://www.airbnb.com/rooms/25428",
     name: "Lovely, sunny 1 bed apt in Ctr (w.lift) & firepl.",
     description:
@@ -227,7 +227,7 @@ window.amsterdam = [
     reviews_per_month: "0.12",
   },
   {
-    id: "27886",
+    listing_id: "27886",
     listing_url: "https://www.airbnb.com/rooms/27886",
     name: "Romantic, stylish B&B houseboat in canal district",
     description:
@@ -304,7 +304,7 @@ window.amsterdam = [
     reviews_per_month: "2.14",
   },
   {
-    id: "28871",
+    listing_id: "28871",
     listing_url: "https://www.airbnb.com/rooms/28871",
     name: "Comfortable double room",
     description:
@@ -380,7 +380,7 @@ window.amsterdam = [
     reviews_per_month: "4.53",
   },
   {
-    id: "29051",
+    listing_id: "29051",
     listing_url: "https://www.airbnb.com/rooms/29051",
     name: "Comfortable single room",
     description:
@@ -457,7 +457,7 @@ window.amsterdam = [
     reviews_per_month: "5.44",
   },
   {
-    id: "41125",
+    listing_id: "41125",
     listing_url: "https://www.airbnb.com/rooms/41125",
     name: "Amsterdam Center Entire Apartment",
     description:
@@ -531,7 +531,7 @@ window.amsterdam = [
     reviews_per_month: "0.75",
   },
   {
-    id: "43980",
+    listing_id: "43980",
     listing_url: "https://www.airbnb.com/rooms/43980",
     name: "View into park / museum district (long/short stay)",
     description:
@@ -607,7 +607,7 @@ window.amsterdam = [
     reviews_per_month: "0.52",
   },
   {
-    id: "44391",
+    listing_id: "44391",
     listing_url: "https://www.airbnb.com/rooms/44391",
     name: "Quiet 2-bedroom Amsterdam city centre apartment",
     description:
@@ -684,7 +684,7 @@ window.amsterdam = [
     reviews_per_month: "0.61",
   },
   {
-    id: "47061",
+    listing_id: "47061",
     listing_url: "https://www.airbnb.com/rooms/47061",
     name: "Charming apartment in old centre",
     description:
@@ -758,7 +758,7 @@ window.amsterdam = [
     reviews_per_month: "1.58",
   },
   {
-    id: "49552",
+    listing_id: "49552",
     listing_url: "https://www.airbnb.com/rooms/49552",
     name: "Multatuli Luxury Guest Suite in top location",
     description:
@@ -836,7 +836,7 @@ window.amsterdam = [
     reviews_per_month: "3.61",
   },
   {
-    id: "49790",
+    listing_id: "49790",
     listing_url: "https://www.airbnb.com/rooms/49790",
     name: "Luxurous Houseboat-Great Location",
     description:
@@ -910,7 +910,7 @@ window.amsterdam = [
     reviews_per_month: "0.83",
   },
   {
-    id: "50515",
+    listing_id: "50515",
     listing_url: "https://www.airbnb.com/rooms/50515",
     name: "Family Home (No drugs, smoking or parties)",
     description:
@@ -986,7 +986,7 @@ window.amsterdam = [
     reviews_per_month: "0.2",
   },
   {
-    id: "50523",
+    listing_id: "50523",
     listing_url: "https://www.airbnb.com/rooms/50523",
     name: "B & B de 9 Straatjes (city center)",
     description:
@@ -1061,7 +1061,7 @@ window.amsterdam = [
     reviews_per_month: "2.53",
   },
   {
-    id: "52490",
+    listing_id: "52490",
     listing_url: "https://www.airbnb.com/rooms/52490",
     name: "Amsterdam Aqua",
     description:
@@ -1138,7 +1138,7 @@ window.amsterdam = [
     reviews_per_month: "1.22",
   },
   {
-    id: "53671",
+    listing_id: "53671",
     listing_url: "https://www.airbnb.com/rooms/53671",
     name: "Nice room near centre with en suite bath",
     description:
@@ -1215,7 +1215,7 @@ window.amsterdam = [
     reviews_per_month: "2.49",
   },
   {
-    id: "55621",
+    listing_id: "55621",
     listing_url: "https://www.airbnb.com/rooms/55621",
     name: "Fully equiped house, PIJP area = great",
     description:
@@ -1293,7 +1293,7 @@ window.amsterdam = [
     reviews_per_month: "0.5",
   },
   {
-    id: "55868",
+    listing_id: "55868",
     listing_url: "https://www.airbnb.com/rooms/55868",
     name: "Apartment near Museumplein (centre)",
     description:
@@ -1370,7 +1370,7 @@ window.amsterdam = [
     reviews_per_month: "0.91",
   },
   {
-    id: "62015",
+    listing_id: "62015",
     listing_url: "https://www.airbnb.com/rooms/62015",
     name: "Charming, beautifully & sunny place with cat Luna",
     description:
@@ -1447,7 +1447,7 @@ window.amsterdam = [
     reviews_per_month: "1.08",
   },
   {
-    id: "62801",
+    listing_id: "62801",
     listing_url: "https://www.airbnb.com/rooms/62801",
     name: "Very nice appartment ALL of januari",
     description:
@@ -1507,7 +1507,7 @@ window.amsterdam = [
     calculated_host_listings_count_shared_rooms: "0",
   },
   {
-    id: "64736",
+    listing_id: "64736",
     listing_url: "https://www.airbnb.com/rooms/64736",
     name: "Luxury Houseboat",
     description:
@@ -1580,7 +1580,7 @@ window.amsterdam = [
     reviews_per_month: "1.18",
   },
   {
-    id: "67841",
+    listing_id: "67841",
     listing_url: "https://www.airbnb.com/rooms/67841",
     name: "Amsterdam - The Pijp Apartment 1A",
     description:
@@ -1654,7 +1654,7 @@ window.amsterdam = [
     reviews_per_month: "0.17",
   },
   {
-    id: "70598",
+    listing_id: "70598",
     listing_url: "https://www.airbnb.com/rooms/70598",
     name: "Attic room with doublebed available",
     description:
@@ -1731,7 +1731,7 @@ window.amsterdam = [
     reviews_per_month: "1.64",
   },
   {
-    id: "75382",
+    listing_id: "75382",
     listing_url: "https://www.airbnb.com/rooms/75382",
     name: "Garden Suite Studiohttps://www.airbnb.com/manage-l",
     description:
@@ -1808,7 +1808,7 @@ window.amsterdam = [
     reviews_per_month: "3.5",
   },
   {
-    id: "75444",
+    listing_id: "75444",
     listing_url: "https://www.airbnb.com/rooms/75444",
     name: "Cottage Room- Completely Private",
     description:
@@ -1885,7 +1885,7 @@ window.amsterdam = [
     reviews_per_month: "4.21",
   },
   {
-    id: "75499",
+    listing_id: "75499",
     listing_url: "https://www.airbnb.com/rooms/75499",
     name: "Red Studio Palamedes Amsterdam",
     description:
@@ -1962,7 +1962,7 @@ window.amsterdam = [
     reviews_per_month: "0.5",
   },
   {
-    id: "76459",
+    listing_id: "76459",
     listing_url: "https://www.airbnb.com/rooms/76459",
     name: "Yellow Studio Palamedes Amsterdam",
     description:
@@ -2039,7 +2039,7 @@ window.amsterdam = [
     reviews_per_month: "0.27",
   },
   {
-    id: "76668",
+    listing_id: "76668",
     listing_url: "https://www.airbnb.com/rooms/76668",
     name: "studio INN, bright and spacious",
     description:
@@ -2116,7 +2116,7 @@ window.amsterdam = [
     reviews_per_month: "1.48",
   },
   {
-    id: "80635",
+    listing_id: "80635",
     listing_url: "https://www.airbnb.com/rooms/80635",
     name: "TOP LOCATED Canalhouse B&B Jordaan",
     description:
@@ -2191,7 +2191,7 @@ window.amsterdam = [
     reviews_per_month: "1.78",
   },
   {
-    id: "82482",
+    listing_id: "82482",
     listing_url: "https://www.airbnb.com/rooms/82482",
     name: "The Backroom - Central private appt",
     description:
@@ -2268,7 +2268,7 @@ window.amsterdam = [
     reviews_per_month: "7.09",
   },
   {
-    id: "82748",
+    listing_id: "82748",
     listing_url: "https://www.airbnb.com/rooms/82748",
     name: "Bright apt in central Amsterdam",
     description:
@@ -2341,7 +2341,7 @@ window.amsterdam = [
     reviews_per_month: "1.29",
   },
   {
-    id: "84057",
+    listing_id: "84057",
     listing_url: "https://www.airbnb.com/rooms/84057",
     name: "Bed&Bike SleepOnNature - free bikes",
     description:
@@ -2418,7 +2418,7 @@ window.amsterdam = [
     reviews_per_month: "1.28",
   },
   {
-    id: "85008",
+    listing_id: "85008",
     listing_url: "https://www.airbnb.com/rooms/85008",
     name: "Museum district/Vondelpark studio-apartment",
     description:
@@ -2493,7 +2493,7 @@ window.amsterdam = [
     reviews_per_month: "0.09",
   },
   {
-    id: "91535",
+    listing_id: "91535",
     listing_url: "https://www.airbnb.com/rooms/91535",
     name: 'Privat room and shared Houseboat "Ramona" centre',
     description:
@@ -2571,7 +2571,7 @@ window.amsterdam = [
     reviews_per_month: "0.71",
   },
   {
-    id: "97221",
+    listing_id: "97221",
     listing_url: "https://www.airbnb.com/rooms/97221",
     name: "Beautiful and spacious room",
     description:
@@ -2646,7 +2646,7 @@ window.amsterdam = [
     reviews_per_month: "1.88",
   },
   {
-    id: "97476",
+    listing_id: "97476",
     listing_url: "https://www.airbnb.com/rooms/97476",
     name: "Urban Oasis~beautiful street in Old South",
     description:
@@ -2723,7 +2723,7 @@ window.amsterdam = [
     reviews_per_month: "0.73",
   },
   {
-    id: "108890",
+    listing_id: "108890",
     listing_url: "https://www.airbnb.com/rooms/108890",
     name: "Amsterdam at its best",
     description:
@@ -2797,7 +2797,7 @@ window.amsterdam = [
     reviews_per_month: "0.06",
   },
   {
-    id: "110246",
+    listing_id: "110246",
     listing_url: "https://www.airbnb.com/rooms/110246",
     name: "Modern High End Designer Duplex",
     description:
@@ -2870,7 +2870,7 @@ window.amsterdam = [
     reviews_per_month: "0.03",
   },
   {
-    id: "130390",
+    listing_id: "130390",
     listing_url: "https://www.airbnb.com/rooms/130390",
     name: "Large private room for rent Center / De Pijp",
     description:
@@ -2944,7 +2944,7 @@ window.amsterdam = [
     reviews_per_month: "0.25",
   },
   {
-    id: "137026",
+    listing_id: "137026",
     listing_url: "https://www.airbnb.com/rooms/137026",
     name: "Entire house with garden in De Pijp",
     description:
@@ -3021,7 +3021,7 @@ window.amsterdam = [
     reviews_per_month: "0.89",
   },
   {
-    id: "141708",
+    listing_id: "141708",
     listing_url: "https://www.airbnb.com/rooms/141708",
     name: "light modern & cosy apartment",
     description:
@@ -3097,7 +3097,7 @@ window.amsterdam = [
     reviews_per_month: "0.85",
   },
   {
-    id: "148132",
+    listing_id: "148132",
     listing_url: "https://www.airbnb.com/rooms/148132",
     name: "Bright room in lively Kinkerbuurt",
     description:
@@ -3174,7 +3174,7 @@ window.amsterdam = [
     reviews_per_month: "0.12",
   },
   {
-    id: "150634",
+    listing_id: "150634",
     listing_url: "https://www.airbnb.com/rooms/150634",
     name: "Lovely apartment near Vondelpark",
     description:
@@ -3251,7 +3251,7 @@ window.amsterdam = [
     reviews_per_month: "0.99",
   },
   {
-    id: "155548",
+    listing_id: "155548",
     listing_url: "https://www.airbnb.com/rooms/155548",
     name: "Apartment 2 minutes from Centrum!",
     description:
@@ -3323,7 +3323,7 @@ window.amsterdam = [
     reviews_per_month: "0.35",
   },
   {
-    id: "162467",
+    listing_id: "162467",
     listing_url: "https://www.airbnb.com/rooms/162467",
     name: "Modern app. with brand new design bathroom",
     description:
@@ -3401,7 +3401,7 @@ window.amsterdam = [
     reviews_per_month: "0.76",
   },
   {
-    id: "165833",
+    listing_id: "165833",
     listing_url: "https://www.airbnb.com/rooms/165833",
     name: "Amsterdam at your feet",
     description:
@@ -3479,7 +3479,7 @@ window.amsterdam = [
     reviews_per_month: "0.85",
   },
   {
-    id: "168769",
+    listing_id: "168769",
     listing_url: "https://www.airbnb.com/rooms/168769",
     name: "SUPERLOCATED Room in  CANALHOUSE, Private bath",
     description:
@@ -3554,7 +3554,7 @@ window.amsterdam = [
     reviews_per_month: "2.14",
   },
   {
-    id: "169356",
+    listing_id: "169356",
     listing_url: "https://www.airbnb.com/rooms/169356",
     name: "Central,Rooftop 360',Zen,Canal-View, Bright,Quiet",
     description:
@@ -3631,7 +3631,7 @@ window.amsterdam = [
     reviews_per_month: "0.25",
   },
   {
-    id: "171054",
+    listing_id: "171054",
     listing_url: "https://www.airbnb.com/rooms/171054",
     name: "Spacious apartment next to center",
     description:
@@ -3706,7 +3706,7 @@ window.amsterdam = [
     reviews_per_month: "0.84",
   },
   {
-    id: "171631",
+    listing_id: "171631",
     listing_url: "https://www.airbnb.com/rooms/171631",
     name: "Pleasant,cosy & crazy apartment with small balcony",
     description:
@@ -3782,7 +3782,7 @@ window.amsterdam = [
     reviews_per_month: "0.42",
   },
   {
-    id: "174592",
+    listing_id: "174592",
     listing_url: "https://www.airbnb.com/rooms/174592",
     name: "Cosy Apt | IN CITY CENTRE | Close to Artis Zoo",
     description:
@@ -3858,7 +3858,7 @@ window.amsterdam = [
     reviews_per_month: "1.23",
   },
   {
-    id: "175989",
+    listing_id: "175989",
     listing_url: "https://www.airbnb.com/rooms/175989",
     name: "Cat lover's paradise in Amsterdam's hottest street",
     description:
@@ -3935,7 +3935,7 @@ window.amsterdam = [
     reviews_per_month: "0.96",
   },
   {
-    id: "179528",
+    listing_id: "179528",
     listing_url: "https://www.airbnb.com/rooms/179528",
     name: "Authentic Amsterdam apartment RAI",
     description:
@@ -4012,7 +4012,7 @@ window.amsterdam = [
     reviews_per_month: "0.22",
   },
   {
-    id: "182839",
+    listing_id: "182839",
     listing_url: "https://www.airbnb.com/rooms/182839",
     name: "Central, quiet, design apartment",
     description:
@@ -4084,7 +4084,7 @@ window.amsterdam = [
     reviews_per_month: "0.13",
   },
   {
-    id: "188347",
+    listing_id: "188347",
     listing_url: "https://www.airbnb.com/rooms/188347",
     name: "Clean & Cozy room in The Baarsjes",
     description:
@@ -4161,7 +4161,7 @@ window.amsterdam = [
     reviews_per_month: "3.54",
   },
   {
-    id: "189754",
+    listing_id: "189754",
     listing_url: "https://www.airbnb.com/rooms/189754",
     name: "Metropolitan B&B centre Amsterdam",
     description:
@@ -4239,7 +4239,7 @@ window.amsterdam = [
     reviews_per_month: "2.05",
   },
   {
-    id: "190943",
+    listing_id: "190943",
     listing_url: "https://www.airbnb.com/rooms/190943",
     name: "Lovely light appartment with garden",
     description:
@@ -4315,7 +4315,7 @@ window.amsterdam = [
     reviews_per_month: "0.28",
   },
   {
-    id: "193038",
+    listing_id: "193038",
     listing_url: "https://www.airbnb.com/rooms/193038",
     name: "Private Loft&Bathroom  Ensuite Studio Ctr Amsterda",
     description:
@@ -4392,7 +4392,7 @@ window.amsterdam = [
     reviews_per_month: "4.99",
   },
   {
-    id: "199844",
+    listing_id: "199844",
     listing_url: "https://www.airbnb.com/rooms/199844",
     name: "ART & DESIGN APARTMENT",
     description:
@@ -4465,7 +4465,7 @@ window.amsterdam = [
     reviews_per_month: "0.44",
   },
   {
-    id: "203658",
+    listing_id: "203658",
     listing_url: "https://www.airbnb.com/rooms/203658",
     name: "Best Area - Large Luxury 3 Bdr Home",
     description:
@@ -4542,7 +4542,7 @@ window.amsterdam = [
     reviews_per_month: "0.31",
   },
   {
-    id: "205759",
+    listing_id: "205759",
     listing_url: "https://www.airbnb.com/rooms/205759",
     name: "Central yet quiet studio apartment",
     description:
@@ -4617,7 +4617,7 @@ window.amsterdam = [
     reviews_per_month: "0.03",
   },
   {
-    id: "212050",
+    listing_id: "212050",
     listing_url: "https://www.airbnb.com/rooms/212050",
     name: "Spacious home w roof garden",
     description:
@@ -4694,7 +4694,7 @@ window.amsterdam = [
     reviews_per_month: "0.31",
   },
   {
-    id: "213371",
+    listing_id: "213371",
     listing_url: "https://www.airbnb.com/rooms/213371",
     name: "Spacious apartment, great location in De Pijp!",
     description:
@@ -4769,7 +4769,7 @@ window.amsterdam = [
     reviews_per_month: "0.18",
   },
   {
-    id: "213721",
+    listing_id: "213721",
     listing_url: "https://www.airbnb.com/rooms/213721",
     name: "Amsterdam Apartment (waterview)",
     description:
@@ -4845,7 +4845,7 @@ window.amsterdam = [
     reviews_per_month: "0.87",
   },
   {
-    id: "214531",
+    listing_id: "214531",
     listing_url: "https://www.airbnb.com/rooms/214531",
     name: "LUXURIOUS GUESTHOUSE in CITY CENTER",
     description:
@@ -4922,7 +4922,7 @@ window.amsterdam = [
     reviews_per_month: "1.6",
   },
   {
-    id: "219276",
+    listing_id: "219276",
     listing_url: "https://www.airbnb.com/rooms/219276",
     name: "Suite in Canalhouse with Jacuzzi",
     description:
@@ -4996,7 +4996,7 @@ window.amsterdam = [
     reviews_per_month: "0.44",
   },
   {
-    id: "222516",
+    listing_id: "222516",
     listing_url: "https://www.airbnb.com/rooms/222516",
     name: "Cosy apartment in West | Quiet street | Netflix",
     description:
@@ -5073,7 +5073,7 @@ window.amsterdam = [
     reviews_per_month: "1.35",
   },
   {
-    id: "230710",
+    listing_id: "230710",
     listing_url: "https://www.airbnb.com/rooms/230710",
     name: "Jordaan apt with views of canals and Westerkerk",
     description:
@@ -5149,7 +5149,7 @@ window.amsterdam = [
     reviews_per_month: "0.21",
   },
   {
-    id: "245927",
+    listing_id: "245927",
     listing_url: "https://www.airbnb.com/rooms/245927",
     name: "Sonnenberg - Canal side & view - Private & Central",
     description:
@@ -5227,7 +5227,7 @@ window.amsterdam = [
     reviews_per_month: "1",
   },
   {
-    id: "247805",
+    listing_id: "247805",
     listing_url: "https://www.airbnb.com/rooms/247805",
     name: "Bellavista, central,with canal view",
     description:
@@ -5301,7 +5301,7 @@ window.amsterdam = [
     reviews_per_month: "3.69",
   },
   {
-    id: "250751",
+    listing_id: "250751",
     listing_url: "https://www.airbnb.com/rooms/250751",
     name: "Modern studio near central AMS",
     description:
@@ -5375,7 +5375,7 @@ window.amsterdam = [
     reviews_per_month: "0.9",
   },
   {
-    id: "252080",
+    listing_id: "252080",
     listing_url: "https://www.airbnb.com/rooms/252080",
     name: "Amazing apartment historical centre",
     description:
@@ -5448,7 +5448,7 @@ window.amsterdam = [
     reviews_per_month: "0.1",
   },
   {
-    id: "254104",
+    listing_id: "254104",
     listing_url: "https://www.airbnb.com/rooms/254104",
     name: "The Flying Pancake B&B Amsterdam",
     description:
@@ -5524,7 +5524,7 @@ window.amsterdam = [
     reviews_per_month: "1.12",
   },
   {
-    id: "254800",
+    listing_id: "254800",
     listing_url: "https://www.airbnb.com/rooms/254800",
     name: "Amazing apartment in city center",
     description:
@@ -5602,7 +5602,7 @@ window.amsterdam = [
     reviews_per_month: "1.3",
   },
   {
-    id: "255809",
+    listing_id: "255809",
     listing_url: "https://www.airbnb.com/rooms/255809",
     name: "stylish apartment free car parking and 2 bikes",
     description:
@@ -5680,7 +5680,7 @@ window.amsterdam = [
     reviews_per_month: "0.82",
   },
   {
-    id: "256670",
+    listing_id: "256670",
     listing_url: "https://www.airbnb.com/rooms/256670",
     name: "Caracteristic, family apartment",
     description:
@@ -5754,7 +5754,7 @@ window.amsterdam = [
     reviews_per_month: "0.09",
   },
   {
-    id: "258273",
+    listing_id: "258273",
     listing_url: "https://www.airbnb.com/rooms/258273",
     name: "Great CENTRAL apartment De Pijp",
     description:
@@ -5827,7 +5827,7 @@ window.amsterdam = [
     reviews_per_month: "0.08",
   },
   {
-    id: "262394",
+    listing_id: "262394",
     listing_url: "https://www.airbnb.com/rooms/262394",
     name: "Charming Studio with Roof Terrace",
     description:
@@ -5905,7 +5905,7 @@ window.amsterdam = [
     reviews_per_month: "1.04",
   },
   {
-    id: "265349",
+    listing_id: "265349",
     listing_url: "https://www.airbnb.com/rooms/265349",
     name: "Private, central & luxurious apment",
     description:
@@ -5978,7 +5978,7 @@ window.amsterdam = [
     reviews_per_month: "0.8",
   },
   {
-    id: "272597",
+    listing_id: "272597",
     listing_url: "https://www.airbnb.com/rooms/272597",
     name: "Luxury appartm, good neighbourhood",
     description:
@@ -6056,7 +6056,7 @@ window.amsterdam = [
     reviews_per_month: "0.08",
   },
   {
-    id: "274688",
+    listing_id: "274688",
     listing_url: "https://www.airbnb.com/rooms/274688",
     name: "Cozy sleeping in popular Amsterdam West",
     description:
@@ -6133,7 +6133,7 @@ window.amsterdam = [
     reviews_per_month: "0.43",
   },
   {
-    id: "277011",
+    listing_id: "277011",
     listing_url: "https://www.airbnb.com/rooms/277011",
     name: "nice apartment in centre amsterdam",
     description:
@@ -6207,7 +6207,7 @@ window.amsterdam = [
     reviews_per_month: "0.18",
   },
   {
-    id: "282269",
+    listing_id: "282269",
     listing_url: "https://www.airbnb.com/rooms/282269",
     name: "Your central home in wonderful AMS!",
     description:
@@ -6279,7 +6279,7 @@ window.amsterdam = [
     reviews_per_month: "0.03",
   },
   {
-    id: "283170",
+    listing_id: "283170",
     listing_url: "https://www.airbnb.com/rooms/283170",
     name: "5-bedrooms house; central location",
     description:
@@ -6354,7 +6354,7 @@ window.amsterdam = [
     reviews_per_month: "1.11",
   },
   {
-    id: "286374",
+    listing_id: "286374",
     listing_url: "https://www.airbnb.com/rooms/286374",
     name: "Cozy and quiet 1 bedroom apartment",
     description:
@@ -6429,7 +6429,7 @@ window.amsterdam = [
     reviews_per_month: "1.87",
   },
   {
-    id: "286500",
+    listing_id: "286500",
     listing_url: "https://www.airbnb.com/rooms/286500",
     name: "Center,Canal View, Private Bathroom",
     description:
@@ -6506,7 +6506,7 @@ window.amsterdam = [
     reviews_per_month: "2.92",
   },
   {
-    id: "290701",
+    listing_id: "290701",
     listing_url: "https://www.airbnb.com/rooms/290701",
     name: "Center, Large&Sunny Room,Pvt Bathrm",
     description:
@@ -6583,7 +6583,7 @@ window.amsterdam = [
     reviews_per_month: "2.99",
   },
   {
-    id: "291637",
+    listing_id: "291637",
     listing_url: "https://www.airbnb.com/rooms/291637",
     name: "cosy bedroom | garden | near center | breakfast",
     description:
@@ -6660,7 +6660,7 @@ window.amsterdam = [
     reviews_per_month: "0.13",
   },
   {
-    id: "291752",
+    listing_id: "291752",
     listing_url: "https://www.airbnb.com/rooms/291752",
     name: "Cozy & large bohemian style room",
     description:
@@ -6733,7 +6733,7 @@ window.amsterdam = [
     reviews_per_month: "1.79",
   },
   {
-    id: "293337",
+    listing_id: "293337",
     listing_url: "https://www.airbnb.com/rooms/293337",
     name: "Sunny Apartment along river IJ",
     description:
@@ -6809,7 +6809,7 @@ window.amsterdam = [
     reviews_per_month: "0.22",
   },
   {
-    id: "293514",
+    listing_id: "293514",
     listing_url: "https://www.airbnb.com/rooms/293514",
     name: "Volledig huis-apartement",
     description:
@@ -6881,7 +6881,7 @@ window.amsterdam = [
     reviews_per_month: "0.07",
   },
   {
-    id: "297220",
+    listing_id: "297220",
     listing_url: "https://www.airbnb.com/rooms/297220",
     name: "Modern apartment + rooftop terrace @city centre",
     description:
@@ -6958,7 +6958,7 @@ window.amsterdam = [
     reviews_per_month: "0.83",
   },
   {
-    id: "301220",
+    listing_id: "301220",
     listing_url: "https://www.airbnb.com/rooms/301220",
     name: "Cosy apartment in charming Jordaan",
     description:
@@ -7034,7 +7034,7 @@ window.amsterdam = [
     reviews_per_month: "0.71",
   },
   {
-    id: "302426",
+    listing_id: "302426",
     listing_url: "https://www.airbnb.com/rooms/302426",
     name: "Sunny family flat in the Jordaan!",
     description:
@@ -7110,7 +7110,7 @@ window.amsterdam = [
     reviews_per_month: "0.16",
   },
   {
-    id: "304082",
+    listing_id: "304082",
     listing_url: "https://www.airbnb.com/rooms/304082",
     name: "Quiet studio in the heart of town with Garden!",
     description:
@@ -7185,7 +7185,7 @@ window.amsterdam = [
     reviews_per_month: "1.06",
   },
   {
-    id: "304143",
+    listing_id: "304143",
     listing_url: "https://www.airbnb.com/rooms/304143",
     name: "Unique Beautiful Houseboat (ship) in Center",
     description:
@@ -7262,7 +7262,7 @@ window.amsterdam = [
     reviews_per_month: "0.5",
   },
   {
-    id: "304189",
+    listing_id: "304189",
     listing_url: "https://www.airbnb.com/rooms/304189",
     name: "Smack dab middle of Amsterdam",
     description:
@@ -7338,7 +7338,7 @@ window.amsterdam = [
     reviews_per_month: "1.05",
   },
   {
-    id: "305809",
+    listing_id: "305809",
     listing_url: "https://www.airbnb.com/rooms/305809",
     name: "Canal & Parkview Apartment",
     description:
@@ -7415,7 +7415,7 @@ window.amsterdam = [
     reviews_per_month: "1.46",
   },
   {
-    id: "306852",
+    listing_id: "306852",
     listing_url: "https://www.airbnb.com/rooms/306852",
     name: "SunShine, A Sunny Amsterdam Center Special",
     description:
