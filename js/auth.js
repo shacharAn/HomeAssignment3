@@ -13,7 +13,6 @@
             registrationEvent.preventDefault();
 
             const usernameInput = document.getElementById("username");
-            // const passwordInput = document.getElementById("password");
             const usernameInputValue = usernameInput.value.trim();
             const passwordInputValue = passwordInput.value;
 
