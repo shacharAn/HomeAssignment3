@@ -7,9 +7,6 @@
     <link rel="icon" href="images/icon.ico" type="image/x-icon" />
     <script src="js/utils.js" defer></script>
     <script src="js/data/amsterdam.js"></script>
-    <script>
-      console.log(amsterdam);
-    </script>
     <script src="js/storage.js"></script>
     <script src="js/rent.js" defer></script>
   </head>
@@ -17,6 +14,7 @@
   <body>
     <h1>Rent This Property</h1>
     <div id="listing-details"></div>
+
     <form id="rental-form">
       <label for="startDate">Start Date:</label>
       <input type="date" id="startDate" name="startDate" required />
@@ -24,52 +22,8 @@
       <input type="date" id="endDate" name="endDate" required />
       <button type="submit">Check Availability</button>
     </form>
+
     <div id="result"></div>
-
-    <script>
-      const params = new URLSearchParams(window.location.search);
-      const listingId = params.get("id");
-
-      const listing = amsterdam.find((item) => item.listing_id === listingId);
-
-      if (listing) {
-        document.getElementById("listing-details").innerHTML = `
-          <h2>${listing.name}</h2>
-          <img src="${listing.picture_url}" alt="Listing image" width="300">
-          <p>${listing.description}</p>
-        `;
-      }
-
-      document
-        .getElementById("rental-form")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          const startDate = document.getElementById("startDate").value;
-          const endDate = document.getElementById("endDate").value;
-
-          if (checkAvailability(listingId, startDate, endDate)) {
-            const username = localStorage.getItem("currentUser");
-            const key = `${username}_bookings`;
-
-            const newBooking = {
-              listing_id: listingId,
-              startDate: startDate,
-              endDate: endDate,
-            };
-
-            const existing = JSON.parse(localStorage.getItem(key)) || [];
-            existing.push(newBooking);
-            localStorage.setItem(key, JSON.stringify(existing));
-
-            document.getElementById("result").innerText =
-              "Dates are available! Booking saved.";
-          } else {
-            document.getElementById("result").innerText =
-              "These dates are already booked.";
-          }
-        });
-    </script>
 
     <h2>Payment Details</h2>
     <form id="payment-form">
