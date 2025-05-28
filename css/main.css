@@ -1,0 +1,88 @@
+header {
+  background-color: #0d6efd;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  width: 100%;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-center {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-center li a,
+.nav-right a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-center li a:hover,
+.nav-right a:hover {
+  color: #cce6ff;
+}
+
+#signout-btn {
+  background-color: #ffffff;
+  color: #0d6efd;
+  border: 2px solid #ffffff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#signout-btn:hover {
+  background-color: #cce6ff;
+  color: #0a58ca;
+  border-color: #cce6ff;
+}
+
+.nav-right a {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-right a:hover {
+  background-color: white;
+  color: #0d6efd;
+}
+
+#currentUser {
+  font-weight: bold;
+}

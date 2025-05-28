@@ -1,9 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const currentUserSpan = document.getElementById("currentUser");
-  const currentUser = getCurrentUser();
-  currentUserSpan.textContent = currentUser ? currentUser : "Guest";
+  const toggleBtn = document.getElementById("toggleFiltersBtn");
+  const filterSection = document.getElementById("filterSection");
+  toggleBtn.addEventListener("click", () => {
+    filterSection.style.display =
+      filterSection.style.display === "none" ||
+      filterSection.style.display === ""
+        ? "block"
+        : "none";
+  });
 
+  const currentUserSpan = document.getElementById("currentUser");
   const signoutBtn = document.getElementById("signout-btn");
+  const currentUser = getCurrentUser();
+
+  currentUserSpan.textContent = currentUser ? `👤 ${currentUser}` : "👤 Guest";
+  signoutBtn.style.display = currentUser ? "inline-block" : "none";
+
   signoutBtn.addEventListener("click", function () {
     clearUserData();
     window.location.href = "login.html";
@@ -44,18 +56,14 @@ document.addEventListener("DOMContentLoaded", function () {
   roomSelect.appendChild(noFilterOption);
 
   const roomNumbers = [];
-
   for (let i = 0; i < amsterdam.length; i++) {
     const room = parseInt(amsterdam[i].bedrooms);
-    if (!isNaN(room) && roomNumbers.indexOf(room) === -1) {
+    if (!isNaN(room) && !roomNumbers.includes(room)) {
       roomNumbers.push(room);
     }
   }
 
-  roomNumbers.sort(function (a, b) {
-    return a - b;
-  });
-
+  roomNumbers.sort((a, b) => a - b);
   roomNumbers.forEach((room) => {
     if (room < 5) {
       const option = document.createElement("option");
@@ -72,13 +80,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const filterBtn = document.getElementById("filterBtn");
   filterBtn.addEventListener("click", function () {
-    const selectedRating =
-      parseInt(document.getElementById("rating").value) || 0;
-    //
+    const selectedRating = parseInt(ratingSelect.value) || 0;
     const minPrice = parseInt(minPriceInput.value);
     const maxPrice = parseInt(maxPriceInput.value);
-
-    const selectedRooms = document.getElementById("roomSelect").value;
+    const selectedRooms = roomSelect.value;
 
     const filtered = amsterdam.filter((ap) => {
       const rating = parseFloat(ap.review_scores_rating) || 0;
@@ -110,15 +115,14 @@ function getCurrentUser() {
 
 function clearUserData() {
   localStorage.removeItem("currentUser");
-  window.location.href = "login.html";
 }
 
 function displayApartments(apartments) {
-  const resultsContainer = document.getElementById("results");
-  resultsContainer.innerHTML = "";
+  const track = document.getElementById("results");
+  track.innerHTML = "";
 
   if (apartments.length === 0) {
-    resultsContainer.innerHTML = "<p>No apartments match your criteria.</p>";
+    track.innerHTML = "<p>No apartments match your criteria.</p>";
     return;
   }
 
@@ -163,6 +167,38 @@ function displayApartments(apartments) {
       localStorage.setItem(favKey, JSON.stringify(favList));
     });
 
-    resultsContainer.appendChild(card);
+    track.appendChild(card);
   });
+
+  let currentSlide = 0;
+  const cardWidth = 460;
+  const cardMargin = 20;
+
+  function updateCarousel() {
+    const totalItems = track.children.length;
+    const visibleCards = 2;
+    const maxSlide = Math.max(0, totalItems - visibleCards);
+
+    if (currentSlide < 0) currentSlide = 0;
+    if (currentSlide > maxSlide) currentSlide = maxSlide;
+
+    const offset = currentSlide * (cardWidth + cardMargin);
+    track.style.transform = `translateX(-${offset}px)`;
+  }
+
+  const rightBtn = document.querySelector(".right-btn");
+  const leftBtn = document.querySelector(".left-btn");
+
+  if (rightBtn && leftBtn) {
+    rightBtn.onclick = () => {
+      currentSlide++;
+      updateCarousel();
+    };
+    leftBtn.onclick = () => {
+      currentSlide--;
+      updateCarousel();
+    };
+  }
+
+  updateCarousel();
 }

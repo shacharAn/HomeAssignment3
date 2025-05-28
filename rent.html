@@ -6,6 +6,7 @@
     <title>Rent Page</title>
     <link rel="icon" href="images/icon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/rent.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <script src="js/utils.js" defer></script>
     <script src="js/data/amsterdam.js"></script>
     <script src="js/storage.js"></script>
@@ -14,13 +15,29 @@
 
   <body>
     <header>
-      <h1>Rent This Property 🏡</h1>
+      <nav class="nav-bar">
+        <div class="nav-left">
+          <button id="signout-btn">Sign Out</button>
+          <span id="currentUser">👤 Guest</span>
+        </div>
+
+        <ul class="nav-center">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rent.html">Rent</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+          <li><a href="mybookings.html">My Bookings</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+        </div>
+      </nav>
     </header>
 
     <main>
-      
+      <h1>Rent This Property 🏡</h1>
       <div id="listing-details"></div>
-
       <form id="rental-form">
         <label for="startDate">Start Date:</label>
         <input type="date" id="startDate" name="startDate" required />

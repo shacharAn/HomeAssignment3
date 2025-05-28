@@ -8,7 +8,12 @@ function checkAvailability(listingId, startDate, endDate) {
   for (let bookingObject of allBookingsArray) {
     if (
       bookingObject.listing_id === listingId &&
-      isDateRangeOverlap(startDate, endDate, bookingObject.startDate, bookingObject.endDate)
+      isDateRangeOverlap(
+        startDate,
+        endDate,
+        bookingObject.startDate,
+        bookingObject.endDate
+      )
     ) {
       return false;
     }
@@ -20,7 +25,9 @@ function checkAvailability(listingId, startDate, endDate) {
 window.addEventListener("DOMContentLoaded", function () {
   const selectedListingJSON = localStorage.getItem("selectedListing");
   if (!selectedListingJSON) {
-    document.getElementById("listing-details").innerHTML = `<p style="color:red;">No apartment selected.</p>`;
+    document.getElementById(
+      "listing-details"
+    ).innerHTML = `<p style="color:red;">No apartment selected.</p>`;
     return;
   }
 
@@ -32,29 +39,43 @@ window.addEventListener("DOMContentLoaded", function () {
     <p>${currentListing.description}</p>
   `;
 
-  document.getElementById("rental-form").addEventListener("submit", function (formSubmitEvent) {
-    formSubmitEvent.preventDefault();
+  document
+    .getElementById("rental-form")
+    .addEventListener("submit", function (formSubmitEvent) {
+      formSubmitEvent.preventDefault();
 
-    const selectedStartDate = document.getElementById("startDate").value;
-    const selectedEndDate = document.getElementById("endDate").value;
+      const selectedStartDate = document.getElementById("startDate").value;
+      const selectedEndDate = document.getElementById("endDate").value;
 
-    if (checkAvailability(currentListing.listing_id, selectedStartDate, selectedEndDate)) {
-      const currentUsername = localStorage.getItem("currentUser");
-      const userBookingKey = `${currentUsername}_bookings`;
+      if (
+        checkAvailability(
+          currentListing.listing_id,
+          selectedStartDate,
+          selectedEndDate
+        )
+      ) {
+        const currentUsername = localStorage.getItem("currentUser");
+        const userBookingKey = `${currentUsername}_bookings`;
 
-      const newBookingObject = {
-        listing_id: currentListing.listing_id,
-        startDate: selectedStartDate,
-        endDate: selectedEndDate,
-      };
+        const newBookingObject = {
+          listing_id: currentListing.listing_id,
+          startDate: selectedStartDate,
+          endDate: selectedEndDate,
+        };
 
-      const existingBookingsArray = JSON.parse(localStorage.getItem(userBookingKey)) || [];
-      existingBookingsArray.push(newBookingObject);
-      localStorage.setItem(userBookingKey, JSON.stringify(existingBookingsArray));
+        const existingBookingsArray =
+          JSON.parse(localStorage.getItem(userBookingKey)) || [];
+        existingBookingsArray.push(newBookingObject);
+        localStorage.setItem(
+          userBookingKey,
+          JSON.stringify(existingBookingsArray)
+        );
 
-      document.getElementById("result").innerText = "✅ Dates are available! Booking saved.";
-    } else {
-      document.getElementById("result").innerText = "❌ These dates are already booked.";
-    }
-  });
+        document.getElementById("result").innerText =
+          "✅ Dates are available! Booking saved.";
+      } else {
+        document.getElementById("result").innerText =
+          "❌ These dates are already booked.";
+      }
+    });
 });
