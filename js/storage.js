@@ -1,1 +1,7 @@
-// פונקציות כלליות לעבודה עם localStorage
+function getCurrentUser() {
+  return localStorage.getItem("currentUser");
+}
+
+function clearUserData() {
+  localStorage.removeItem("currentUser");
+}
