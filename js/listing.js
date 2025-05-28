@@ -20,20 +20,20 @@ document.addEventListener("DOMContentLoaded", function () {
     ratingSelect.appendChild(option);
   }
 
-  const minPriceInput = document.getElementById("minPrice");
-  const maxPriceInput = document.getElementById("maxPrice");
-  const minPriceValue = document.getElementById("minPriceValue");
-  const maxPriceValue = document.getElementById("maxPriceValue");
+const minPriceInput = document.getElementById("minPrice");
+const maxPriceInput = document.getElementById("maxPrice");
+const minPriceValue = document.getElementById("minPriceValue");
+const maxPriceValue = document.getElementById("maxPriceValue");
 
-  const updatePriceLabels = () => {
-    minPriceValue.textContent = minPriceInput.value;
-    maxPriceValue.textContent =
-      maxPriceInput.value == "2000" ? "2000+" : maxPriceInput.value;
-  };
+const updatePriceLabels = () => {
+  minPriceValue.textContent = `₪${minPriceInput.value}`;
+  maxPriceValue.textContent = maxPriceInput.value === "800" ? "₪800+" : `₪${maxPriceInput.value}`;
+};
 
-  minPriceInput.addEventListener("input", updatePriceLabels);
-  maxPriceInput.addEventListener("input", updatePriceLabels);
-  updatePriceLabels();
+minPriceInput.addEventListener("input", updatePriceLabels);
+maxPriceInput.addEventListener("input", updatePriceLabels);
+updatePriceLabels();
+
 
   const roomSelect = document.getElementById("roomSelect");
   roomSelect.innerHTML = "";
@@ -43,9 +43,19 @@ document.addEventListener("DOMContentLoaded", function () {
   noFilterOption.textContent = "No Room Filter";
   roomSelect.appendChild(noFilterOption);
 
-  const roomNumbers = [...new Set(amsterdam.map((ap) => ap.bedrooms))]
-    .filter((r) => r !== undefined && r !== null)
-    .sort((a, b) => a - b);
+  const roomNumbers = [];
+
+for (let i = 0; i < amsterdam.length; i++) {
+  const room = parseInt(amsterdam[i].bedrooms);
+  if (!isNaN(room) && roomNumbers.indexOf(room) === -1) {
+    roomNumbers.push(room);
+  }
+}
+
+roomNumbers.sort(function (a, b) {
+  return a - b;
+});
+
 
   roomNumbers.forEach((room) => {
     if (room < 5) {
@@ -65,14 +75,16 @@ document.addEventListener("DOMContentLoaded", function () {
   filterBtn.addEventListener("click", function () {
     const selectedRating =
       parseInt(document.getElementById("rating").value) || 0;
-    const minPrice = parseInt(document.getElementById("minPrice").value);
-    const maxPrice = parseInt(document.getElementById("maxPrice").value);
+//     
+const minPrice = parseInt(minPriceInput.value);
+const maxPrice = parseInt(maxPriceInput.value);
+
     const selectedRooms = document.getElementById("roomSelect").value;
 
     const filtered = amsterdam.filter((ap) => {
-      const rating = ap.review_scores_rating || 0;
-      const price = ap.price || 0;
-      const rooms = ap.bedrooms || 0;
+      const rating = parseFloat(ap.review_scores_rating) || 0;
+      const price = parseFloat(ap.price.replace(/[^0-9.]/g, "")) || 0;
+      const rooms = parseInt(ap.bedrooms) || 0;
 
       const ratingMatch = rating >= selectedRating;
       const priceMatch = price >= minPrice && price <= maxPrice;
