@@ -3,13 +3,70 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Amsterdam Rentals</title>
     <link rel="icon" href="images/icon.ico" type="image/x-icon" />
+    <script src="js/utils.js" defer></script>
+    <script src="js/storage.js" defer></script>
     <script src="js/data/amsterdam.js" defer></script>
+    <script src="js/listing.js" defer></script>
     <link rel="stylesheet" href="css/home.css" />
     <script>
       console.log(amsterdam);
     </script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rent.html">Rent</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+          <li><a href="mybookings.html">My Bookings</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+        <div id="user-info">
+          <span id="currentUser"></span>
+          <button id="signout-btn">Sign Out</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="general-section">
+        <h1>Find Your Perfect Stay in Amsterdam</h1>
+        <p id="general-info">
+          Welcome to our apartment rental site in the heart of Amsterdam! We
+          offer a wide selection of carefully curated apartments to suit every
+          traveler – from cozy studios to spacious family homes. Whether you're
+          here for business, leisure, or a bit of both – we've got
+          <span id="apartment-count"></span> unique listings waiting for you.
+        </p>
+      </section>
+      <section class="filter-section">
+        <h2>Filter Apartments</h2>
+
+        <label for="rating">Minimum Rating:</label>
+        <select id="rating">
+          <option value="">No Rating Filter</option>
+        </select>
+
+        <label for="minPrice">Price Range (₪):</label>
+        <div class="price-range">
+          <input type="range" id="minPrice" min="0" max="2000" value="0" />
+          <input type="range" id="maxPrice" min="0" max="2000" value="2000" />
+          <div class="price-values">
+            <span id="minPriceValue">0</span> ₪ –
+            <span id="maxPriceValue">2000+</span> ₪
+          </div>
+        </div>
+
+        <label for="roomSelect">Number of Rooms:</label>
+        <select id="roomSelect"></select>
+
+        <button id="filterBtn">Filter</button>
+      </section>
+
+      <section id="results"></section>
+    </main>
+  </body>
 </html>
