@@ -1,4 +1,4 @@
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const currentUserSpan = document.getElementById("currentUser");
   const currentUser = getCurrentUser();
   currentUserSpan.textContent = currentUser ? currentUser : "Guest";
@@ -20,20 +20,20 @@
     ratingSelect.appendChild(option);
   }
 
-const minPriceInput = document.getElementById("minPrice");
-const maxPriceInput = document.getElementById("maxPrice");
-const minPriceValue = document.getElementById("minPriceValue");
-const maxPriceValue = document.getElementById("maxPriceValue");
+  const minPriceInput = document.getElementById("minPrice");
+  const maxPriceInput = document.getElementById("maxPrice");
+  const minPriceValue = document.getElementById("minPriceValue");
+  const maxPriceValue = document.getElementById("maxPriceValue");
 
-const updatePriceLabels = () => {
-  minPriceValue.textContent = `₪${minPriceInput.value}`;
-  maxPriceValue.textContent = maxPriceInput.value === "800" ? "₪800+" : `₪${maxPriceInput.value}`;
-};
+  const updatePriceLabels = () => {
+    minPriceValue.textContent = `₪${minPriceInput.value}`;
+    maxPriceValue.textContent =
+      maxPriceInput.value === "800" ? "₪800+" : `₪${maxPriceInput.value}`;
+  };
 
-minPriceInput.addEventListener("input", updatePriceLabels);
-maxPriceInput.addEventListener("input", updatePriceLabels);
-updatePriceLabels();
-
+  minPriceInput.addEventListener("input", updatePriceLabels);
+  maxPriceInput.addEventListener("input", updatePriceLabels);
+  updatePriceLabels();
 
   const roomSelect = document.getElementById("roomSelect");
   roomSelect.innerHTML = "";
@@ -45,17 +45,16 @@ updatePriceLabels();
 
   const roomNumbers = [];
 
-for (let i = 0; i < amsterdam.length; i++) {
-  const room = parseInt(amsterdam[i].bedrooms);
-  if (!isNaN(room) && roomNumbers.indexOf(room) === -1) {
-    roomNumbers.push(room);
+  for (let i = 0; i < amsterdam.length; i++) {
+    const room = parseInt(amsterdam[i].bedrooms);
+    if (!isNaN(room) && roomNumbers.indexOf(room) === -1) {
+      roomNumbers.push(room);
+    }
   }
-}
 
-roomNumbers.sort(function (a, b) {
-  return a - b;
-});
-
+  roomNumbers.sort(function (a, b) {
+    return a - b;
+  });
 
   roomNumbers.forEach((room) => {
     if (room < 5) {
@@ -75,9 +74,9 @@ roomNumbers.sort(function (a, b) {
   filterBtn.addEventListener("click", function () {
     const selectedRating =
       parseInt(document.getElementById("rating").value) || 0;
-//     
-const minPrice = parseInt(minPriceInput.value);
-const maxPrice = parseInt(maxPriceInput.value);
+    //
+    const minPrice = parseInt(minPriceInput.value);
+    const maxPrice = parseInt(maxPriceInput.value);
 
     const selectedRooms = document.getElementById("roomSelect").value;
 
@@ -158,7 +157,7 @@ function displayApartments(apartments) {
         favList.splice(index, 1);
         favBtn.textContent = "Add to Favorites";
       } else {
-        favList.push(ap);
+        favList.push({ listing_id: ap.listing_id });
         favBtn.textContent = "Remove from Favorites";
       }
       localStorage.setItem(favKey, JSON.stringify(favList));
