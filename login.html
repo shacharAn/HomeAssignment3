@@ -7,23 +7,23 @@
     <link rel="icon" href="images/icon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/auth.css" />
   </head>
-  <body class="auth-page">
-    <div class="auth-card">
-          <h2>Login</h2>
+  <body class="login-page">
+    <div class="login-container">
+      <div class="login-card">
+        <h2>Login</h2>
     <form id="loginForm">
-      <div class="mb-3">
-        <label for="username" class="form-label">Username</label>
-        <input type="text" id="username" class="form-control" required />
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" required/>
       </div>
-      <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" id="password" class="form-control" required minlength="8" />
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" required minlength="8"/>
       </div>
-      <button type="submit" class="btn btn-primary">Login</button>
+      <button type="submit">Login</button>
     </form>
-    <p class="mt-3">Don't have an account ?<a href="register.html">Register here</a></p>
-    </div>
-
+    <p class="register-link">Don't have an account ?<a href="register.html"> Register here</a></p>
+      </div>
     </div>
   <script src="js/auth.js"></script>
   </body>
