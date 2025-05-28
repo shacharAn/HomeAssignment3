@@ -8,16 +8,12 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   const key = `${username}_favorites`;
-  const favoriteIds = JSON.parse(localStorage.getItem(key)) || [];
+  const favoriteListings = JSON.parse(localStorage.getItem(key)) || [];
 
-  if (favoriteIds.length === 0) {
+  if (favoriteListings.length === 0) {
     container.innerHTML = "<p>You have no favorite listings.</p>";
     return;
   }
-
-  const favoriteListings = amsterdam.filter((listing) =>
-    favoriteIds.includes(listing.listing_id)
-  );
 
   favoriteListings.forEach((listing) => {
     const card = document.createElement("div");
@@ -32,9 +28,9 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   container.addEventListener("click", (event) => {
-  if (event.target.tagName === "BUTTON") {
-      const idToRemove = e.target.dataset.id;
-      const updatedFavorites = favoriteIds.filter((id) => id !== idToRemove);
+    if (event.target.tagName === "BUTTON") {
+      const idToRemove = event.target.dataset.id;
+      const updatedFavorites = favoriteListings.filter((fav) => fav.listing_id !== idToRemove);
       localStorage.setItem(key, JSON.stringify(updatedFavorites));
       window.location.reload();
     }
