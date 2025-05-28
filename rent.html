@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rent Page</title>
     <link rel="icon" href="images/icon.ico" type="image/x-icon" />
+    <script src="js/utils.js" defer></script>
     <script src="js/data/amsterdam.js"></script>
     <script>
       console.log(amsterdam);
@@ -12,20 +13,17 @@
     <script src="js/storage.js"></script>
     <script src="js/rent.js" defer></script>
   </head>
+
   <body>
     <h1>Rent This Property</h1>
     <div id="listing-details"></div>
-
     <form id="rental-form">
       <label for="startDate">Start Date:</label>
       <input type="date" id="startDate" name="startDate" required />
-
       <label for="endDate">End Date:</label>
       <input type="date" id="endDate" name="endDate" required />
-
       <button type="submit">Check Availability</button>
     </form>
-
     <div id="result"></div>
 
     <script>
@@ -42,32 +40,35 @@
         `;
       }
 
-      document.getElementById("rental-form").addEventListener("submit", function (e) {
-        e.preventDefault();
+      document
+        .getElementById("rental-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
 
-        const startDate = document.getElementById("startDate").value;
-        const endDate = document.getElementById("endDate").value;
+          const startDate = document.getElementById("startDate").value;
+          const endDate = document.getElementById("endDate").value;
 
-        if (checkAvailability(listingId, startDate, endDate)) {
+          if (checkAvailability(listingId, startDate, endDate)) {
+            const username = localStorage.getItem("currentUser");
+            const key = `${username}_bookings`;
 
-          const username = localStorage.getItem("currentUser");
-          const key = `${username}_bookings`;
+            const newBooking = {
+              listing_id: listingId,
+              startDate: startDate,
+              endDate: endDate,
+            };
 
-          const newBooking = {
-            listing_id: listingId,
-            startDate: startDate,
-            endDate: endDate
-          };
+            const existing = JSON.parse(localStorage.getItem(key)) || [];
+            existing.push(newBooking);
+            localStorage.setItem(key, JSON.stringify(existing));
 
-          const existing = JSON.parse(localStorage.getItem(key)) || [];
-          existing.push(newBooking);
-          localStorage.setItem(key, JSON.stringify(existing));
-
-          document.getElementById("result").innerText = "Dates are available! Booking saved.";
-        } else {
-          document.getElementById("result").innerText = "These dates are already booked.";
-        }
-      });
+            document.getElementById("result").innerText =
+              "Dates are available! Booking saved.";
+          } else {
+            document.getElementById("result").innerText =
+              "These dates are already booked.";
+          }
+        });
     </script>
 
     <h2>Payment Details</h2>
