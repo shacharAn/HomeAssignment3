@@ -1,24 +1,10 @@
+function getCurrentUser() {
+  return localStorage.getItem("currentUser");
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function clearUserData() {
+  localStorage.removeItem("currentUser");
+}
 
 function getAllBookings() {
   const bookings = [];
