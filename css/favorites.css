@@ -1,32 +1,45 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 20px;
-  color: #333;
+  background-color: #fefefe;
+  color: #2c3e50;
 }
 
-h1 {
+.header {
   text-align: center;
-  color: #444;
-  margin-bottom: 30px;
+  background: linear-gradient(to right, #6cbbcb, #88d8b0);
+  padding: 2rem 1rem;
+  border-bottom: 4px solid #2c3e50;
+  color: white;
 }
 
-#favorites-container {
+.header h1 {
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.header-icon {
+  width: 70px;
+  margin-bottom: 1rem;
+}
+
+.favorites-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  padding: 2rem;
+  gap: 2rem;
 }
 
 .favorite-card {
-  background-color: #fff;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  width: 300px;
-  padding: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  max-width: 320px;
   text-align: center;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s;
 }
 
 .favorite-card:hover {
@@ -34,34 +47,44 @@ h1 {
 }
 
 .favorite-card img {
+  border-radius: 10px;
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 
-.favorite-card h3 {
-  font-size: 20px;
-  margin: 10px 0 5px;
-  color: #222;
+.favorite-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .favorite-card p {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: #555;
 }
 
 .favorite-card button {
-  background-color: #c0392b;
-  color: white;
+  background-color: #2980b9;
   border: none;
-  padding: 10px 14px;
-  border-radius: 6px;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.2s ease;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
 }
 
 .favorite-card button:hover {
-  background-color: #a93226;
+  background-color: #c0392b;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  color: #555;
 }

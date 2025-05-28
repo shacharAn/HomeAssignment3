@@ -8,7 +8,11 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   const key = `${username}_favorites`;
-  const favoriteListings = JSON.parse(localStorage.getItem(key)) || [];
+  const favoriteIds = JSON.parse(localStorage.getItem(key)) || [];
+
+  const favoriteListings = amsterdam.filter((listing) =>
+    favoriteIds.some((fav) => fav.listing_id === listing.listing_id)
+  );
 
   if (favoriteListings.length === 0) {
     container.innerHTML = "<p>You have no favorite listings.</p>";
@@ -30,7 +34,7 @@ window.addEventListener("DOMContentLoaded", () => {
   container.addEventListener("click", (event) => {
     if (event.target.tagName === "BUTTON") {
       const idToRemove = event.target.dataset.id;
-      const updatedFavorites = favoriteListings.filter((fav) => fav.listing_id !== idToRemove);
+      const updatedFavorites = favoriteIds.filter((fav) => fav.listing_id !== idToRemove);
       localStorage.setItem(key, JSON.stringify(updatedFavorites));
       window.location.reload();
     }
