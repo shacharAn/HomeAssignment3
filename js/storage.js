@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 
 
 
@@ -35,3 +36,5 @@ function getAllBookings() {
 
   return bookings;
 }
+=======
+>>>>>>> aca69b616f1f849c7fd564817dc0211747e864e9
