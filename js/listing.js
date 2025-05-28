@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function () {
   const currentUserSpan = document.getElementById("currentUser");
   const currentUser = getCurrentUser();
   currentUserSpan.textContent = currentUser ? currentUser : "Guest";
