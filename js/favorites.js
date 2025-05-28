@@ -33,7 +33,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   container.addEventListener("click", (event) => {
   if (event.target.tagName === "BUTTON") {
-      const idToRemove = e.target.dataset.id;
+      const idToRemove = event.target.dataset.id;
       const updatedFavorites = favoriteIds.filter((id) => id !== idToRemove);
       localStorage.setItem(key, JSON.stringify(updatedFavorites));
       window.location.reload();
