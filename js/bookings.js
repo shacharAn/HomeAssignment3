@@ -1,4 +1,3 @@
-//  הוספה/ביטול השכרות, לפי currentUser
     document.addEventListener("DOMContentLoaded",function(){
     const currentUser = localStorage.getItem("currentUser");
     const Key = `${currentUser}_bookings`;
