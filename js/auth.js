@@ -1,12 +1,26 @@
     document.addEventListener("DOMContentLoaded", function () {
+    const passwordInput = document.getElementById("password");
+    passwordInput.addEventListener("input", function () {
+    if (passwordInput.validity.tooShort) {
+        passwordInput.setCustomValidity("Password must be at least 8 characters.");
+    } else {
+        passwordInput.setCustomValidity("");
+    }
+    });
     const registerFormElement = document.getElementById("registerForm");
     if (registerFormElement) {
         registerFormElement.addEventListener("submit", function (registrationEvent) {
             registrationEvent.preventDefault();
 
-            const usernameInputValue = document.getElementById("username").value.trim();
-            const passwordInputValue = document.getElementById("password").value;
+            const usernameInput = document.getElementById("username");
+            // const passwordInput = document.getElementById("password");
+            const usernameInputValue = usernameInput.value.trim();
+            const passwordInputValue = passwordInput.value;
 
+            if (!usernameInputValue) {
+                alert("Username is required.");
+                return;
+            }
             if (passwordInputValue.length < 8) {
                 alert("Password must be at least 8 characters.");
                 return;
@@ -35,6 +49,10 @@
             const usernameInputValue = document.getElementById("username").value.trim();
             const passwordInputValue = document.getElementById("password").value;
 
+            if (!usernameInputValue || !passwordInputValue) {
+                alert("Please fill in both fields.");
+                return;
+            }
             const registeredUsersList = JSON.parse(localStorage.getItem("usersList")) || [];
             const matchedUserObject = registeredUsersList.find(
                 (userObject) => userObject.username === usernameInputValue && userObject.password === passwordInputValue
