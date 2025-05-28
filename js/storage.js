@@ -34,5 +34,4 @@ function getAllBookings() {
   }
 
   return bookings;
->>>>>>> 43e407ec64bbf61d74bdb619641d6fc481a07f0d
 }
