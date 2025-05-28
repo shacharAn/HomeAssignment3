@@ -13,34 +13,47 @@
   </head>
 
   <body>
-    <h1>Rent This Property 🏠</h1>
-    <div id="listing-details"></div>
+    <header>
+      <h1>Rent This Property 🏡</h1>
+    </header>
 
-    <form id="rental-form">
-      <label for="startDate">Start Date:</label>
-      <input type="date" id="startDate" name="startDate" required />
-      <label for="endDate">End Date:</label>
-      <input type="date" id="endDate" name="endDate" required />
-      <button type="submit">Check Availability</button>
-    </form>
+    <main>
+      
+      <div id="listing-details"></div>
 
-    <div id="result"></div>
+      <form id="rental-form">
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate" required />
 
-    <h2> Payment Details 💳</h2>
-    <form id="payment-form">
-      <label for="cardName">Cardholder Name:</label>
-      <input type="text" id="cardName" name="cardName" required />
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate" required />
 
-      <label for="cardNumber">Card Number:</label>
-      <input type="text" id="cardNumber" name="cardNumber" required />
+        <button type="submit">Check Availability</button>
+      </form>
 
-      <label for="expiryDate">Expiry Date (MM/YY):</label>
-      <input type="text" id="expiryDate" name="expiryDate" required />
+      <div id="result"></div>
 
-      <label for="cvv">CVV:</label>
-      <input type="text" id="cvv" name="cvv" required />
+      <form id="payment-form">
+        <h2>Payment Details 💳</h2>
 
-      <button type="submit" disabled>Pay Now</button>
-    </form>
+        <label for="cardName">Cardholder Name:</label>
+        <input type="text" id="cardName" name="cardName" required />
+
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required />
+
+        <label for="expiryDate">Expiry Date (MM/YY):</label>
+        <input type="text" id="expiryDate" name="expiryDate" required />
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required />
+
+        <button type="submit" disabled>Pay Now</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>🏡 Find your next stay with us | &copy; 2025 DreamStays</p>
+    </footer>
   </body>
 </html>
