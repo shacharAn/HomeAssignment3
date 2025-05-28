@@ -1,0 +1,69 @@
+/* טיפוגרפיה כללית */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* כותרת עליונה - header */
+header {
+  background-color: #0d6efd; /* כחול כהה */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* תפריט ניווט */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #a3d5ff; /* תכלת בהיר בהובר */
+}
+
+/* הצגת שם המשתמש וכפתור יציאה */
+#user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#signout-btn {
+  background-color: white;
+  color: #0d6efd;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#signout-btn:hover {
+  background-color: #e6f0ff;
+}
