@@ -7,7 +7,9 @@
     <link rel="icon" href="images/icon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/mybookings.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/data/amsterdam.js" defer></script>
     <script src="js/utils.js" defer></script>
+    <script src="js/bookings.js" defer></script>
   </head>
 
   <body class="container mt-5">
@@ -33,6 +35,12 @@
     </header>
 
     <h2 class="mb-4">My Bookings</h2>
+    <div class="tabs">
+  <button class="tab-btn active" data-type="all">All Bookings <span id="allCount">0</span></button>
+  <button class="tab-btn" data-type="upcoming">Upcoming <span id="upcomingCount">0</span></button>
+  <button class="tab-btn" data-type="past">Past <span id="pastCount">0</span></button>
+</div>
+
     <div id="bookingsContainer" class="row"></div>
 <footer>
   <p>🏡 Find your next stay with us in Amsterdam | &copy; 2025 DreamStays</p>
@@ -45,6 +53,5 @@
 </footer>
 
 
-    <script src="js/bookings.js"></script>
   </body>
 </html>
