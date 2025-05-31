@@ -7,52 +7,54 @@
     <link rel="icon" href="images/icon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/favorites.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
     <script src="js/utils.js" defer></script>
     <script src="js/data/amsterdam.js"></script>
     <script src="js/favorites.js" defer></script>
   </head>
 
-  <body>
-    <header>
-      <nav class="nav-bar">
-        <div class="nav-left">
-          <button id="signout-btn">Sign Out</button>
-          <span id="currentUser">👤 Guest</span>
-        </div>
+  <body><header>
+  <nav class="nav-bar">
+    <div class="nav-left">
+      <button id="signout-btn">Sign Out</button>
+      <span id="currentUser">Guest</span>
+    </div>
 
-        <ul class="nav-center">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="rent.html">Rent</a></li>
-          <li><a href="favorites.html">Favorites</a></li>
-          <li><a href="mybookings.html">My Bookings</a></li>
-        </ul>
+   <ul class="nav-center">
+  <li><a href="index.html" class="active"><i class="fi fi-sr-home"></i> Home</a></li>
+  <li><a href="rent.html"><i class="fi fi-sr-building"></i> Rent</a></li>
+  <li><a href="favorites.html"><i class="fi fi-sr-heart"></i> Favorites</a></li>
+  <li><a href="mybookings.html"><i class="fi fi-sr-calendar"></i> My Bookings</a></li>
+</ul>
 
-        <div class="nav-right">
-          <a href="login.html">Login</a>
-          <a href="register.html">Register</a>
-        </div>
-      </nav>
-    </header>
+
+
+    <div class="nav-right">
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </div>
+  </nav>
+</header>
+
 
     <main>
-      <div class="h-favorite">
-        <h1>Your Favorite Apartments 🌍</h1>
-        <p>Saved with love, ready to rent</p>
-      </div>
-      <div id="favorites-container" class="favorites-container"></div>
+      <section class="favorites-header">
+        <h1>My Favorites</h1>
+        <p>Apartments you've saved for later</p>
+        <p id="favorites-count"></p>
+      </section>
+
+      <section id="favorites-container" class="favorites-container"></section>
     </main>
 
-<footer>
+  <footer>
   <p>🏡 Find your next stay with us in Amsterdam | &copy; 2025 DreamStays</p>
   <p>
     🌍 Recommended Amsterdam guides:
     <a href="https://www.getyourguide.com/-l36/?cmp=ga..." target="_blank">GetYourGuide</a> |
-    <a href="https://www.mako.co.il/travel-world/guides-amsterdam" target="_blank">mako מדריך</a> |
-    <a href="https://www.lametayel.co.il/destinations/amsterdam-541" target="_blank">למטייל</a>
+    <a href="https://www.mako.co.il/travel-world/guides-amsterdam" target="_blank">Mako</a> |
+    <a href="https://www.lametayel.co.il/destinations/amsterdam-541" target="_blank">Lametayel</a>
   </p>
 </footer>
-
-
-
   </body>
 </html>
