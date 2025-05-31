@@ -114,13 +114,6 @@ button:disabled {
   transition: color 0.3s;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 0.9em;
-}
-
 @media (max-width: 600px) {
   header h1 {
     font-size: 1.8em;

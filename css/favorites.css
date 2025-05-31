@@ -1,16 +1,28 @@
 body {
   font-family: "Segoe UI", sans-serif;
   margin: 0;
-  background-color: #fefefe;
+  background: url("../images/favorites-banner.jpg") no-repeat center center fixed;
+  background-size: cover;
   color: #2c3e50;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
 }
 
 .h-favorite {
   text-align: center;
-  background: linear-gradient(to right, #f5e1bb, #e4c67e);
   padding: 2rem 1rem;
-  border-bottom: 4px solid #2c3e50;
-  color: white;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 .h-favorite h1 {
@@ -28,10 +40,12 @@ body {
   justify-content: center;
   padding: 2rem;
   gap: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .favorite-card {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.95);
   border: 1px solid #ddd;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
@@ -71,11 +85,15 @@ body {
   background-color: #c0392b;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #f8f8f8;
-  border-top: 1px solid #ddd;
-  font-size: 0.9rem;
-  color: #555;
+@media (max-width: 600px) {
+  .h-favorite h1 {
+    font-size: 1.8em;
+  }
+  .favorites-container {
+    padding: 1rem;
+  }
+  .favorite-card {
+    width: 90%;
+    max-width: none;
+  }
 }

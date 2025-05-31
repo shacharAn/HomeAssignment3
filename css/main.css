@@ -1,5 +1,5 @@
 header {
-  background-color: #0d6efd;
+  background-color: #555a3b;
   color: white;
   position: sticky;
   top: 0;
@@ -86,3 +86,26 @@ header {
 #currentUser {
   font-weight: bold;
 }
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  color: #555;
+  position: relative;
+  z-index: 1;
+}
+
+footer a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
