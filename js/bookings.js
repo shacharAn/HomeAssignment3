@@ -1,5 +1,3 @@
-// js/bookings.js
-
 const bookingsContainer = document.getElementById("bookingsContainer");
 const allCount = document.getElementById("allCount");
 const upcomingCount = document.getElementById("upcomingCount");
