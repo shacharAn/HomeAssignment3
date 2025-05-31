@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   </head>
 
   <body>
@@ -37,57 +38,50 @@
       </nav>
     </header>
     <main>
-      <section class="general-section">
-        <h1>Find Your Perfect Stay in Amsterdam</h1>
-        <p id="general-info">
-          Welcome to our apartment rental site in the heart of Amsterdam! We
-          offer a wide selection of carefully curated apartments to suit every
-          traveler – from cozy studios to spacious family homes. Whether you're
-          here for business, leisure, or a bit of both – we've got
-          <span id="apartment-count"></span> unique listings waiting for you.
-        </p>
+      <section class="hero-section">      
+          <h1>Find Your Perfect Stay</h1>
+          <h2>in Amsterdam</h2>
+          <p>
+            Discover unique accommodations and create unforgettable memories in<br/>
+            one of Europe's most beautiful cities
+          </p>
+          <div class="features-row">
+            <div><i class="bi bi-search"></i> Easy Search</div>
+            <div><i class="bi bi-geo"></i>Great Locations</div>
+            <div><i class="bi bi-calendar3"></i> Instant Booking</div>
+          </div>
       </section>
-      <div class="filter-toggle">
-        <button id="toggleFiltersBtn">
-          <span class="filter-text">Filter by:</span>
-          <span class="filter-icon">⚙️</span>
-        </button>
-      </div>
 
       <section class="filter-section" id="filterSection">
-        <h2 class="filter-title">Filter Apartments</h2>
-
-        <div class="filter-row">
+        <h2 class="filter-title"><i class="bi bi-filter"></i> Filter Apartments</h2>
+        <div class="filter-row-group">
+          <div class="filter-row">
           <label for="rating">Minimum Rating:</label>
           <select id="rating">
             <option value="">No Rating Filter</option>
           </select>
         </div>
-
         <div class="filter-row">
           <label for="roomSelect">Number of Rooms:</label>
           <select id="roomSelect"></select>
         </div>
-
         <div class="filter-row">
-          <label class="form-label">Price Range (₪):</label>
+          <label class="form-label">Price Range ($):</label>
           <div id="priceSlider"></div>
-              <p>Selected range: <span id="priceRangeLabel">₪0 - ₪800+</span></p>
-          </div>
+              <p>Selected range: <span id="priceRangeLabel">$0 - $800+</span></p>
         </div>
-
+        </div>
         <div class="filter-button-container">
           <button id="filterBtn">Apply Filter</button>
+          <button id="resetBtn">Reset</button>
         </div>
+        <h3 id="apartment-count" style="text-align: center; margin-top: 1rem;"></h3>
+
       </section>
       <section class="carousel-container">
-        <button class="carousel-btn left-btn">❮</button>
-
         <div class="carousel-track-container">
           <div class="carousel-track" id="results"></div>
         </div>
-
-        <button class="carousel-btn right-btn">❯</button>
       </section>
     </main>
   </body>
