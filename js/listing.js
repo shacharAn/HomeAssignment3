@@ -17,11 +17,6 @@ if (signoutBtn) {
     window.location.href = "login.html";
   });
 }
- const apartmentCountSpan = document.getElementById("apartment-count");
-  if (apartmentCountSpan) {
-    apartmentCountSpan.textContent = apartments.length;
-  }
-
   const ratingSelect = document.getElementById("rating");
   for (let i = 1; i <= 10; i++) {
     const option = document.createElement("option");
@@ -97,12 +92,8 @@ priceSlider.noUiSlider.on("update", function (values) {
       const ratingMatch = rating >= selectedRating;
       const priceMatch = price >= minPrice && price <= maxPrice;
 
-      let roomMatch = true;
-      if (selectedRooms === "5+") {
-        roomMatch = rooms >= 5;
-      } else if (selectedRooms !== "") {
-        roomMatch = rooms === parseInt(selectedRooms);
-      }
+
+      const roomMatch = selectedRooms === "" || rooms === parseInt(selectedRooms);
 
       return ratingMatch && priceMatch && roomMatch;
     });
@@ -114,9 +105,7 @@ priceSlider.noUiSlider.on("update", function (values) {
     ratingSelect.value = "";
     roomSelect.value = "";
 
-    if (priceSlider && priceSlider.noUiSlider) {
-      priceSlider.noUiSlider.set([0, 800]);
-    }
+    priceSlider.noUiSlider.set([0, 800]);
 
     displayApartments(apartments);
   });
@@ -130,6 +119,11 @@ function getCurrentUser() {
 
 function clearUserData() {
   localStorage.removeItem("currentUser");
+}
+
+function paginate(array, pageNumber, pageSize) {
+  const start = (pageNumber - 1) * pageSize;
+  return array.slice(start, start + pageSize);
 }
 
 function displayApartments(apartments) {
@@ -151,61 +145,64 @@ function displayApartments(apartments) {
 
     card.innerHTML = `
       <img src="${ap.picture_url}" alt="${ap.name}" class="apartment-image"/>
-      <div class = "apartment-info">
+      <div class="apartment-info">
       <h3>${ap.name}</h3>
       <p><strong>ID:</strong> ${ap.listing_id}</p>
-      <p><strong>Description:</strong> ${ap.description}</p>
+      <p><strong>Rating:</strong> ${ap.review_scores_rating}</p>
+      <p><strong>Bedrooms:</strong> ${ap.bedrooms}</p>
+      <p><strong>Price:</strong> ${ap.price}</p>
       <a href="${ap.listing_url}" target="_blank">View Listing</a>
-      <div class="action-buttons">
-      <button class="rent-btn">Rent</button>
-      <button class="fav-btn">Add to Favorites</button>
+
+      <div class="action-icons">
+        <i class="bi bi-heart fav-icon" title="Add to Favorites"></i>
+        <i class="bi bi-box-arrow-in-right rent-icon" title="Rent Apartment"></i>
+        <button class="toggle-details-btn">➤ Show more</button>
+      </div>
+      
+      <div class="apartment-details hidden">
+      <p>${ap.description}...</p>
     </div>
   </div>
-    `;
+`;
 
-    card.querySelector(".rent-btn").addEventListener("click", () => {
+
+    card.querySelector(".rent-icon").addEventListener("click", () => {
       localStorage.setItem("selectedListing", JSON.stringify(ap));
       window.location.href = "rent.html";
     });
 
-    const favBtn = card.querySelector(".fav-btn");
-    const user = getCurrentUser();
-    const favKey = `${user}_favorites`;
-    let favList = JSON.parse(localStorage.getItem(favKey)) || [];
-    const isFav = favList.some((fav) => fav.listing_id === ap.listing_id);
-    favBtn.textContent = isFav ? "Remove from Favorites" : "Add to Favorites";
+const favIcon = card.querySelector(".fav-icon");
+const user = getCurrentUser();
+const favKey = `${user}_favorites`;
+let favList = JSON.parse(localStorage.getItem(favKey)) || [];
 
-    favBtn.addEventListener("click", () => {
-      favList = JSON.parse(localStorage.getItem(favKey)) || [];
-      const index = favList.findIndex(
-        (fav) => fav.listing_id === ap.listing_id);
-      if (index > -1) {
-        favList.splice(index, 1);
-        favBtn.textContent = "Add to Favorites";
-      } else {
-        favList.push({ listing_id: ap.listing_id });
-        favBtn.textContent = "Remove from Favorites";
-      }
-      localStorage.setItem(favKey, JSON.stringify(favList));
-    });
-    track.appendChild(card);
+const isFav = favList.some((fav) => fav.listing_id === ap.listing_id);
+favIcon.classList.toggle("bi-heart-fill", isFav);
+favIcon.classList.toggle("bi-heart", !isFav);
+
+favIcon.addEventListener("click", () => {
+  favList = JSON.parse(localStorage.getItem(favKey)) || [];
+  const index = favList.findIndex(fav => fav.listing_id === ap.listing_id);
+  if (index > -1) {
+    favList.splice(index, 1);
+  } else {
+    favList.push(ap);
+  }
+  localStorage.setItem(favKey, JSON.stringify(favList));
+  favIcon.classList.toggle("bi-heart-fill");
+  favIcon.classList.toggle("bi-heart");
+});
+
+    card.querySelector(".toggle-details-btn").addEventListener("click", function () {
+    const detailsDiv = card.querySelector(".apartment-details");
+    const isHidden = detailsDiv.classList.contains("hidden");
+
+    detailsDiv.classList.toggle("hidden");
+    this.textContent = isHidden ? "▼ Hide details" : "➤ Show more";
   });
 
-  let currentSlide = 0;
-  const cardWidth = 460;
-  const cardMargin = 20;
-
-  function updateCarousel() {
-    const totalItems = track.children.length;
-    const visibleCards = 2;
-    const maxSlide = Math.max(0, totalItems - visibleCards);
-
-    if (currentSlide < 0) currentSlide = 0;
-    if (currentSlide > maxSlide) currentSlide = maxSlide;
-
-    const offset = currentSlide * (cardWidth + cardMargin);
-    track.style.transform = `translateX(-${offset}px)`;
-  }
+    track.appendChild(card);
+  });
 
   const rightBtn = document.querySelector(".right-btn");
   const leftBtn = document.querySelector(".left-btn");
