@@ -1,125 +1,146 @@
-body {
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: url("../images/rent-banner.jpg") no-repeat center center fixed;
-  background-size: cover;
-  color: #333;
-  position: relative;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
-
-main {
-  max-width: 1000px;
-  margin: 30px auto;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-}
-
-#listing-details {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-}
-
-#listing-details img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin: 10px 0;
-}
-
-form {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 500px;
-}
-
-form h2 {
-  margin-top: 0;
-  color: #2c3e50;
-  border-bottom: 2px solid #502c2e;
-  padding-bottom: 10px;
-  font-size: 1.4em;
-}
-
-label {
-  display: block;
-  margin-bottom: 6px;
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
   font-weight: bold;
-  margin-top: 15px;
 }
 
-input[type="text"],
-input[type="date"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  transition: border-color 0.3s;
+.badge.upcoming {
+  background-color: #d4f7dc;
+  color: #157347;
 }
 
-input:focus {
-  border-color: #2980b9;
-  outline: none;
+.badge.past {
+  background-color: #f7d4d4;
+  color: #842029;
 }
 
-button {
-  background-color: #3498db;
+.cancel-btn {
+  background-color: #dc3545;
   color: white;
+  padding: 8px 16px;
   border: none;
-  padding: 10px 18px;
+  margin-top: 10px;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.tab-btn {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tab-btn.active {
+  background-color: #0d6efd;
+  color: white;
+  border-color: #0d6efd;
+}
+
+.tab-btn span {
+  background-color: white;
+  color: #0d6efd;
+  border-radius: 50%;
+  padding: 3px 8px;
+  margin-left: 5px;
+  font-weight: normal;
+}
+
+.empty-sub {
+  color: #666;
+  margin-top: 8px;
+  margin-bottom: 15px;
   font-size: 14px;
-  margin-top: 15px;
-  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #2980b9;
+.rent-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
-button:disabled {
-  background-color: #95a5a6;
-  cursor: not-allowed;
+.rent-left,
+.rent-right {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  height: fit-content;
+}
+
+.rent-img {
+  width: 100%;
+  max-height: 160px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.rent-summary p {
+  margin: 8px 0;
+}
+
+.total-line {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.1rem;
 }
 
 #result {
-  text-align: center;
-  margin-top: -20px;
-  margin-bottom: 30px;
-  color: #27ae60;
+  margin-top: 15px;
   font-weight: bold;
-  font-size: 1em;
-  transition: color 0.3s;
+  color: green;
 }
 
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.8em;
-  }
+#rental-form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
 
-  form {
-    padding: 20px;
-  }
+#rental-form .date-row {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#rental-form .date-row input[type="date"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  direction: ltr;
 }
