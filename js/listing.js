@@ -1,31 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
   const apartments = window.amsterdam;
   console.log(amsterdam);
-  displayApartments(apartments);
-  const toggleBtn = document.getElementById("toggleFiltersBtn");
-  const filterSection = document.getElementById("filterSection");
-  toggleBtn.addEventListener("click", () => {
-    filterSection.style.display =
-      filterSection.style.display === "none" ||
-      filterSection.style.display === ""
-        ? "block"
-        : "none";
-  });
 
-  const currentUserSpan = document.getElementById("currentUser");
-  const signoutBtn = document.getElementById("signout-btn");
-  const currentUser = getCurrentUser();
+const currentUserSpan = document.getElementById("currentUser");
+const signoutBtn = document.getElementById("signout-btn");
+const currentUser = getCurrentUser();
 
+if (currentUserSpan) {
   currentUserSpan.textContent = currentUser ? `👤 ${currentUser}` : "👤 Guest";
-  signoutBtn.style.display = currentUser ? "inline-block" : "none";
+}
 
+if (signoutBtn) {
+  signoutBtn.style.display = currentUser ? "inline-block" : "none";
   signoutBtn.addEventListener("click", function () {
     clearUserData();
     window.location.href = "login.html";
   });
-
-  const apartmentCountSpan = document.getElementById("apartment-count");
-  apartmentCountSpan.textContent = amsterdam.length;
+}
+ const apartmentCountSpan = document.getElementById("apartment-count");
+  if (apartmentCountSpan) {
+    apartmentCountSpan.textContent = apartments.length;
+  }
 
   const ratingSelect = document.getElementById("rating");
   for (let i = 1; i <= 10; i++) {
@@ -39,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const priceLabel = document.getElementById("priceRangeLabel");
 
 noUiSlider.create(priceSlider, {
-  start: [100, 400],
+  start: [100, 800],
   connect: true,
   range: {
     min: 0,
@@ -48,7 +43,7 @@ noUiSlider.create(priceSlider, {
   step: 10,
   tooltips: true,
   format: {
-    to: value => `₪${Math.round(value)}`,
+    to: value => `$${Math.round(value)}`,
     from: value => Number(value.replace(/[^\d]/g, ''))
   }
 });
@@ -67,8 +62,8 @@ priceSlider.noUiSlider.on("update", function (values) {
   roomSelect.appendChild(noFilterOption);
 
   const roomNumbers = [];
-  for (let i = 0; i < amsterdam.length; i++) {
-    const room = parseInt(amsterdam[i].bedrooms);
+    for (let ap of amsterdam) {
+    const room = parseInt(ap.bedrooms);
     if (!isNaN(room) && !roomNumbers.includes(room)) {
       roomNumbers.push(room);
     }
@@ -89,8 +84,7 @@ priceSlider.noUiSlider.on("update", function (values) {
   fivePlusOption.textContent = "5+ rooms";
   roomSelect.appendChild(fivePlusOption);
 
-  const filterBtn = document.getElementById("filterBtn");
-  filterBtn.addEventListener("click", function () {
+  document.getElementById("filterBtn").addEventListener("click", function () {
     const selectedRating = parseInt(ratingSelect.value) || 0;
     const [minPrice, maxPrice] = priceSlider.noUiSlider.get().map(val => parseInt(val.replace(/[^\d]/g, '')));
     const selectedRooms = roomSelect.value;
@@ -116,6 +110,17 @@ priceSlider.noUiSlider.on("update", function (values) {
     displayApartments(filtered);
   });
 
+    document.getElementById("resetBtn").addEventListener("click", function () {
+    ratingSelect.value = "";
+    roomSelect.value = "";
+
+    if (priceSlider && priceSlider.noUiSlider) {
+      priceSlider.noUiSlider.set([0, 800]);
+    }
+
+    displayApartments(apartments);
+  });
+
   displayApartments(amsterdam);
 });
 
@@ -131,6 +136,10 @@ function displayApartments(apartments) {
   const track = document.getElementById("results");
   track.innerHTML = "";
 
+  const countElement = document.getElementById("apartment-count");
+  if (countElement) {
+    countElement.textContent = `${apartments.length} apartments found`;
+  }
   if (apartments.length === 0) {
     track.innerHTML = "<p>No apartments match your criteria.</p>";
     return;
@@ -142,12 +151,16 @@ function displayApartments(apartments) {
 
     card.innerHTML = `
       <img src="${ap.picture_url}" alt="${ap.name}" class="apartment-image"/>
+      <div class = "apartment-info">
       <h3>${ap.name}</h3>
       <p><strong>ID:</strong> ${ap.listing_id}</p>
       <p><strong>Description:</strong> ${ap.description}</p>
-      <a href="${ap.listing_url}" target="_blank">View Listing</a><br/>
+      <a href="${ap.listing_url}" target="_blank">View Listing</a>
+      <div class="action-buttons">
       <button class="rent-btn">Rent</button>
       <button class="fav-btn">Add to Favorites</button>
+    </div>
+  </div>
     `;
 
     card.querySelector(".rent-btn").addEventListener("click", () => {
@@ -165,8 +178,7 @@ function displayApartments(apartments) {
     favBtn.addEventListener("click", () => {
       favList = JSON.parse(localStorage.getItem(favKey)) || [];
       const index = favList.findIndex(
-        (fav) => fav.listing_id === ap.listing_id
-      );
+        (fav) => fav.listing_id === ap.listing_id);
       if (index > -1) {
         favList.splice(index, 1);
         favBtn.textContent = "Add to Favorites";
@@ -176,7 +188,6 @@ function displayApartments(apartments) {
       }
       localStorage.setItem(favKey, JSON.stringify(favList));
     });
-
     track.appendChild(card);
   });
 
@@ -209,6 +220,5 @@ function displayApartments(apartments) {
       updateCarousel();
     };
   }
-
   updateCarousel();
 }
