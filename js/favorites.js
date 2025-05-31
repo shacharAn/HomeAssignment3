@@ -51,9 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const price = apt.price || "";
 
     card.innerHTML = `
-      <div class="heart" data-id="${apt.listing_id}">
-        <i class="fi fi-sr-heart"></i>
-      </div>
+      <div class="heart" title="Remove from favorites" data-id="${apt.listing_id}"><i class="fi fi-sr-heart"></i></div>
       <img src="${imgSrc}" alt="${apt.name}" />
       <div class="card-body">
         <h2>${apt.name}</h2>

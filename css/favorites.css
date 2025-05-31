@@ -143,3 +143,27 @@ main {
   border-radius: 6px;
   cursor: pointer;
 }
+
+.favorite-card .location i {
+  color: #28a745; 
+}
+
+.favorite-card .price-rating i {
+  color: #f8c200;
+}
+
+.favorite-card h2 {
+  min-height: 48px;
+}
+
+.favorite-card:hover {
+  transform: translateY(-4px) scale(1.01);
+}
+
+.book-btn {
+  border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+
