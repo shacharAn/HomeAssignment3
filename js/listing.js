@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const apartments = window.amsterdam;
+  console.log(amsterdam);
+  displayApartments(apartments);
   const toggleBtn = document.getElementById("toggleFiltersBtn");
   const filterSection = document.getElementById("filterSection");
   toggleBtn.addEventListener("click", () => {
@@ -32,20 +35,28 @@ document.addEventListener("DOMContentLoaded", function () {
     ratingSelect.appendChild(option);
   }
 
-  const minPriceInput = document.getElementById("minPrice");
-  const maxPriceInput = document.getElementById("maxPrice");
-  const minPriceValue = document.getElementById("minPriceValue");
-  const maxPriceValue = document.getElementById("maxPriceValue");
+  const priceSlider = document.getElementById("priceSlider");
+  const priceLabel = document.getElementById("priceRangeLabel");
 
-  const updatePriceLabels = () => {
-    minPriceValue.textContent = `₪${minPriceInput.value}`;
-    maxPriceValue.textContent =
-      maxPriceInput.value === "800" ? "₪800+" : `₪${maxPriceInput.value}`;
-  };
+noUiSlider.create(priceSlider, {
+  start: [100, 400],
+  connect: true,
+  range: {
+    min: 0,
+    max: 800,
+  },
+  step: 10,
+  tooltips: true,
+  format: {
+    to: value => `₪${Math.round(value)}`,
+    from: value => Number(value.replace(/[^\d]/g, ''))
+  }
+});
 
-  minPriceInput.addEventListener("input", updatePriceLabels);
-  maxPriceInput.addEventListener("input", updatePriceLabels);
-  updatePriceLabels();
+priceSlider.noUiSlider.on("update", function (values) {
+  const [min, max] = values;
+  priceLabel.textContent = `${min} - ${max === "₪800" ? "₪800+" : max}`;
+});
 
   const roomSelect = document.getElementById("roomSelect");
   roomSelect.innerHTML = "";
@@ -81,8 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const filterBtn = document.getElementById("filterBtn");
   filterBtn.addEventListener("click", function () {
     const selectedRating = parseInt(ratingSelect.value) || 0;
-    const minPrice = parseInt(minPriceInput.value);
-    const maxPrice = parseInt(maxPriceInput.value);
+    const [minPrice, maxPrice] = priceSlider.noUiSlider.get().map(val => parseInt(val.replace(/[^\d]/g, '')));
     const selectedRooms = roomSelect.value;
 
     const filtered = amsterdam.filter((ap) => {
