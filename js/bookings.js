@@ -5,7 +5,8 @@ const pastCount = document.getElementById("pastCount");
 const tabs = document.querySelectorAll(".tab-btn");
 
 const currentUsername = localStorage.getItem("currentUser") || "guest";
-const bookings = JSON.parse(localStorage.getItem(`${currentUsername}_bookings`)) || [];
+const bookings =
+  JSON.parse(localStorage.getItem(`${currentUsername}_bookings`)) || [];
 
 let activeTab = "all";
 
@@ -39,8 +40,8 @@ function renderBookings() {
     bookingsContainer.innerHTML = `
       <div class="empty-bookings">
         <p>No bookings to show</p>
-        <p class="empty-sub">Start exploring apartments and make your first booking! ✨</p>
-        <a class="browse-btn" href="index.html">🔍 Browse Apartments</a>
+        <p class="empty-sub">Start exploring apartments and make your first booking! <i class="bi bi-stars"></i></p>
+        <a class="browse-btn" href="index.html"><i class="bi bi-search">  </i>Browse Apartments</a>
       </div>
     `;
     return;
@@ -54,8 +55,13 @@ function renderBookings() {
     const status = isUpcoming ? "Upcoming" : isPast ? "Past" : "Current";
 
     const nights = Math.ceil((checkOut - checkIn) / (1000 * 60 * 60 * 24));
-    const apartment = window.amsterdam.find((a) => a.listing_id === booking.listing_id);
-    const pricePerNight = apartment ? parseFloat(apartment.price.replace(/[^\d.]/g, "")) : 0;
+    const apartment = window.amsterdam.find(
+      (a) => a.listing_id === booking.listing_id
+    );
+    const pricePerNight = apartment
+      ? parseFloat
+      (apartment.price.replace(/[^\d.]/g, ""))
+      : 0;
     const totalPrice = nights * pricePerNight;
 
     const card = document.createElement("div");
@@ -63,7 +69,10 @@ function renderBookings() {
 
     card.innerHTML = `
       <div class="booking-info">
-        <h3>🏡 ${apartment?.name || "Apartment in Amsterdam"}</h3>
+        <h3><i class="bi bi-house"></i>
+ ${
+          apartment?.name || "Apartment in Amsterdam"
+        }</h3>
         <div class="booking-details">
           <p><strong>Check-in:</strong> ${booking.startDate}</p>
           <p><strong>Check-out:</strong> ${booking.endDate}</p>
@@ -77,7 +86,9 @@ function renderBookings() {
           }
         </div>
       </div>
-      <img class="booking-img" src="${apartment?.picture_url || "images/default.jpg"}" alt="Apartment image" />
+      <img class="booking-img" src="${
+        apartment?.picture_url || "images/default.jpg"
+      }" alt="Apartment image" />
     `;
 
     bookingsContainer.appendChild(card);
@@ -103,7 +114,10 @@ function cancelBooking(id) {
   const index = bookings.findIndex((b) => b.listing_id === id);
   if (index !== -1) {
     bookings.splice(index, 1);
-    localStorage.setItem(`${currentUsername}_bookings`, JSON.stringify(bookings));
+    localStorage.setItem(
+      `${currentUsername}_bookings`,
+      JSON.stringify(bookings)
+    );
     renderBookings();
   }
 }
