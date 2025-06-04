@@ -1,10 +1,8 @@
   let currentPage = 1;
   const pageSize = 10;
   let allApartments = window.amsterdam;
-  document.addEventListener("DOMContentLoaded", function () {
 
-  // const apartments = window.amsterdam;
-
+document.addEventListener("DOMContentLoaded", function () {
 const currentUserSpan = document.getElementById("currentUser");
 const signoutBtn = document.getElementById("signout-btn");
 const currentUser = getCurrentUser();
@@ -21,12 +19,14 @@ if (signoutBtn) {
   });
 }
   const ratingSelect = document.getElementById("rating");
-  for (let i = 1; i <= 10; i++) {
-    const option = document.createElement("option");
-    option.value = i;
-    option.textContent = i + "+";
-    ratingSelect.appendChild(option);
-  }
+const ratings = [3, 3.5, 4, 4.5, 5];
+
+for (let i = 0; i < ratings.length; i++) {
+  const option = document.createElement("option");
+  option.value = ratings[i];
+  option.textContent = ratings[i] + " +";
+  ratingSelect.appendChild(option);
+}
 
   const priceSlider = document.getElementById("priceSlider");
   const priceLabel = document.getElementById("priceRangeLabel");
@@ -53,7 +53,6 @@ priceSlider.noUiSlider.on("update", function (values) {
 
   const roomSelect = document.getElementById("roomSelect");
   roomSelect.innerHTML = "";
-
   const noFilterOption = document.createElement("option");
   noFilterOption.value = "";
   noFilterOption.textContent = "No Room Filter";
@@ -91,37 +90,40 @@ priceSlider.noUiSlider.on("update", function (values) {
       const rating = parseFloat(ap.review_scores_rating) || 0;
       const price = parseFloat(ap.price.replace(/[^0-9.]/g, "")) || 0;
       const rooms = parseInt(ap.bedrooms) || 0;
-
       const ratingMatch = rating >= selectedRating;
       const priceMatch = price >= minPrice && price <= maxPrice;
-
-
       const roomMatch = selectedRooms === "" || rooms === parseInt(selectedRooms);
-
       return ratingMatch && priceMatch && roomMatch;
     });
 
     currentPage = 1;
     allApartments = filtered;
     displayApartments(allApartments);
-
-    // displayApartments(filtered);
   });
 
     document.getElementById("resetBtn").addEventListener("click", function () {
     ratingSelect.value = "";
     roomSelect.value = "";
-
     priceSlider.noUiSlider.set([0, 800]);
-
     currentPage = 1;
     allApartments = window.amsterdam;
     displayApartments(allApartments);
-    // displayApartments(apartments);
   });
 
+    document.getElementById("prevPage").addEventListener("click", function () {
+    if (currentPage > 1) {
+      currentPage--;
+      displayApartments(allApartments);
+    }
+  });
+    document.getElementById("nextPage").addEventListener("click", function () {
+    const totalPages = Math.ceil(allApartments.length / pageSize);
+    if (currentPage < totalPages) {
+      currentPage++;
   displayApartments(allApartments);
-  // displayApartments(amsterdam);
+  }
+});
+displayApartments(allApartments);
 });
 
 function getCurrentUser() {
@@ -137,29 +139,10 @@ function paginate(array, pageNumber, pageSize) {
   return array.slice(start, start + pageSize);
 }
 
-function renderPagination(totalItems) {
-  const totalPages = Math.ceil(totalItems / pageSize);
-  const paginationContainer = document.getElementById("pagination");
-  paginationContainer.innerHTML = "";
-
-  for (let i = 1; i <= totalPages; i++) {
-    const btn = document.createElement("button");
-    btn.textContent = i;
-    if (i === currentPage) {
-      btn.classList.add("active");
-    }
-    btn.addEventListener("click", () => {
-      currentPage = i;
-      displayApartments(allApartments);
-    });
-    paginationContainer.appendChild(btn);
-  }
-}
 function displayApartments(apartments) {
   const track = document.getElementById("results");
-  const paginated = paginate(apartments, currentPage, pageSize);
   track.innerHTML = "";
-
+  const paginated = paginate(apartments, currentPage, pageSize);
   const countElement = document.getElementById("apartment-count");
   if (countElement) {
     countElement.textContent = `${apartments.length} apartments found`;
@@ -188,7 +171,7 @@ function displayApartments(apartments) {
       <p><strong>Rating:</strong> ${ap.review_scores_rating}</p>
       <p><strong>Bedrooms:</strong> ${ap.bedrooms}</p>
       <p><strong>Price:</strong> ${ap.price}</p>
-      <a href="${ap.listing_url}" target="_blank">View Listing</a>
+      <a href="${ap.listing_url}" target="_blank" class="link">View Listing</a>
 
       <div class="action-icons">
         <button class="toggle-details-btn">➤ Show more</button>
@@ -231,14 +214,13 @@ favIcon.addEventListener("click", () => {
     card.querySelector(".toggle-details-btn").addEventListener("click", function () {
     const detailsDiv = card.querySelector(".apartment-details");
     const isHidden = detailsDiv.classList.contains("hidden");
-
     detailsDiv.classList.toggle("hidden");
     this.textContent = isHidden ? "▼ Hide details" : "➤ Show more";
   });
 
     track.appendChild(card);
   });
-
-  renderPagination(apartments.length);
-
+  const pageIndicator = document.getElementById("page-indicator");
+const totalPages = Math.ceil(apartments.length / pageSize);
+pageIndicator.textContent = `Page ${currentPage} of ${totalPages}`;
 }
