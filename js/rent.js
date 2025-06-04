@@ -36,13 +36,20 @@ window.addEventListener("DOMContentLoaded", function () {
   const maxNights = parseInt(currentListing.maximum_nights) || 60;
   document.getElementById("min-nights-display").textContent = minNights;
 
-  document.getElementById("listing-details").innerHTML = `
-    <img class="rent-img" src="${currentListing.picture_url}" alt="Listing image">
-    <h2>${currentListing.name}</h2>
-    <p><strong>Price per night:</strong> ${currentListing.price}</p>
-    <p><strong>Minimum nights:</strong> ${currentListing.minimum_nights}</p>
-    <p>${currentListing.description}</p>
-  `;
+document.getElementById("listing-details").innerHTML = `
+  <img class="rent-img" src="${currentListing.picture_url}" alt="Listing image">
+  <h2>${currentListing.name}</h2>
+
+  <p class="apt-location"><i class="bi bi-geo-alt-fill"></i> ${currentListing.neighbourhood_cleansed || "Unknown location"}</p>
+  
+  <p><strong>Price per night:</strong> ${currentListing.price}</p>
+  <p><strong>Minimum nights:</strong> ${currentListing.minimum_nights}</p>
+
+  <p class="apt-rating"><i class="bi bi-star-fill"></i> ${parseFloat(currentListing.review_scores_rating || 4.8).toFixed(1)} (${currentListing.number_of_reviews || 0})</p>
+
+  <p>${currentListing.description}</p>
+`;
+
 
   const today = new Date().toISOString().split("T")[0];
   document.getElementById("startDate").setAttribute("min", today);

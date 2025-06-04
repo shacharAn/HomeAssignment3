@@ -128,6 +128,12 @@ main {
   margin-top: 100px;
 }
 
+.empty-heart-icon i {
+  font-size: 80px;
+  color: #e63946;
+}
+
+
 .empty-state .empty-heart-icon {
   font-size: 5rem;
   color: #ccc;
