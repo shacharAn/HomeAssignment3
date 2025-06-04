@@ -172,12 +172,25 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   align-items: center;
 }
 
-.apt-location i {
-  color: green;
-  margin-right: 6px;
+
+.empty-state {
+  text-align: center;
+  margin-top: 100px;
 }
 
-.apt-rating i {
-  color: gold;
-  margin-right: 4px;
+.empty-state .empty-heart-icon {
+  font-size: 5rem;
+  color: #ccc;
 }
+
+.empty-state button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
