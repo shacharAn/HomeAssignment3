@@ -1,15 +1,13 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("favorites-container");
   const countDisplay = document.getElementById("favorites-count");
-  const userDisplay = document.getElementById("currentUser");
   const username = localStorage.getItem("currentUser");
 
   if (!username) {
     window.location.href = "login.html";
     return;
   }
-
-  userDisplay.textContent = ` ${username}`;
 
   const key = `${username}_favorites`;
   const favoriteIds = JSON.parse(localStorage.getItem(key)) || [];
@@ -21,20 +19,22 @@ document.addEventListener("DOMContentLoaded", () => {
   countDisplay.textContent = `${favorites.length} apartment${
     favorites.length !== 1 ? "s" : ""
   } in your favorites`;
-  
-if (favorites.length === 0) {
-  container.innerHTML = `
-    <div class="empty-state">
-      <div class="empty-heart-icon"><i class="bi bi-heart-fill text-danger"></i>
-</div>
-      <p>No favorites yet</p>
-      <p>Start browsing apartments and save your favorites for easy access later! <i class="bi bi-stars"></i></p>
-      <button onclick="window.location.href='index.html'"><i class="bi bi-search">  </i>Browse Apartments</a>
-    </div>
-  `;
-  return;
-}
 
+  if (favorites.length === 0) {
+    container.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-heart-icon">
+          <i class="bi bi-heart-fill text-danger"></i>
+        </div>
+        <p>No favorites yet</p>
+        <p>Start browsing apartments and save your favorites for easy access later! <i class="bi bi-stars"></i></p>
+        <button onclick="window.location.href='index.html'" class="btn btn-outline-primary">
+          <i class="bi bi-search"></i> Browse Apartments
+        </button>
+      </div>
+    `;
+    return;
+  }
 
   favorites.forEach((apt) => {
     const wrapper = document.createElement("div");
@@ -53,15 +53,18 @@ if (favorites.length === 0) {
     const price = apt.price || "";
 
     card.innerHTML = `
-      <div class="heart" title="Remove from favorites" data-id="${apt.listing_id}"><i class="bi bi-heart-fill text-danger"></i>
-</div>
+      <div class="heart" title="Remove from favorites" data-id="${apt.listing_id}">
+        <i class="bi bi-heart-fill text-danger"></i>
+      </div>
       <img src="${imgSrc}" alt="${apt.name}" />
       <div class="card-body">
         <h2>${apt.name}</h2>
-        <p class="location"><i class="bi bi-geo-alt-fill text-success"></i> ${apt.neighbourhood_cleansed}</p>
+        <p class="location">
+          <i class="bi bi-geo-alt-fill text-success"></i> ${apt.neighbourhood_cleansed}
+        </p>
         <div class="price-rating">
-          <span>Price per night: ${price} </span>
-          <span><i class="bi bi-star-fill"></i></i> ${parseFloat(rating).toFixed(1)} (${reviews})</span>
+          <span>Price per night: ${price}</span>
+          <span><i class="bi bi-star-fill"></i> ${parseFloat(rating).toFixed(1)} (${reviews})</span>
         </div>
       </div>
       <button class="book-btn" onclick="window.location.href='rent.html'"> Rent </button>
