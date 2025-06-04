@@ -69,10 +69,7 @@ function renderBookings() {
 
     card.innerHTML = `
       <div class="booking-info">
-        <h3><i class="bi bi-house"></i>
- ${
-          apartment?.name || "Apartment in Amsterdam"
-        }</h3>
+        <h3><i class="bi bi-house-fill"></i> ${apartment?.name || "Apartment in Amsterdam"}</h3>
         <div class="booking-details">
           <p><strong>Check-in:</strong> ${booking.startDate}</p>
           <p><strong>Check-out:</strong> ${booking.endDate}</p>
