@@ -150,14 +150,6 @@ main {
   cursor: pointer;
 }
 
-.favorite-card .location i {
-  color: #28a745; 
-}
-
-.favorite-card .price-rating i {
-  color: #f8c200;
-}
-
 .favorite-card h2 {
   min-height: 48px;
 }
