@@ -18,10 +18,12 @@ if (signoutBtn) {
   });
 }
   const ratingSelect = document.getElementById("rating");
-  for (let i = 1; i <= 10; i++) {
+  const ratings = [3, 3.5, 4, 4.5, 5];
+
+  for (let i = 0; i < ratings.length; i++) {
     const option = document.createElement("option");
-    option.value = i;
-    option.textContent = i + "+";
+    option.value = ratings[i];
+    option.textContent = ratings[i] + " +";
     ratingSelect.appendChild(option);
   }
 
@@ -150,7 +152,7 @@ function displayApartments(apartments) {
       <p><strong>ID:</strong> ${ap.listing_id}</p>
       <p><strong>Rating:</strong> ${ap.review_scores_rating}</p>
       <p><strong>Bedrooms:</strong> ${ap.bedrooms}</p>
-      <p><strong>Price:</strong> ${ap.price}</p>
+      <p><strong>Price per night:</strong> ${ap.price}</p>
       <a href="${ap.listing_url}" target="_blank">View Listing</a>
 
       <div class="action-icons">
@@ -160,7 +162,7 @@ function displayApartments(apartments) {
       </div>
       
       <div class="apartment-details hidden">
-      <p>${ap.description}...</p>
+      <p>${ap.description}</p>
     </div>
   </div>
 `;
