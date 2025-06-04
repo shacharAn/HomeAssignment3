@@ -1,6 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const apartments = window.amsterdam;
-  console.log(amsterdam);
+  let currentPage = 1;
+  const pageSize = 10;
+  let allApartments = window.amsterdam;
+  document.addEventListener("DOMContentLoaded", function () {
+
+  // const apartments = window.amsterdam;
 
 const currentUserSpan = document.getElementById("currentUser");
 const signoutBtn = document.getElementById("signout-btn");
@@ -18,12 +21,10 @@ if (signoutBtn) {
   });
 }
   const ratingSelect = document.getElementById("rating");
-  const ratings = [3, 3.5, 4, 4.5, 5];
-
-  for (let i = 0; i < ratings.length; i++) {
+  for (let i = 1; i <= 10; i++) {
     const option = document.createElement("option");
-    option.value = ratings[i];
-    option.textContent = ratings[i] + " +";
+    option.value = i;
+    option.textContent = i + "+";
     ratingSelect.appendChild(option);
   }
 
@@ -31,7 +32,7 @@ if (signoutBtn) {
   const priceLabel = document.getElementById("priceRangeLabel");
 
 noUiSlider.create(priceSlider, {
-  start: [100, 800],
+  start: [0, 800],
   connect: true,
   range: {
     min: 0,
@@ -59,7 +60,7 @@ priceSlider.noUiSlider.on("update", function (values) {
   roomSelect.appendChild(noFilterOption);
 
   const roomNumbers = [];
-    for (let ap of amsterdam) {
+    for (let ap of window.amsterdam) {
     const room = parseInt(ap.bedrooms);
     if (!isNaN(room) && !roomNumbers.includes(room)) {
       roomNumbers.push(room);
@@ -86,7 +87,7 @@ priceSlider.noUiSlider.on("update", function (values) {
     const [minPrice, maxPrice] = priceSlider.noUiSlider.get().map(val => parseInt(val.replace(/[^\d]/g, '')));
     const selectedRooms = roomSelect.value;
 
-    const filtered = amsterdam.filter((ap) => {
+    const filtered = window.amsterdam.filter((ap) => {
       const rating = parseFloat(ap.review_scores_rating) || 0;
       const price = parseFloat(ap.price.replace(/[^0-9.]/g, "")) || 0;
       const rooms = parseInt(ap.bedrooms) || 0;
@@ -100,7 +101,11 @@ priceSlider.noUiSlider.on("update", function (values) {
       return ratingMatch && priceMatch && roomMatch;
     });
 
-    displayApartments(filtered);
+    currentPage = 1;
+    allApartments = filtered;
+    displayApartments(allApartments);
+
+    // displayApartments(filtered);
   });
 
     document.getElementById("resetBtn").addEventListener("click", function () {
@@ -109,10 +114,14 @@ priceSlider.noUiSlider.on("update", function (values) {
 
     priceSlider.noUiSlider.set([0, 800]);
 
-    displayApartments(apartments);
+    currentPage = 1;
+    allApartments = window.amsterdam;
+    displayApartments(allApartments);
+    // displayApartments(apartments);
   });
 
-  displayApartments(amsterdam);
+  displayApartments(allApartments);
+  // displayApartments(amsterdam);
 });
 
 function getCurrentUser() {
@@ -128,8 +137,27 @@ function paginate(array, pageNumber, pageSize) {
   return array.slice(start, start + pageSize);
 }
 
+function renderPagination(totalItems) {
+  const totalPages = Math.ceil(totalItems / pageSize);
+  const paginationContainer = document.getElementById("pagination");
+  paginationContainer.innerHTML = "";
+
+  for (let i = 1; i <= totalPages; i++) {
+    const btn = document.createElement("button");
+    btn.textContent = i;
+    if (i === currentPage) {
+      btn.classList.add("active");
+    }
+    btn.addEventListener("click", () => {
+      currentPage = i;
+      displayApartments(allApartments);
+    });
+    paginationContainer.appendChild(btn);
+  }
+}
 function displayApartments(apartments) {
   const track = document.getElementById("results");
+  const paginated = paginate(apartments, currentPage, pageSize);
   track.innerHTML = "";
 
   const countElement = document.getElementById("apartment-count");
@@ -141,23 +169,28 @@ function displayApartments(apartments) {
     return;
   }
 
-  apartments.forEach((ap) => {
+  paginated.forEach((ap) => {
+  // apartments.forEach((ap) => {
     const card = document.createElement("div");
     card.className = "apartment-card";
 
     card.innerHTML = `
-      <img src="${ap.picture_url}" alt="${ap.name}" class="apartment-image"/>
+      <div class="fav-icon-container">
+    <i class="bi bi-heart fav-icon" title="Add to Favorites"></i>
+      </div>
+      <div class="apartment-image-wrapper">
+        <img src="${ap.picture_url}" alt="${ap.name}" class="apartment-image"/>
+        <button class="rent-btn">Rent this apartment</button>
+      </div>
       <div class="apartment-info">
       <h3>${ap.name}</h3>
       <p><strong>ID:</strong> ${ap.listing_id}</p>
       <p><strong>Rating:</strong> ${ap.review_scores_rating}</p>
       <p><strong>Bedrooms:</strong> ${ap.bedrooms}</p>
-      <p><strong>Price per night:</strong> ${ap.price}</p>
+      <p><strong>Price:</strong> ${ap.price}</p>
       <a href="${ap.listing_url}" target="_blank">View Listing</a>
 
       <div class="action-icons">
-        <i class="bi bi-heart fav-icon" title="Add to Favorites"></i>
-        <i class="bi bi-box-arrow-in-right rent-icon" title="Rent Apartment"></i>
         <button class="toggle-details-btn">➤ Show more</button>
       </div>
       
@@ -168,7 +201,7 @@ function displayApartments(apartments) {
 `;
 
 
-    card.querySelector(".rent-icon").addEventListener("click", () => {
+    card.querySelector(".rent-btn").addEventListener("click", () => {
       localStorage.setItem("selectedListing", JSON.stringify(ap));
       window.location.href = "rent.html";
     });
@@ -206,18 +239,6 @@ favIcon.addEventListener("click", () => {
     track.appendChild(card);
   });
 
-  const rightBtn = document.querySelector(".right-btn");
-  const leftBtn = document.querySelector(".left-btn");
+  renderPagination(apartments.length);
 
-  if (rightBtn && leftBtn) {
-    rightBtn.onclick = () => {
-      currentSlide++;
-      updateCarousel();
-    };
-    leftBtn.onclick = () => {
-      currentSlide--;
-      updateCarousel();
-    };
-  }
-  updateCarousel();
 }
