@@ -21,18 +21,19 @@ document.addEventListener("DOMContentLoaded", () => {
   countDisplay.textContent = `${favorites.length} apartment${
     favorites.length !== 1 ? "s" : ""
   } in your favorites`;
+  
+if (favorites.length === 0) {
+  container.innerHTML = `
+    <div class="empty-state">
+      <div class="empty-heart-icon"><i class="fi fi-sr-heart"></i></div>
+      <p>No favorites yet</p>
+      <p>Start browsing apartments and save your favorites for easy access later!</p>
+      <button onclick="window.location.href='index.html'">Browse Apartments</button>
+    </div>
+  `;
+  return;
+}
 
-  if (favorites.length === 0) {
-    container.innerHTML = `
-      <div class="empty-state">
-        <div class="empty-heart-icon">🤍</div>
-        <p>No favorites yet</p>
-        <p>Start browsing apartments and save your favorites for easy access later!</p>
-        <button onclick="window.location.href='index.html'">Browse Apartments</button>
-      </div>
-    `;
-    return;
-  }
 
   favorites.forEach((apt) => {
     const wrapper = document.createElement("div");
@@ -57,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <h2>${apt.name}</h2>
         <p class="location"><i class="fi fi-sr-marker"></i> ${apt.neighbourhood_cleansed}</p>
         <div class="price-rating">
-          <span>${price} </span>
+          <span>Price per night: ${price} </span>
           <span><i class="fi fi-sr-star"></i> ${parseFloat(rating).toFixed(1)} (${reviews})</span>
         </div>
       </div>
