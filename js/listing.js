@@ -8,7 +8,9 @@ const signoutBtn = document.getElementById("signout-btn");
 const currentUser = getCurrentUser();
 
 if (currentUserSpan) {
-  currentUserSpan.textContent = currentUser ? `👤 ${currentUser}` : "👤 Guest";
+  currentUserSpan.innerHTML = currentUser
+  ? `<i class="bi bi-person-fill"></i> ${currentUser}`
+  : `<i class="bi bi-person-fill"></i> Guest`;
 }
 
 if (signoutBtn) {
