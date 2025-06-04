@@ -9,6 +9,6 @@
 
   const userDisplay = document.getElementById("currentUser");
   if (user && userDisplay) {
-    userDisplay.innerHTML = `<i class="fi fi-ss-user"></i> ${user}`;
+    userDisplay.innerHTML = `<i class="bi bi-person-fill"></i> ${user}`;
   }
 })();

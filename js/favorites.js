@@ -61,7 +61,7 @@ if (favorites.length === 0) {
         <p class="location"><i class="bi bi-geo-alt-fill text-success"></i> ${apt.neighbourhood_cleansed}</p>
         <div class="price-rating">
           <span>Price per night: ${price} </span>
-          <span><i class="bi bi-star-fill" style="color: gold;"></i></i> ${parseFloat(rating).toFixed(1)} (${reviews})</span>
+          <span><i class="bi bi-star-fill"></i></i> ${parseFloat(rating).toFixed(1)} (${reviews})</span>
         </div>
       </div>
       <button class="book-btn" onclick="window.location.href='rent.html'"> Rent </button>
