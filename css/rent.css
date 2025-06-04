@@ -88,8 +88,8 @@
 
 .rent-img {
   width: 100%;
-  max-height: 160px;
-  border-radius: 12px;
+  max-height: 200px;
+  border-radius: 10px;
   object-fit: cover;
   margin-bottom: 15px;
 }
@@ -181,9 +181,3 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: gold;
   margin-right: 4px;
 }
-
-
-
-
-
-
