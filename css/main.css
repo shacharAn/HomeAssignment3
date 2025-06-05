@@ -135,7 +135,8 @@ h2 {
 .filter-section,
 .apartment-card,
 .rent-left,
-.rent-right{
+.rent-right,
+.favorite-card{
   background-color: #fffdfd;
   padding:15px 30px;
   border-radius: 16px;
@@ -147,7 +148,8 @@ h2 {
 
 #filterBtn,
 #resetBtn,
-button[type="submit"]{
+button[type="submit"],
+.favorite-card .book-btn{
   font-weight: bold;
   padding: 8px 20px;
   font-size: 16px;
@@ -155,11 +157,13 @@ button[type="submit"]{
   border: none;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
 }
 
 #filterBtn,
 .rent-btn,
-button[type="submit"] {
+button[type="submit"],
+.favorite-card .book-btn {
   background-color:#44698d;
   color: #ffffff;
 }
@@ -167,7 +171,8 @@ button[type="submit"] {
 #filterBtn:hover,
 .rent-btn:hover,
 #pagination button:hover,
-button[type="submit"]:hover{
+button[type="submit"]:hover,
+.favorite-card .book-btn:hover{
   background-color: #385a8e;
   transform: scale(1.02);
   transition: background-color 0.1s ease, transform 0.1s ease;
@@ -190,7 +195,7 @@ button[type="submit"]:hover{
   cursor: pointer;
 }
 
-@media (max-width: 767px) {
+@media ((max-width: 768px) and (max-width: 991px)){
   .hamburger-menu {
     display: block;
     margin: 0 auto;
