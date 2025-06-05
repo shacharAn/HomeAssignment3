@@ -14,11 +14,6 @@
   flex: 1;
   min-width: 300px;
   max-width: 500px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  background-color: #fff;
   height: fit-content;
 }
 
@@ -34,16 +29,10 @@
   margin: 8px 0;
 }
 
-.total-line {
-  font-weight: bold;
-  margin-top: 10px;
-  font-size: 1.1rem;
-}
-
 #result {
   margin-top: 15px;
   font-weight: bold;
-  color: green;
+  color: rgb(227, 72, 72);
 }
 
 #rental-form label {
@@ -57,7 +46,7 @@
   display: flex;
   gap: 15px;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 #rental-form .date-row input[type="date"] {
@@ -65,16 +54,6 @@
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
-}
-
-button[type="submit"] {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #0d6efd;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -94,41 +73,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .form-group input {
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #89A8B2;
   border-radius: 6px;
-  font-size: 1rem;
-}
-
-.apt-location,
-.apt-rating {
-  font-size: 0.95rem;
-  margin: 4px 0 12px;
-  color: #444;
-  display: flex;
-  align-items: center;
+  font-size: 16px;
 }
 
 
-.empty-state {
-  text-align: center;
-  margin-top: 100px;
-}
 
-.empty-state .empty-heart-icon {
-  font-size: 5rem;
-  color: #ccc;
-}
 
-.empty-state button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-weight: bold;
-  background-color: #2563eb;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
+
+
+
+
 
 .hidden {
   display: none;
