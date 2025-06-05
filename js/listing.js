@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     signoutBtn.style.display = currentUser ? "inline-block" : "none";
     signoutBtn.addEventListener("click", function () {
       clearUserData();
-     location.href = "login.html";
+      location.href = "login.html";
     });
   }
 
