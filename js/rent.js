@@ -1,154 +1,152 @@
-function isDateRangeOverlap(startDate1, endDate1, startDate2, endDate2) {
-  return !(endDate1 < startDate2 || startDate1 > endDate2);
+function isDateRangeOverlap(start1, end1, start2, end2) {
+  return !(end1 < start2 || start1 > end2);
 }
 
 function checkAvailability(listingId, startDate, endDate) {
-  const allBookingsArray = getAllBookings();
+  const allBookings = getAllBookings();
+  return !allBookings.some(
+    (booking) =>
+      booking.listing_id === listingId &&
+      isDateRangeOverlap(startDate, endDate, booking.startDate, booking.endDate)
+  );
+}
 
-  for (let bookingObject of allBookingsArray) {
-    if (
-      bookingObject.listing_id === listingId &&
-      isDateRangeOverlap(
-        startDate,
-        endDate,
-        bookingObject.startDate,
-        bookingObject.endDate
-      )
-    ) {
-      return false;
-    }
+addEventListener("DOMContentLoaded", () => {
+  const selectedListingJSON = localStorage.getItem("selectedListing");
+  if (!selectedListingJSON) {
+    document.querySelector(".rent-container").innerHTML = `
+      <section class="empty-state">
+        <h1>Rent an Apartment</h1>
+        <p>No apartment selected</p>
+        <p>Please choose an apartment from the home page <i class="bi bi-stars"></i></p>
+        <button onclick="location.href='index.html'" class="btn btn-outline-primary">
+          <i class="bi bi-search"></i> Browse Apartments
+        </button>
+      </section>
+    `;
+    return;
   }
 
-  return true;
-}
-
-window.addEventListener("DOMContentLoaded", function () {
-  const selectedListingJSON = localStorage.getItem("selectedListing");
- if (!selectedListingJSON) {
-  document.querySelector(".rent-container").innerHTML = `
-    <section class="empty-state">
-      <h1 class="text-center mb-3">Rent an Apartment</h1>
-      <p>No apartment selected</p>
-      <p>To book an apartment, please start from the home page and select a listing you like ✨</p>
-      <button onclick="window.location.href='index.html'" class="btn btn-outline-primary">
-        <i class="bi bi-search"></i> Browse Apartments
-      </button>
-    </section>
-  `;
-  return;
-}
-
-
-  const currentListing = JSON.parse(selectedListingJSON);
-  const minNights = parseInt(currentListing.minimum_nights) || 2;
-  const maxNights = parseInt(currentListing.maximum_nights) || 60;
+  const listing = JSON.parse(selectedListingJSON);
+  const minNights = parseInt(listing.minimum_nights) || 2;
+  const maxNights = parseInt(listing.maximum_nights) || 60;
   document.getElementById("min-nights-display").textContent = minNights;
 
   document.getElementById("listing-details").innerHTML = `
     <div class="card mb-4">
-      <img src="${currentListing.picture_url}" class="card-img-top rent-img" alt="Listing image">
+      <img src="${listing.picture_url}" class="card-img-top rent-img" alt="Listing image">
       <div class="card-body">
-        <h2 class="card-title">${currentListing.name}</h2>
-        <p class="card-subtitle text-muted">
-          <i class="bi bi-geo-alt-fill"></i>
-          ${currentListing.neighbourhood_cleansed || "Unknown location"}
+        <h2>${listing.name}</h2>
+        <p class="text-muted">
+          <i class="bi bi-geo-alt-fill"></i> ${listing.neighbourhood_cleansed || "Unknown"}
         </p>
-        <p><strong>Price per night:</strong> ${currentListing.price}</p>
-        <p><strong>Minimum nights:</strong> ${currentListing.minimum_nights}</p>
-        <p class="text-warning">
-          <i class="bi bi-star-fill"></i>
-          ${parseFloat(currentListing.review_scores_rating || 4.8).toFixed(1)}
-          (${currentListing.number_of_reviews || 0})
-        </p>
-        <p class="card-text">${currentListing.description}</p>
+        <p><strong>Price:</strong> ${listing.price}</p>
+        <p><strong>Min nights:</strong> ${listing.minimum_nights}</p>
+        <p><i class="bi bi-star-fill text-warning"></i> ${parseFloat(listing.review_scores_rating || 4.8).toFixed(1)} (${listing.number_of_reviews || 0})</p>
+        <p>${listing.description}</p>
       </div>
     </div>
   `;
 
   const today = new Date().toISOString().split("T")[0];
-  document.getElementById("startDate").setAttribute("min", today);
-  document.getElementById("endDate").setAttribute("min", today);
+  document.getElementById("startDate").min = today;
+  document.getElementById("endDate").min = today;
 
-  document.getElementById("rental-form").addEventListener("submit", function (e) {
+  document.getElementById("rental-form").addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const selectedStartDate = document.getElementById("startDate").value;
-    const selectedEndDate = document.getElementById("endDate").value;
+    const start = document.getElementById("startDate").value;
+    const end = document.getElementById("endDate").value;
+    const result = document.getElementById("result");
 
-    if (!selectedStartDate || !selectedEndDate) return;
-
-    if (selectedEndDate < selectedStartDate) {
-      document.getElementById("result").innerHTML = `
-        <div class="alert alert-danger">Check-out date must be after check-in date.</div>
-      `;
+    if (!start || !end || end < start) {
+      result.innerHTML = `<div class="alert alert-danger">Check-out must be after check-in.</div>`;
       return;
     }
 
-    const start = new Date(selectedStartDate);
-    const end = new Date(selectedEndDate);
-    const nights = Math.ceil((end - start) / (1000 * 60 * 60 * 24));
-
+    const nights = Math.ceil((new Date(end) - new Date(start)) / (1000 * 60 * 60 * 24));
     if (nights < minNights) {
-      document.getElementById("result").innerHTML = `
-        <div class="alert alert-warning">Minimum stay is ${minNights} nights.</div>
-      `;
+      result.innerHTML = `<div class="alert alert-warning">Minimum stay is ${minNights} nights.</div>`;
       return;
     }
-
     if (nights > maxNights) {
-      document.getElementById("result").innerHTML = `
-        <div class="alert alert-warning">Maximum stay is ${maxNights} nights.</div>
-      `;
+      result.innerHTML = `<div class="alert alert-warning">Maximum stay is ${maxNights} nights.</div>`;
       return;
     }
 
-    if (!checkAvailability(currentListing.listing_id, selectedStartDate, selectedEndDate)) {
-      document.getElementById("result").innerHTML = `
-        <div class="alert alert-danger">These dates are already booked.</div>
-      `;
+    if (!checkAvailability(listing.listing_id, start, end)) {
+      result.innerHTML = `<div class="alert alert-danger">These dates are already booked.</div>`;
       return;
     }
 
-    const pricePerNight = parseFloat(currentListing.price.replace(/[^\d.]/g, "")) || 0;
-    const total = pricePerNight * nights;
+    const price = parseFloat(listing.price.replace(/[^\d.]/g, "")) || 0;
+    const total = (price * nights).toFixed(2);
 
-    document.getElementById("result").innerHTML = `
+    result.innerHTML = `
       <div class="alert alert-success">
-        ${currentListing.price} x ${nights} nights = $${total.toFixed(2)}<br>
-        <strong>Total: $${total.toFixed(2)}</strong>
+        ${listing.price} x ${nights} nights = $${total}<br>
+        <strong>Total: $${total}</strong>
       </div>
     `;
 
-    document.getElementById("summary-name").textContent = currentListing.name;
-    document.getElementById("summary-start").textContent = selectedStartDate;
-    document.getElementById("summary-end").textContent = selectedEndDate;
+    document.getElementById("summary-name").textContent = listing.name;
+    document.getElementById("summary-start").textContent = start;
+    document.getElementById("summary-end").textContent = end;
     document.getElementById("summary-nights").textContent = nights;
-    document.getElementById("summary-total").textContent = total.toFixed(2);
+    document.getElementById("summary-total").textContent = total;
 
-    document.getElementById("payment-form").style.display = "block";
+    document.getElementById("payment-form").classList.remove("hidden");
+  });
 
-    document.getElementById("payment-form").addEventListener("submit", function (e) {
-      e.preventDefault();
+  document.getElementById("payment-form").addEventListener("submit", function handleSubmit(e) {
+    e.preventDefault();
 
-      const currentUsername = localStorage.getItem("currentUser");
-      const userBookingKey = `${currentUsername}_bookings`;
+    const cardNumber = document.getElementById("cardNumber").value;
+    const expiryDate = document.getElementById("expiryDate").value;
+    const cvv = document.getElementById("cvv").value;
 
-      const newBookingObject = {
-        listing_id: currentListing.listing_id,
-        startDate: selectedStartDate,
-        endDate: selectedEndDate,
-        nights: nights,
-        total: total.toFixed(2),
-        name: currentListing.name,
-      };
+    if (!/^\d{16}$/.test(cardNumber)) {
+      alert("Invalid card number");
+      return;
+    }
+    if (!/^\d{2}\/\d{2}$/.test(expiryDate)) {
+      alert("Invalid expiry date. Use MM/YY format.");
+      return;
+    }
+    if (!/^\d{3,4}$/.test(cvv)) {
+      alert("Invalid CVV");
+      return;
+    }
 
-      const existingBookingsArray = JSON.parse(localStorage.getItem(userBookingKey)) || [];
-      existingBookingsArray.push(newBookingObject);
-      localStorage.setItem(userBookingKey, JSON.stringify(existingBookingsArray));
-      localStorage.removeItem("selectedListing");
-  
-      alert("Booking confirmed!");
-      window.location.href = "mybookings.html";
-    });
+    const currentUser = localStorage.getItem("currentUser");
+    const key = `${currentUser}_bookings`;
+    const start = document.getElementById("startDate").value;
+    const end = document.getElementById("endDate").value;
+    const nights = document.getElementById("summary-nights").textContent;
+    const total = document.getElementById("summary-total").textContent;
+
+    const booking = {
+      listing_id: listing.listing_id,
+      startDate: start,
+      endDate: end,
+      nights: nights,
+      total: total,
+      name: listing.name,
+    };
+
+    const existing = JSON.parse(localStorage.getItem(key)) || [];
+    existing.push(booking);
+    localStorage.setItem(key, JSON.stringify(existing));
+    localStorage.removeItem("selectedListing");
+
+    alert("Booking confirmed!");
+
+    document.getElementById("payment-form").classList.add("hidden");
+    document.getElementById("rental-form").reset();
+    document.getElementById("result").innerHTML = "";
+
+    document.getElementById("payment-form").removeEventListener("submit", handleSubmit);
+
+    location.href = "mybookings.html";
   });
 });
