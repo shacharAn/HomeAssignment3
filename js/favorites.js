@@ -78,54 +78,13 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       </div>
       <button class="book-btn">Rent</button>
-      <div class="review-section">
-        <h4>Leave a Review</h4>
-        <textarea class="review-comment" placeholder="Your comment..."></textarea>
-        <select class="review-rating">
-          <option value="5">★★★★★</option>
-          <option value="4">★★★★☆</option>
-          <option value="3">★★★☆☆</option>
-          <option value="2">★★☆☆☆</option>
-          <option value="1">★☆☆☆☆</option>
-        </select>
-        <button class="submit-review">Submit Review</button>
-      </div>
     `;
-
-    const reviewsContainer = document.createElement("div");
-    reviewsContainer.className = "reviews-list";
-    const existingReviews = JSON.parse(localStorage.getItem(`${apt.listing_id}_reviews`)) || [];
-
-    if (existingReviews.length > 0) {
-      const list = document.createElement("ul");
-      existingReviews.forEach((rev) => {
-        const li = document.createElement("li");
-        li.innerHTML = `${'<i class="bi bi-star-fill"></i>'.repeat(rev.rating)} - ${rev.comment}`;
-        list.appendChild(li);
-      });
-      reviewsContainer.appendChild(list);
-    } else {
-      reviewsContainer.innerHTML = "<p>No reviews yet.</p>";
-    }
 
     card.querySelector(".book-btn").addEventListener("click", () => {
       localStorage.setItem("selectedListing", JSON.stringify(apt));
       location.href = "rent.html";
     });
 
-    card.querySelector(".submit-review").addEventListener("click", () => {
-      const comment = card.querySelector(".review-comment").value;
-      const rating = card.querySelector(".review-rating").value;
-      const review = { comment, rating };
-      const reviewKey = `${apt.listing_id}_reviews`;
-      const existing = JSON.parse(localStorage.getItem(reviewKey)) || [];
-      existing.push(review);
-      localStorage.setItem(reviewKey, JSON.stringify(existing));
-      alert("Review submitted!");
-      location.reload();
-    });
-
-    card.appendChild(reviewsContainer);
     wrapper.appendChild(card);
     container.appendChild(wrapper);
   });
