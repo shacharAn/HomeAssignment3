@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         localStorage.setItem("usersList", JSON.stringify(registeredUsersList));
         alert("Registration successful! Redirecting to login...");
-        window.location.href = "login.html";
+        location.href = "login.html";
       }
     );
   }
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       localStorage.setItem("currentUser", usernameInputValue);
       alert("Login successful!");
-      window.location.href = "index.html";
+      location.href = "index.html";
     });
   }
 });
