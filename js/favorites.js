@@ -1,14 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const signoutBtn = document.getElementById("signout-btn");
-  if (signoutBtn) {
-    signoutBtn.addEventListener("click", function () {
-      localStorage.removeItem("currentUser");
-      window.location.href = "login.html";
-    });
-  }
 
-  renderBookings();
-});
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("favorites-container");
   const countDisplay = document.getElementById("favorites-count");
@@ -94,12 +84,4 @@ document.addEventListener("DOMContentLoaded", () => {
       location.reload();
     }
   });
-
-  const signOutBtn = document.getElementById("signout-btn");
-  if (signOutBtn) {
-    signOutBtn.addEventListener("click", () => {
-      localStorage.removeItem("currentUser");
-      window.location.href = "login.html";
-    });
-  }
 });
