@@ -11,7 +11,7 @@ function checkAvailability(listingId, startDate, endDate) {
   );
 }
 
-addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const selectedListingJSON = localStorage.getItem("selectedListing");
   if (!selectedListingJSON) {
     document.querySelector(".rent-container").innerHTML = `
@@ -44,19 +44,48 @@ addEventListener("DOMContentLoaded", () => {
         <p><strong>Min nights:</strong> ${listing.minimum_nights}</p>
         <p><i class="bi bi-star-fill text-warning"></i> ${parseFloat(listing.review_scores_rating || 4.8).toFixed(1)} (${listing.number_of_reviews || 0})</p>
         <p>${listing.description}</p>
+        <div id="map" style="height: 300px; margin-top: 1rem;"></div>
       </div>
     </div>
   `;
 
+  const map = L.map("map").setView([listing.latitude || 52.3676, listing.longitude || 4.9041], 13);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+  }).addTo(map);
+  L.marker([listing.latitude || 52.3676, listing.longitude || 4.9041]).addTo(map)
+    .bindPopup(`<b>${listing.name}</b>`)
+    .openPopup();
+
   const today = new Date().toISOString().split("T")[0];
-  document.getElementById("startDate").min = today;
-  document.getElementById("endDate").min = today;
+  const startDateInput = document.getElementById("startDate");
+  const endDateInput = document.getElementById("endDate");
+  startDateInput.min = today;
+  endDateInput.min = today;
+
+  startDateInput.addEventListener("change", () => {
+    const start = startDateInput.value;
+    endDateInput.min = start;
+  });
+
+  [startDateInput, endDateInput].forEach((input) => {
+    input.addEventListener("input", () => {
+      const start = startDateInput.value;
+      const end = endDateInput.value;
+      if (start && end && !checkAvailability(listing.listing_id, start, end)) {
+        input.setCustomValidity("These dates are already booked.");
+        input.reportValidity();
+      } else {
+        input.setCustomValidity("");
+      }
+    });
+  });
 
   document.getElementById("rental-form").addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const start = document.getElementById("startDate").value;
-    const end = document.getElementById("endDate").value;
+    const start = startDateInput.value;
+    const end = endDateInput.value;
     const result = document.getElementById("result");
 
     if (!start || !end || end < start) {
@@ -120,8 +149,8 @@ addEventListener("DOMContentLoaded", () => {
 
     const currentUser = localStorage.getItem("currentUser");
     const key = `${currentUser}_bookings`;
-    const start = document.getElementById("startDate").value;
-    const end = document.getElementById("endDate").value;
+    const start = startDateInput.value;
+    const end = endDateInput.value;
     const nights = document.getElementById("summary-nights").textContent;
     const total = document.getElementById("summary-total").textContent;
 
