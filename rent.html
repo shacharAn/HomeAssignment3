@@ -19,7 +19,7 @@
       <nav class="nav-bar">
         <div class="nav-left">
           <button id="signout-btn">Sign Out</button>
-          <span id="currentUser"> <i class="bi bi-person-fill"></i> Guest</span>
+          <span id="currentUser"><i class="bi bi-person-fill"></i> Guest</span>
         </div>
         <ul class="nav-center">
           <li><a href="index.html"><i class="bi bi-house-fill"></i> Home</a></li>
@@ -38,7 +38,7 @@
       <section class="rent-left" id="listing-details"></section>
 
       <section class="rent-right">
-        <form id="rental-form">
+        <form id="rental-form" aria-label="Select rental dates">
           <h3><i class="bi bi-calendar3"></i> Select Your Dates</h3>
 
           <label for="startDate">Check-in Date</label>
@@ -56,7 +56,7 @@
 
         <div id="result"></div>
 
-        <form id="payment-form" style="display: none">
+        <form id="payment-form" class="hidden" aria-label="Enter payment details">
           <h3>Booking Summary</h3>
           <div class="rent-summary">
             <p><strong>Apartment:</strong> <span id="summary-name"></span></p>
