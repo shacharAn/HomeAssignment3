@@ -3,12 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("favorites-container");
   const countDisplay = document.getElementById("favorites-count");
   const username = localStorage.getItem("currentUser");
-
-  if (!username) {
-    window.location.href = "login.html";
-    return;
-  }
-
   const key = `${username}_favorites`;
   const favoriteIds = JSON.parse(localStorage.getItem(key)) || [];
 

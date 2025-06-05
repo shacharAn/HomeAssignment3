@@ -3,24 +3,7 @@
   let allApartments = window.amsterdam;
 
 document.addEventListener("DOMContentLoaded", function () {
-const currentUserSpan = document.getElementById("currentUser");
-const signoutBtn = document.getElementById("signout-btn");
-const currentUser = getCurrentUser();
-
-if (currentUserSpan) {
-  currentUserSpan.innerHTML = currentUser
-  ? `<i class="bi bi-person-fill"></i> ${currentUser}`
-  : `<i class="bi bi-person-fill"></i> Guest`;
-}
-
-if (signoutBtn) {
-  signoutBtn.style.display = currentUser ? "inline-block" : "none";
-  signoutBtn.addEventListener("click", function () {
-    clearUserData();
-    window.location.href = "login.html";
-  });
-}
-  const ratingSelect = document.getElementById("rating");
+const ratingSelect = document.getElementById("rating");
 const ratings = [3, 3.5, 4, 4.5, 5];
 
 for (let i = 0; i < ratings.length; i++) {
@@ -30,28 +13,28 @@ for (let i = 0; i < ratings.length; i++) {
   ratingSelect.appendChild(option);
 }
 
-  const priceSlider = document.getElementById("priceSlider");
-  const priceLabel = document.getElementById("priceRangeLabel");
+//   const priceSlider = document.getElementById("priceSlider");
+//   const priceLabel = document.getElementById("priceRangeLabel");
 
-noUiSlider.create(priceSlider, {
-  start: [0, 800],
-  connect: true,
-  range: {
-    min: 0,
-    max: 800,
-  },
-  step: 10,
-  tooltips: true,
-  format: {
-    to: value => `$${Math.round(value)}`,
-    from: value => Number(value.replace(/[^\d]/g, ''))
-  }
-});
+// noUiSlider.create(priceSlider, {
+//   start: [0, 800],
+//   connect: true,
+//   range: {
+//     min: 0,
+//     max: 800,
+//   },
+//   step: 10,
+//   tooltips: true,
+//   format: {
+//     to: value => `$${Math.round(value)}`,
+//     from: value => Number(value.replace(/[^\d]/g, ''))
+//   }
+// });
 
-priceSlider.noUiSlider.on("update", function (values) {
-  const [min, max] = values;
-  priceLabel.textContent = `${min} - ${max === "₪800" ? "₪800+" : max}`;
-});
+// priceSlider.noUiSlider.on("update", function (values) {
+//   const [min, max] = values;
+//   priceLabel.textContent = `${min} - ${max === "₪800" ? "₪800+" : max}`;
+// });
 
   const roomSelect = document.getElementById("roomSelect");
   roomSelect.innerHTML = "";
@@ -82,6 +65,9 @@ priceSlider.noUiSlider.on("update", function (values) {
   fivePlusOption.value = "5+";
   fivePlusOption.textContent = "5+ rooms";
   roomSelect.appendChild(fivePlusOption);
+
+  const minPriceInput = document.getElementById("minPrice");
+  const maxPriceInput = document.getElementById("maxPrice");
 
   document.getElementById("filterBtn").addEventListener("click", function () {
     const selectedRating = parseInt(ratingSelect.value) || 0;
@@ -128,14 +114,6 @@ priceSlider.noUiSlider.on("update", function (values) {
 displayApartments(allApartments);
 });
 
-function getCurrentUser() {
-  return localStorage.getItem("currentUser");
-}
-
-function clearUserData() {
-  localStorage.removeItem("currentUser");
-}
-
 function paginate(array, pageNumber, pageSize) {
   const start = (pageNumber - 1) * pageSize;
   return array.slice(start, start + pageSize);
@@ -155,7 +133,6 @@ function displayApartments(apartments) {
   }
 
   paginated.forEach((ap) => {
-  // apartments.forEach((ap) => {
     const card = document.createElement("div");
     card.className = "apartment-card";
 
