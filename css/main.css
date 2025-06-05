@@ -133,7 +133,9 @@ h2 {
 }
 
 .filter-section,
-.apartment-card {
+.apartment-card,
+.rent-left,
+.rent-right{
   background-color: #fffdfd;
   padding:15px 30px;
   border-radius: 16px;
@@ -143,9 +145,47 @@ h2 {
   border: 1px solid #e0e0e0;
 }
 
-.filter-title i,
-.filter-row label i {
-  margin-right: 6px;
-  color: #455265;
+#filterBtn,
+#resetBtn,
+button[type="submit"]{
+  font-weight: bold;
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+#filterBtn,
+.rent-btn,
+button[type="submit"] {
+  background-color:#44698d;
+  color: #ffffff;
+}
+
+#filterBtn:hover,
+.rent-btn:hover,
+#pagination button:hover,
+button[type="submit"]:hover{
+  background-color: #385a8e;
+  transform: scale(1.02);
+  transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+.bi-geo-alt-fill {
+  color: #1f8d0e; 
+}
+
+.bi-star-fill {
+  color: gold; 
+}
+
+.bi-cash-coin {
+  color: rgb(29, 86, 29);
+}
+
+
+
+
 
