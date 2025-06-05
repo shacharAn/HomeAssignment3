@@ -33,4 +33,12 @@ document.addEventListener("DOMContentLoaded", function () {
       location.href = "login.html";
       });
     }
+  const hamburger = document.getElementById("hamburger");
+  const navBar = document.querySelector(".nav-bar");
+
+  if (hamburger && navBar) {
+    hamburger.addEventListener("click", function () {
+      navBar.classList.toggle("open");
+    });
+  }
 });
