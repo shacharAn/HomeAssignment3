@@ -1,3 +1,10 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
 main {
   max-width: 1200px;
   margin: 40px auto;
@@ -74,7 +81,6 @@ main {
 .favorite-card h2 {
   font-size: 1.1rem;
   margin: 12px 16px 4px;
-  min-height: 48px;
 }
 
 .favorite-card .location {
@@ -142,3 +148,19 @@ main {
   border-radius: 6px;
   cursor: pointer;
 }
+
+.favorite-card h2 {
+  min-height: 48px;
+}
+
+.favorite-card:hover {
+  transform: translateY(-4px) scale(1.01);
+}
+
+.book-btn {
+  border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+
