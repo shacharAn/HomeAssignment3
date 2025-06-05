@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function () {
 const bookingsContainer = document.getElementById("bookingsContainer");
 const allCount = document.getElementById("allCount");
 const upcomingCount = document.getElementById("upcomingCount");
@@ -15,27 +16,35 @@ function toDateOnly(date) {
 }
 function renderBookings() {
   bookingsContainer.innerHTML = "";
-
   const today = toDateOnly(new Date());
 
-  const filtered = bookings.filter((booking) => {
-    const checkIn = toDateOnly(new Date(booking.startDate));
-    const checkOut = toDateOnly(new Date(booking.endDate));
-    if (activeTab === "upcoming") return checkIn > today;
-    if (activeTab === "past") return checkOut < today;
-    return true;
-  });
-  filtered.sort((a, b) => new Date(b.startDate) - new Date(a.startDate));
+  let upcomingCounter = 0;
+  let pastCounter = 0;
+  for (let i = 0; i < bookings.length; i++) {
+      const checkIn = toDateOnly(new Date(bookings[i].startDate));
+      const checkOut = toDateOnly(new Date(bookings[i].endDate));
+      if (checkIn > today) upcomingCounter++;
+      if (checkOut < today) pastCounter++;
+    }
 
   allCount.textContent = bookings.length;
-  upcomingCount.textContent = bookings.filter(
-    (b) => toDateOnly(new Date(b.startDate)) > today
-  ).length;
-  pastCount.textContent = bookings.filter(
-    (b) => toDateOnly(new Date(b.endDate)) < today
-  ).length;
+  upcomingCount.textContent = upcomingCounter;
+  pastCount.textContent = pastCounter;
 
-  if (filtered.length === 0) {
+  let filtered = [];
+  for (let i = 0; i < bookings.length; i++) {
+    const checkIn = toDateOnly(new Date(bookings[i].startDate));
+    const checkOut = toDateOnly(new Date(bookings[i].endDate));
+    if (
+      (activeTab === "upcoming" && checkIn > today) ||
+      (activeTab === "past" && checkOut < today) ||
+      activeTab === "all"
+    ) {
+      filtered.push(bookings[i]);
+    }
+  }
+
+    if (filtered.length === 0) {
     bookingsContainer.innerHTML = `
       <div class="empty-bookings">
         <p>No bookings to show</p>
@@ -46,25 +55,50 @@ function renderBookings() {
     return;
   }
 
-  filtered.forEach((booking) => {
+  for (let i = 0; i < filtered.length; i++) {
+    const booking = filtered[i];
     const checkIn = new Date(booking.startDate);
     const checkOut = new Date(booking.endDate);
+    const nights = Math.ceil((checkOut - checkIn) / (1000 * 60 * 60 * 24));
+    const today = toDateOnly(new Date()); 
+
+    let apartment = null;
+      for (let j = 0; j < amsterdam.length; j++) {
+        if (amsterdam[j].listing_id === booking.listing_id) {
+          apartment = amsterdam[j];
+          break;
+        }
+      }
+
+      let pricePerNight = 0;
+      if (apartment && apartment.price) {
+        let priceStr = "";
+        for (let k = 0; k < apartment.price.length; k++) {
+          const ch = apartment.price[k];
+          if ((ch >= "0" && ch <= "9") || ch === ".") {
+            priceStr += ch;
+          }
+        }
+        pricePerNight = parseFloat(priceStr);
+      }
+
+    const totalPrice = nights * pricePerNight;
     const isUpcoming = toDateOnly(checkIn) > today;
     const isPast = toDateOnly(checkOut) < today;
-    const status = isUpcoming ? "Upcoming" : isPast ? "Past" : "Current";
-
-    const nights = Math.ceil((checkOut - checkIn) / (1000 * 60 * 60 * 24));
-    const apartment = window.amsterdam.find(
-      (a) => a.listing_id === booking.listing_id
-    );
-    const pricePerNight = apartment
-      ? parseFloat
-      (apartment.price.replace(/[^\d.]/g, ""))
-      : 0;
-    const totalPrice = nights * pricePerNight;
-
+    let status = "Current";
+      if (isUpcoming) status = "Upcoming";
+      if (isPast) status = "Past";
+    
     const card = document.createElement("div");
     card.className = "booking-card";
+
+    const image = (apartment && apartment.picture_url) ? apartment.picture_url : "images/default.jpg";
+      const name = (apartment && apartment.name) ? apartment.name : "Apartment in Amsterdam";
+
+      let cancelBtn = "";
+      if (isUpcoming) {
+        cancelBtn = `<button class="cancel-btn" data-id="${booking.listing_id}">Cancel Booking</button>`;
+      }
 
     card.innerHTML = `
       <div class="booking-info">
@@ -88,39 +122,44 @@ function renderBookings() {
     `;
 
     bookingsContainer.appendChild(card);
-  });
+  }
 
-  document.querySelectorAll(".cancel-btn").forEach((btn) => {
-    btn.addEventListener("click", function () {
-      cancelBooking(this.dataset.id);
+  const cancelBtns = document.querySelectorAll(".cancel-btn");
+    for (let i = 0; i < cancelBtns.length; i++) {
+      cancelBtns[i].addEventListener("click", function () {
+        const id = this.getAttribute("data-id");
+        cancelBooking(id);
     });
-  });
-}
-
-tabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    tabs.forEach((t) => t.classList.remove("active"));
-    tab.classList.add("active");
-    activeTab = tab.dataset.type;
-    renderBookings();
-  });
-});
-
-function cancelBooking(id) {
-  const index = bookings.findIndex((b) => b.listing_id === id);
-  if (index !== -1) {
-    bookings.splice(index, 1);
-    localStorage.setItem(
-      `${currentUsername}_bookings`,
-      JSON.stringify(bookings)
-    );
-    renderBookings();
   }
 }
-document.addEventListener("DOMContentLoaded", function () {
-  const defaultTab = document.querySelector(".tab-btn[data-type='all']");
+
+for (let i = 0; i < tabs.length; i++) {
+    tabs[i].addEventListener("click", function () {
+      for (let j = 0; j < tabs.length; j++) {
+        tabs[j].classList.remove("active");
+      }
+      this.classList.add("active");
+      activeTab = this.getAttribute("data-type");
+      renderBookings();
+    });
+  }
+
+
+function cancelBooking(id) {
+  for (let i = 0; i < bookings.length; i++) {
+      if (bookings[i].listing_id === id) {
+        bookings.splice(i, 1);
+        break;
+      }
+    }
+    localStorage.setItem(currentUsername + "_bookings", JSON.stringify(bookings));
+    renderBookings();
+  }
+
+const defaultTab = document.querySelector(".tab-btn[data-type='all']");
   if (defaultTab) {
     defaultTab.classList.add("active");
   }
+
   renderBookings();
 });

@@ -1,18 +1,26 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("favorites-container");
   const countDisplay = document.getElementById("favorites-count");
   const username = localStorage.getItem("currentUser");
   const key = `${username}_favorites`;
-  const favoriteIds = JSON.parse(localStorage.getItem(key)) || [];
-
-  const favorites = amsterdam.filter((apt) =>
-    favoriteIds.some((fav) => fav.listing_id === apt.listing_id)
-  );
+  let favoriteIds = localStorage.getItem(key);
+  if(favoriteIds){
+    favoriteIds = JSON.parse(favoriteIds); 
+  }else{
+    favoriteIds = [];
+  }
+  const favorites = [];
+  for(let i = 0; i < amsterdam.length; i++){
+    for(let j = 0; j < favoriteIds.length; j++){
+      if (amsterdam[i].listing_id === favoriteIds[j].listing_id){
+        favorites.push(amsterdam[i]);
+        break;
+      }
+    }
+  }
 
   countDisplay.textContent = `${favorites.length} apartment${
-    favorites.length !== 1 ? "s" : ""
-  } in your favorites`;
+    favorites.length !== 1 ? "s" : ""} in your favorites`;
 
   if (favorites.length === 0) {
     container.innerHTML = `
@@ -37,14 +45,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const card = document.createElement("div");
     card.className = "favorite-card";
 
-    const imgSrc =
-      apt.picture_url && apt.picture_url.startsWith("http")
-        ? apt.picture_url
-        : "images/placeholder.png";
+    let imgSrc = "images/placeholder.png";
+    if(apt.picture_url && apt.picture_url.indexOf("http") === 0){
+      imgSrc = apt.picture_url;
+    }
 
-    const rating = apt.review_scores_rating || "9.0";
-    const reviews = apt.number_of_reviews || "0";
-    const price = apt.price || "";
+    let rating = "9.0";
+    if (apt.review_scores_rating !== undefined) {
+      rating = apt.review_scores_rating;
+    }
+
+    let reviews = "0";
+    if (apt.number_of_reviews !== undefined) {
+      reviews = apt.number_of_reviews;
+    }
+
+    let price = "";
+    if (apt.price !== undefined) {
+      price = apt.price;
+    }
 
     card.innerHTML = `
       <div class="heart" title="Remove from favorites" data-id="${apt.listing_id}">
@@ -68,12 +87,24 @@ document.addEventListener("DOMContentLoaded", () => {
     container.appendChild(wrapper);
   });
 
-  container.addEventListener("click", (e) => {
-    if (e.target.closest(".heart")) {
-      const id = e.target.closest(".heart").getAttribute("data-id");
-      const key = `${localStorage.getItem("currentUser")}_favorites`;
-      const favorites = JSON.parse(localStorage.getItem(key)) || [];
-      const updated = favorites.filter((f) => f.listing_id !== id);
+  container.addEventListener("click", function(e) {
+    const target = e.target;
+    if (target.classList.contains("bi-heart-fill") || target.classList.contains("heart")) {
+      const heartDiv = target.classList.contains("heart")
+        ? target
+        : target.parentNode;
+
+      const id = heartDiv.getAttribute("data-id");
+      const key = localStorage.getItem("currentUser") + "_favorites";
+      let favorites = JSON.parse(localStorage.getItem(key)) || [];
+
+      const updated = [];
+      for (let i = 0; i < favorites.length; i++) {
+        if (favorites[i].listing_id !== id) {
+          updated.push(favorites[i]);
+        }
+      }
+
       localStorage.setItem(key, JSON.stringify(updated));
       location.reload();
     }
