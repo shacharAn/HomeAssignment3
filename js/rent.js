@@ -1,4 +1,14 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const signoutBtn = document.getElementById("signout-btn");
+  if (signoutBtn) {
+    signoutBtn.addEventListener("click", function () {
+      localStorage.removeItem("currentUser");
+      window.location.href = "login.html";
+    });
+  }
 
+  renderBookings();
+});
 function isDateRangeOverlap(startDate1, endDate1, startDate2, endDate2) {
   return !(endDate1 < startDate2 || startDate1 > endDate2);
 }

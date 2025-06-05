@@ -1,3 +1,4 @@
+
 const bookingsContainer = document.getElementById("bookingsContainer");
 const allCount = document.getElementById("allCount");
 const upcomingCount = document.getElementById("upcomingCount");
@@ -13,7 +14,16 @@ let activeTab = "all";
 function toDateOnly(date) {
   return new Date(date.getFullYear(), date.getMonth(), date.getDate());
 }
-
+document.addEventListener("DOMContentLoaded", function () {
+  const signoutBtn = document.getElementById("signout-btn");
+  if (signoutBtn) {
+    signoutBtn.addEventListener("click", function () {
+      localStorage.removeItem("currentUser");
+      window.location.href = "login.html";
+    });
+  }
+  renderBookings();
+});
 function renderBookings() {
   bookingsContainer.innerHTML = "";
 
@@ -119,4 +129,3 @@ function cancelBooking(id) {
   }
 }
 
-window.addEventListener("DOMContentLoaded", renderBookings);
