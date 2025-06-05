@@ -1,14 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const signoutBtn = document.getElementById("signout-btn");
-  if (signoutBtn) {
-    signoutBtn.addEventListener("click", function () {
-      localStorage.removeItem("currentUser");
-      window.location.href = "login.html";
-    });
-  }
-
-  renderBookings();
-});
 function isDateRangeOverlap(startDate1, endDate1, startDate2, endDate2) {
   return !(endDate1 < startDate2 || startDate1 > endDate2);
 }
@@ -141,7 +130,7 @@ window.addEventListener("DOMContentLoaded", function () {
     document.getElementById("payment-form").addEventListener("submit", function (e) {
       e.preventDefault();
 
-      const currentUsername = localStorage.getItem("currentUser") || "guest";
+      const currentUsername = localStorage.getItem("currentUser");
       const userBookingKey = `${currentUsername}_bookings`;
 
       const newBookingObject = {
@@ -156,7 +145,7 @@ window.addEventListener("DOMContentLoaded", function () {
       const existingBookingsArray = JSON.parse(localStorage.getItem(userBookingKey)) || [];
       existingBookingsArray.push(newBookingObject);
       localStorage.setItem(userBookingKey, JSON.stringify(existingBookingsArray));
-     localStorage.removeItem("selectedListing");
+      localStorage.removeItem("selectedListing");
   
       alert("Booking confirmed!");
       window.location.href = "mybookings.html";

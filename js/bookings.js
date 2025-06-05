@@ -1,11 +1,10 @@
-
 const bookingsContainer = document.getElementById("bookingsContainer");
 const allCount = document.getElementById("allCount");
 const upcomingCount = document.getElementById("upcomingCount");
 const pastCount = document.getElementById("pastCount");
 const tabs = document.querySelectorAll(".tab-btn");
 
-const currentUsername = localStorage.getItem("currentUser") || "guest";
+const currentUsername = localStorage.getItem("currentUser");
 const bookings =
   JSON.parse(localStorage.getItem(`${currentUsername}_bookings`)) || [];
 
@@ -14,16 +13,6 @@ let activeTab = "all";
 function toDateOnly(date) {
   return new Date(date.getFullYear(), date.getMonth(), date.getDate());
 }
-document.addEventListener("DOMContentLoaded", function () {
-  const signoutBtn = document.getElementById("signout-btn");
-  if (signoutBtn) {
-    signoutBtn.addEventListener("click", function () {
-      localStorage.removeItem("currentUser");
-      window.location.href = "login.html";
-    });
-  }
-  renderBookings();
-});
 function renderBookings() {
   bookingsContainer.innerHTML = "";
 
@@ -128,4 +117,10 @@ function cancelBooking(id) {
     renderBookings();
   }
 }
-
+document.addEventListener("DOMContentLoaded", function () {
+  const defaultTab = document.querySelector(".tab-btn[data-type='all']");
+  if (defaultTab) {
+    defaultTab.classList.add("active");
+  }
+  renderBookings();
+});
