@@ -1,4 +1,3 @@
-// js/rent.js — גרסה משודרגת עם Bootstrap בלבד בצד JS
 
 function isDateRangeOverlap(startDate1, endDate1, startDate2, endDate2) {
   return !(endDate1 < startDate2 || startDate1 > endDate2);
@@ -26,12 +25,20 @@ function checkAvailability(listingId, startDate, endDate) {
 
 window.addEventListener("DOMContentLoaded", function () {
   const selectedListingJSON = localStorage.getItem("selectedListing");
-  if (!selectedListingJSON) {
-    document.getElementById("listing-details").innerHTML = `
-      <div class="alert alert-danger">No apartment selected.</div>
-    `;
-    return;
-  }
+ if (!selectedListingJSON) {
+  document.querySelector(".rent-container").innerHTML = `
+    <section class="empty-state">
+      <h1 class="text-center mb-3">Rent an Apartment</h1>
+      <p>No apartment selected</p>
+      <p>To book an apartment, please start from the home page and select a listing you like ✨</p>
+      <button onclick="window.location.href='index.html'" class="btn btn-outline-primary">
+        <i class="bi bi-search"></i> Browse Apartments
+      </button>
+    </section>
+  `;
+  return;
+}
+
 
   const currentListing = JSON.parse(selectedListingJSON);
   const minNights = parseInt(currentListing.minimum_nights) || 2;
@@ -139,7 +146,8 @@ window.addEventListener("DOMContentLoaded", function () {
       const existingBookingsArray = JSON.parse(localStorage.getItem(userBookingKey)) || [];
       existingBookingsArray.push(newBookingObject);
       localStorage.setItem(userBookingKey, JSON.stringify(existingBookingsArray));
-
+     localStorage.removeItem("selectedListing");
+  
       alert("Booking confirmed!");
       window.location.href = "mybookings.html";
     });
