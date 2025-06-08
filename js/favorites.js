@@ -17,7 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  countDisplay.textContent = `${favorites.length} apartment${favorites.length !== 1 ? "s" : ""} in your favorites`;
+  countDisplay.textContent = `${favorites.length} apartment${
+    favorites.length !== 1 ? "s" : ""
+  } in your favorites`;
 
   if (favorites.length === 0) {
     container.innerHTML = `
@@ -26,8 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <i class="bi bi-heart-fill text-danger"></i>
         </div>
         <p>No favorites yet</p>
-        <p>Start browsing apartments and save your favorites for easy access later! <i class="bi bi-stars"></i></p>
-        <button onclick="location.href='index.html'" class="btn btn-outline-primary">
+        <p class="empty-sub"> Start browsing apartments and save your favorites for easy access later! <i class="bi bi-stars gold-icon"></i></p>
+        <button onclick="location.href='index.html'" class="browse-btn">
           <i class="bi bi-search"></i> Browse Apartments
         </button>
       </div>
@@ -63,22 +65,26 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     card.innerHTML = `
-      <div class="heart" title="Remove from favorites" data-id="${apt.listing_id}">
-        <i class="bi bi-heart-fill text-danger"></i>
-      </div>
-      <img src="${imgSrc}" alt="${apt.name}" />
-      <div class="card-body">
-        <h2>${apt.name}</h2>
-        <p class="location">
-          <i class="bi bi-geo-alt-fill text-success"></i> ${apt.neighbourhood_cleansed}
-        </p>
-        <div class="price-rating">
-          <span>Price per night: ${price}</span>
-          <span><i class="bi bi-star-fill"></i> ${parseFloat(rating).toFixed(1)} (${reviews})</span>
-        </div>
-      </div>
-      <button class="book-btn">Rent</button>
-    `;
+  <div class="heart" title="Remove from favorites" data-id="${apt.listing_id}">
+    <i class="bi bi-heart-fill text-danger"></i>
+  </div>
+  <img src="${imgSrc}" alt="${apt.name}" />
+  <div class="card-body">
+    <h3>${apt.name}</h3>
+    <p class="location">
+      <i class="bi bi-geo-alt-fill text-success"></i> ${
+        apt.neighbourhood_cleansed
+      }
+    </p>
+    <div class="price-rating">
+      <span>Price per night: ${price}</span>
+      <span><i class="bi bi-star-fill"></i> ${parseFloat(rating).toFixed(
+        1
+      )} (${reviews})</span>
+    </div>
+  </div>
+  <button class="book-btn">Rent</button>
+`;
 
     card.querySelector(".book-btn").addEventListener("click", () => {
       localStorage.setItem("selectedListing", JSON.stringify(apt));
@@ -91,8 +97,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   container.addEventListener("click", function (e) {
     const target = e.target;
-    if (target.classList.contains("bi-heart-fill") || target.classList.contains("heart")) {
-      const heartDiv = target.classList.contains("heart") ? target : target.parentNode;
+    if (
+      target.classList.contains("bi-heart-fill") ||
+      target.classList.contains("heart")
+    ) {
+      const heartDiv = target.classList.contains("heart")
+        ? target
+        : target.parentNode;
       const id = heartDiv.getAttribute("data-id");
       const key = localStorage.getItem("currentUser") + "_favorites";
       let favorites = JSON.parse(localStorage.getItem(key)) || [];

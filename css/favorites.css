@@ -1,21 +1,3 @@
-main {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-.favorites-header {
-  text-align: center;
-  margin-bottom: 40px;
-  padding-left: 20px;
-}
-
-.favorites-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-}
 
 .favorite-card {
   width: 320px;
@@ -35,16 +17,8 @@ main {
   width: 100%;
   height: 200px;
   object-fit: cover;
-}
+  border-radius: 10px;
 
-.favorite-card .heart {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  font-size:24px;
-  color: #e63946;
-  cursor: pointer;
-  z-index: 2;
 }
 
 .card-body {
@@ -74,17 +48,19 @@ main {
   padding: 20px;
 }
 
-.empty-state {
-  text-align: center;
-  margin-top: 100px;
-}
-
 .empty-heart-icon i {
-  font-size: 80px;
+  font-size: 70px;
+  color: #dc3545;
+  margin-top: 1px; 
 }
 
-.favorite-card:hover {
-  transform: translateY(-4px) scale(1.01);
+@media (max-width: 768px) {
+  .favorite-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .favorite-card img {
+    height: 160px;
+  }
 }
-
 

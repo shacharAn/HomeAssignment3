@@ -1,68 +1,73 @@
 document.addEventListener("DOMContentLoaded", function () {
-const bookingsContainer = document.getElementById("bookingsContainer");
-const allCount = document.getElementById("allCount");
-const upcomingCount = document.getElementById("upcomingCount");
-const pastCount = document.getElementById("pastCount");
-const tabs = document.querySelectorAll(".tab-btn");
+  const bookingsContainer = document.getElementById("bookingsContainer");
+  const allCount = document.getElementById("allCount");
+  const upcomingCount = document.getElementById("upcomingCount");
+  const pastCount = document.getElementById("pastCount");
+  const tabs = document.querySelectorAll(".tab-btn");
 
-const currentUsername = localStorage.getItem("currentUser");
-const bookings =
-  JSON.parse(localStorage.getItem(`${currentUsername}_bookings`)) || [];
+  const currentUsername = localStorage.getItem("currentUser");
+  const bookings =
+    JSON.parse(localStorage.getItem(`${currentUsername}_bookings`)) || [];
 
-let activeTab = "all";
+  let activeTab = "all";
 
-function toDateOnly(date) {
-  return new Date(date.getFullYear(), date.getMonth(), date.getDate());
-}
-function renderBookings() {
-  bookingsContainer.innerHTML = "";
-  const today = toDateOnly(new Date());
+  function toDateOnly(date) {
+    return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  }
+  function renderBookings() {
+    bookingsContainer.innerHTML = "";
+    const today = toDateOnly(new Date());
 
-  let upcomingCounter = 0;
-  let pastCounter = 0;
-  for (let i = 0; i < bookings.length; i++) {
+    let upcomingCounter = 0;
+    let pastCounter = 0;
+    for (let i = 0; i < bookings.length; i++) {
       const checkIn = toDateOnly(new Date(bookings[i].startDate));
       const checkOut = toDateOnly(new Date(bookings[i].endDate));
       if (checkIn > today) upcomingCounter++;
       if (checkOut < today) pastCounter++;
     }
 
-  allCount.textContent = bookings.length;
-  upcomingCount.textContent = upcomingCounter;
-  pastCount.textContent = pastCounter;
+    allCount.textContent = bookings.length;
+    upcomingCount.textContent = upcomingCounter;
+    pastCount.textContent = pastCounter;
 
-  let filtered = [];
-  for (let i = 0; i < bookings.length; i++) {
-    const checkIn = toDateOnly(new Date(bookings[i].startDate));
-    const checkOut = toDateOnly(new Date(bookings[i].endDate));
-    if (
-      (activeTab === "upcoming" && checkIn > today) ||
-      (activeTab === "past" && checkOut < today) ||
-      activeTab === "all"
-    ) {
-      filtered.push(bookings[i]);
+    let filtered = [];
+    for (let i = 0; i < bookings.length; i++) {
+      const checkIn = toDateOnly(new Date(bookings[i].startDate));
+      const checkOut = toDateOnly(new Date(bookings[i].endDate));
+      if (
+        (activeTab === "upcoming" && checkIn > today) ||
+        (activeTab === "past" && checkOut < today) ||
+        activeTab === "all"
+      ) {
+        filtered.push(bookings[i]);
+      }
+      filtered.sort((a, b) => {
+        const aStart = new Date(a.startDate);
+        const bStart = new Date(b.startDate);
+        return bStart - aStart;
+      });
     }
-  }
 
     if (filtered.length === 0) {
-    bookingsContainer.innerHTML = `
-      <div class="empty-bookings">
+      bookingsContainer.innerHTML = `
+      <div class="empty-state">
         <p>No bookings to show</p>
-        <p class="empty-sub">Start exploring apartments and make your first booking! <i class="bi bi-stars"></i></p>
-        <a class="browse-btn" href="index.html"><i class="bi bi-search">  </i>Browse Apartments</a>
-      </div>
+        <p class="empty-sub">Start exploring apartments and make your first booking! <i class="bi bi-stars gold-icon"></i></p>
+        <button class="browse-btn" onclick="location.href='index.html'">
+        <i class="bi bi-search"></i> Browse Apartments</button> </div>
     `;
-    return;
-  }
+      return;
+    }
 
-  for (let i = 0; i < filtered.length; i++) {
-    const booking = filtered[i];
-    const checkIn = new Date(booking.startDate);
-    const checkOut = new Date(booking.endDate);
-    const nights = Math.ceil((checkOut - checkIn) / (1000 * 60 * 60 * 24));
-    const today = toDateOnly(new Date()); 
+    for (let i = 0; i < filtered.length; i++) {
+      const booking = filtered[i];
+      const checkIn = new Date(booking.startDate);
+      const checkOut = new Date(booking.endDate);
+      const nights = Math.ceil((checkOut - checkIn) / (1000 * 60 * 60 * 24));
+      const today = toDateOnly(new Date());
 
-    let apartment = null;
+      let apartment = null;
       for (let j = 0; j < amsterdam.length; j++) {
         if (amsterdam[j].listing_id === booking.listing_id) {
           apartment = amsterdam[j];
@@ -82,27 +87,33 @@ function renderBookings() {
         pricePerNight = parseFloat(priceStr);
       }
 
-    const totalPrice = nights * pricePerNight;
-    const isUpcoming = toDateOnly(checkIn) > today;
-    const isPast = toDateOnly(checkOut) < today;
-    let status = "Current";
+      const totalPrice = nights * pricePerNight;
+      const isUpcoming = toDateOnly(checkIn) > today;
+      const isPast = toDateOnly(checkOut) < today;
+      let status = "Current";
       if (isUpcoming) status = "Upcoming";
       if (isPast) status = "Past";
-    
-    const card = document.createElement("div");
-    card.className = "booking-card";
 
-    const image = (apartment && apartment.picture_url) ? apartment.picture_url : "images/default.jpg";
-      const name = (apartment && apartment.name) ? apartment.name : "Apartment in Amsterdam";
+      const card = document.createElement("div");
+      card.className = "booking-card";
+
+      const image =
+        apartment && apartment.picture_url
+          ? apartment.picture_url
+          : "images/default.jpg";
+      const name =
+        apartment && apartment.name ? apartment.name : "Apartment in Amsterdam";
 
       let cancelBtn = "";
       if (isUpcoming) {
         cancelBtn = `<button class="cancel-btn" data-id="${booking.listing_id}">Cancel Booking</button>`;
       }
 
-    card.innerHTML = `
+      card.innerHTML = `
       <div class="booking-info">
-        <h3><i class="bi bi-house-fill"></i> ${apartment?.name || "Apartment in Amsterdam"}</h3>
+        <h3><i class="bi bi-house-fill"></i> ${
+          apartment?.name || "Apartment in Amsterdam"
+        }</h3>
         <div class="booking-details">
           <p><strong>Check-in:</strong> ${booking.startDate}</p>
           <p><strong>Check-out:</strong> ${booking.endDate}</p>
@@ -121,19 +132,19 @@ function renderBookings() {
       }" alt="Apartment image" />
     `;
 
-    bookingsContainer.appendChild(card);
-  }
+      bookingsContainer.appendChild(card);
+    }
 
-  const cancelBtns = document.querySelectorAll(".cancel-btn");
+    const cancelBtns = document.querySelectorAll(".cancel-btn");
     for (let i = 0; i < cancelBtns.length; i++) {
       cancelBtns[i].addEventListener("click", function () {
         const id = this.getAttribute("data-id");
         cancelBooking(id);
-    });
+      });
+    }
   }
-}
 
-for (let i = 0; i < tabs.length; i++) {
+  for (let i = 0; i < tabs.length; i++) {
     tabs[i].addEventListener("click", function () {
       for (let j = 0; j < tabs.length; j++) {
         tabs[j].classList.remove("active");
@@ -144,19 +155,21 @@ for (let i = 0; i < tabs.length; i++) {
     });
   }
 
-
-function cancelBooking(id) {
-  for (let i = 0; i < bookings.length; i++) {
+  function cancelBooking(id) {
+    for (let i = 0; i < bookings.length; i++) {
       if (bookings[i].listing_id === id) {
         bookings.splice(i, 1);
         break;
       }
     }
-    localStorage.setItem(currentUsername + "_bookings", JSON.stringify(bookings));
+    localStorage.setItem(
+      currentUsername + "_bookings",
+      JSON.stringify(bookings)
+    );
     renderBookings();
   }
 
-const defaultTab = document.querySelector(".tab-btn[data-type='all']");
+  const defaultTab = document.querySelector(".tab-btn[data-type='all']");
   if (defaultTab) {
     defaultTab.classList.add("active");
   }

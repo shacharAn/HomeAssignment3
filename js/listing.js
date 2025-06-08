@@ -1,5 +1,5 @@
 let currentPage = 1;
-const pageSize = 10;
+const pageSize = 5;
 let allApartments = amsterdam;
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -105,7 +105,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentPage > 1) {
       currentPage--;
       displayApartments(allApartments);
-    }
+    window.scrollTo({
+      top: 750,
+      behavior: "smooth"
+    });
+  }
   });
 
   document.getElementById("nextPage").addEventListener("click", function () {
@@ -113,7 +117,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentPage < totalPages) {
       currentPage++;
       displayApartments(allApartments);
-    }
+    window.scrollTo({
+      top: 750,
+      behavior: "smooth"
+    });
+  }
   });
 
   displayApartments(allApartments);
