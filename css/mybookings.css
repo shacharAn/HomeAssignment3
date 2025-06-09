@@ -70,6 +70,14 @@
   border-radius: 20px;
   cursor: pointer;
   font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  background-color: #8d8d8d;
+  border: 1px solid #e8cbcb;
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .tab-btn.active {
@@ -78,14 +86,12 @@
   border-color: #434343;
 }
 
-.tab-btn span {
-  background-color: rgb(244, 243, 243);
-  color: #022457;
-  border-radius: 50%;
-  padding: 3px 8px;
-  margin-left: 5px;
-  font-weight: normal;
+@media (max-width: 768px) {
+  .booking-img {
+    margin-top: 12px;
+  }
+
+  .booking-details p {
+    margin-bottom: 12px;
+  }
 }
-
-
-

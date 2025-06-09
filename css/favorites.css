@@ -1,11 +1,27 @@
+#favorites-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 .favorite-card {
-  width: 320px;
-  overflow: hidden;
   position: relative;
+  background-color: #fffdfd;
+  padding: 15px 30px;
+  padding-top: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin: 32px auto;
+  max-width: 900px;
+  border: 1px solid #e0e0e0;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  justify-content: space-between;
+  min-height: 460px;
 }
 
 .favorite-card:hover {
@@ -17,15 +33,14 @@
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 10px;
-
+  border-radius: 8px;
 }
 
 .card-body {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-grow: 1;
 }
 
 .favorite-card .location {
@@ -51,7 +66,7 @@
 .empty-heart-icon i {
   font-size: 70px;
   color: #dc3545;
-  margin-top: 1px; 
+  margin-top: 1px;
 }
 
 @media (max-width: 768px) {
@@ -59,8 +74,8 @@
     width: 90%;
     margin: 0 auto;
   }
+
   .favorite-card img {
     height: 160px;
   }
 }
-

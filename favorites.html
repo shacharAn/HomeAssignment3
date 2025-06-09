@@ -11,7 +11,6 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/favorites.css" />
-
     <script src="js/data/amsterdam.js" defer></script>
     <script src="js/utils.js" defer></script>
     <script src="js/storage.js" defer></script>
@@ -20,14 +19,6 @@
 
   <body>
     <header>
-      <button
-        id="theme-toggle"
-        onclick="toggleDarkMode()"
-        class="theme-btn"
-        title="Toggle dark mode"
-      >
-        <i class="bi bi-moon-stars"></i>
-      </button>
       <nav class="nav-bar">
         <div class="nav-left">
           <button id="signout-btn">Sign Out</button>
@@ -57,6 +48,14 @@
         <div class="nav-right">
           <a href="login.html">Login</a>
           <a href="register.html">Register</a>
+          <button
+            id="theme-toggle"
+            onclick="toggleDarkMode()"
+            class="theme-btn"
+            title="Toggle dark mode"
+          >
+            <i class="bi bi-moon-stars"></i>
+          </button>
         </div>
       </nav>
     </header>

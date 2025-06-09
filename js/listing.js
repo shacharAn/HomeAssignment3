@@ -62,7 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
   fivePlusOption.textContent = "5+ rooms";
   roomSelect.appendChild(fivePlusOption);
 
-
   const minPriceInput = document.getElementById("minPrice");
   const maxPriceInput = document.getElementById("maxPrice");
 
@@ -81,7 +80,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const priceMatch = price >= minPrice && price <= maxPrice;
       const roomMatch =
         selectedRooms === "" ||
-        (selectedRooms === "5+" ? rooms >= 5 : rooms === parseInt(selectedRooms));
+        (selectedRooms === "5+"
+          ? rooms >= 5
+          : rooms === parseInt(selectedRooms));
 
       return ratingMatch && priceMatch && roomMatch;
     });
@@ -105,11 +106,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentPage > 1) {
       currentPage--;
       displayApartments(allApartments);
-    window.scrollTo({
-      top: 750,
-      behavior: "smooth"
-    });
-  }
+      window.scrollTo({
+        top: 750,
+        behavior: "smooth",
+      });
+    }
   });
 
   document.getElementById("nextPage").addEventListener("click", function () {
@@ -117,11 +118,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentPage < totalPages) {
       currentPage++;
       displayApartments(allApartments);
-    window.scrollTo({
-      top: 750,
-      behavior: "smooth"
-    });
-  }
+      window.scrollTo({
+        top: 750,
+        behavior: "smooth",
+      });
+    }
   });
 
   displayApartments(allApartments);
@@ -199,7 +200,9 @@ function displayApartments(apartments) {
 
     favIcon.addEventListener("click", () => {
       favList = JSON.parse(localStorage.getItem(favKey)) || [];
-      const index = favList.findIndex((fav) => fav.listing_id === ap.listing_id);
+      const index = favList.findIndex(
+        (fav) => fav.listing_id === ap.listing_id
+      );
       if (index > -1) {
         favList.splice(index, 1);
       } else {
@@ -210,12 +213,14 @@ function displayApartments(apartments) {
       favIcon.classList.toggle("bi-heart");
     });
 
-    card.querySelector(".toggle-details-btn").addEventListener("click", function () {
-      const detailsDiv = card.querySelector(".apartment-details");
-      const isHidden = detailsDiv.classList.contains("hidden");
-      detailsDiv.classList.toggle("hidden");
-      this.textContent = isHidden ? "▼ Hide details" : "➤ Show more";
-    });
+    card
+      .querySelector(".toggle-details-btn")
+      .addEventListener("click", function () {
+        const detailsDiv = card.querySelector(".apartment-details");
+        const isHidden = detailsDiv.classList.contains("hidden");
+        detailsDiv.classList.toggle("hidden");
+        this.textContent = isHidden ? "▼ Hide details" : "➤ Show more";
+      });
 
     track.appendChild(card);
   });

@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
    <section class="rent-header">
   <h2>Rent an Apartment</h2>
   <p>No apartment selected</p>
-  <p class="empty-sub">Please choose an apartment from the home page <i class="bi  gold-icon"></i></p>
+  <p class="empty-sub">Please choose an apartment from the home page <i class="bi bi-stars gold-icon"></i></p>
   <button onclick="window.location.href='index.html'" class="browse-btn">
     <i class="bi bi-search"></i> Browse Apartments
   </button>

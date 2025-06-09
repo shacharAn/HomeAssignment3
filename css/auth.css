@@ -1,7 +1,3 @@
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-}
 body.login-page,
 body.register-page {
   position: relative;
@@ -13,6 +9,7 @@ body.register-page {
   align-items: center;
   overflow: hidden;
 }
+
 .login-page::before,
 .register-page::before {
   content: "";
@@ -28,27 +25,25 @@ body.register-page {
     url("/images/amsterdam.jpg") no-repeat center center/cover;
   z-index: -1;
 }
+
 .login-container {
-  background-color: rgba(255, 255, 255, 0.9);
-  display: flex;
+  background-color: #fffdfd;
   flex-direction: column;
   justify-content: center;
-  padding: 50px 35px;
-  border-radius: 20px;
+  padding: 30px 40px;
+  border-radius: 10px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
   width: 100%;
   max-width: 400px;
   z-index: 1;
   height: auto;
 }
+
 .site-title {
   position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 20px;
-  color: rgb(100, 100, 187);
-  font-weight: bold;
+  top: 20px;
+  font-size: 35px;
+  color: rgb(1, 1, 34);
   text-align: center;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
   z-index: 2;
@@ -56,14 +51,15 @@ body.register-page {
   line-height: 1.2;
   max-width: 90%;
 }
+
 .site-subtitle {
   position: absolute;
   top: 80px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
-  color: rgb(62, 62, 152);
+  color: rgb(36, 36, 48);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   z-index: 2;
   padding: 0 20px;
@@ -86,67 +82,65 @@ body.register-page {
   padding: 12px;
   font-size: 15px;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 1px solid #444444;
 }
 
 button[type="submit"] {
-  background: linear-gradient(to right, #0d6efd, #0a58ca);
   width: 85%;
-  padding: 10px;
-  color: white;
   font-weight: 600;
   font-size: 14px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
   margin-top: 10px;
   margin-bottom: 12px;
 }
 
-button[type="submit"]:hover {
-  background: linear-gradient(to right, #084298, #052c65);
-}
 body.register-page button[type="submit"] {
-  background: linear-gradient(to right, #28a745, #218838);
+  background-color: #006b19;
 }
 
 body.register-page button[type="submit"]:hover {
-  background: linear-gradient(to right, #1e7e34, #155724);
+  background-color: #458855;
 }
+
 .register-link {
   text-align: center;
   margin-top: 15px;
 }
+
 .register-link a {
-  color: #007bff;
+  color: #002955;
+  font-weight: bold;
   text-decoration: none;
 }
+
 .register-link a:hover {
   text-decoration: underline;
 }
-@media (max-width: 500px) {
-  body.login-page::before {
-    background: url("/images/amsterdam.jpg") no-repeat center center/cover;
-  }
+
+@media (max-width: 768px) {
   .site-title {
-    font-size: 15px;
-    top: 15px;
+    font-size: 30px;
+    top: 55px;
     max-width: 90%;
     line-height: 1.2;
   }
 
   .site-subtitle {
-    font-size: 10px;
+    font-size: 17px;
     max-width: 90%;
     line-height: 1.2;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    top: 140px;
   }
+
   .login-container {
     max-width: 60%;
-    font-size: 15px;
+    font-size: 16px;
     padding: 30px 15px;
     margin-top: 120px;
     border-radius: 15px;
+  }
+
+  button[type="submit"] {
+    width: 92%;
   }
 }
