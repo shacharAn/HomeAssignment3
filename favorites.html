@@ -9,16 +9,25 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="css/main.css"/>    
-    <link rel="stylesheet" href="css/favorites.css"/>
-    
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/favorites.css" />
+
     <script src="js/data/amsterdam.js" defer></script>
     <script src="js/utils.js" defer></script>
+    <script src="js/storage.js" defer></script>
     <script src="js/favorites.js" defer></script>
   </head>
 
   <body>
     <header>
+      <button
+        id="theme-toggle"
+        onclick="toggleDarkMode()"
+        class="theme-btn"
+        title="Toggle dark mode"
+      >
+        <i class="bi bi-moon-stars"></i>
+      </button>
       <nav class="nav-bar">
         <div class="nav-left">
           <button id="signout-btn">Sign Out</button>
@@ -58,7 +67,7 @@
         <p>Apartments you've saved for later</p>
         <p id="favorites-count"></p>
       </section>
-      <div id="favorites-container" ></div>
+      <div id="favorites-container"></div>
     </main>
 
     <footer>

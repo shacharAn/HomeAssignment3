@@ -42,3 +42,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+  const icon = document.querySelector("#theme-toggle i");
+  icon.classList.toggle("bi-sun");
+  icon.classList.toggle("bi-moon-stars");
+}
+

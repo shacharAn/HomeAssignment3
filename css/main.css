@@ -72,6 +72,7 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
+
 }
 
 .nav-right a,
@@ -259,6 +260,147 @@ button[type="submit"]:hover,
   font-size: 15px; 
 }
 
+.theme-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2000;
+  background: none;
+  border: none;
+  font-size: 25px;
+  color: #333;
+  cursor: pointer;
+}
+
+body.dark-mode .theme-btn {
+  color: #f1f1f1;
+}
+
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode header,
+body.dark-mode .nav-bar,
+body.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+body.dark-mode .nav-center li a,
+body.dark-mode .nav-left span,
+body.dark-mode .nav-right a,
+body.dark-mode #signout-btn {
+  color: #e0e0e0;
+  background-color: #2c2c2c;
+  border-color: #555;
+}
+
+body.dark-mode .nav-center li a:hover,
+body.dark-mode .nav-center li a.active,
+body.dark-mode .nav-right a:hover,
+body.dark-mode #signout-btn:hover {
+  background-color: #3a3a3a;
+  color: #ffffff;
+}
+
+body.dark-mode .filter-section,
+body.dark-mode .apartment-card,
+body.dark-mode .rent-left,
+body.dark-mode .rent-right,
+body.dark-mode .favorite-card,
+body.dark-mode .rent-summary,
+body.dark-mode #rental-form,
+body.dark-mode .booking-card,
+body.dark-mode .login-container {
+  background-color: #1c1c1c;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode input[type="number"],
+body.dark-mode input[type="date"],
+body.dark-mode select {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border: 1px solid #555;
+}
+
+body.dark-mode .toggle-details-btn,
+body.dark-mode .rent-btn,
+body.dark-mode .book-btn,
+body.dark-mode .browse-btn,
+body.dark-mode #filterBtn,
+body.dark-mode #resetBtn,
+body.dark-mode .cancel-btn {
+  background-color: #333;
+  color: #fff;
+  border-color: #666;
+}
+
+body.dark-mode .toggle-details-btn:hover,
+body.dark-mode .rent-btn:hover,
+body.dark-mode .book-btn:hover,
+body.dark-mode .browse-btn:hover,
+body.dark-mode #filterBtn:hover,
+body.dark-mode #resetBtn:hover,
+body.dark-mode .cancel-btn:hover {
+  background-color: #444;
+}
+
+body.dark-mode .link {
+  background-color: #333;
+  border-color: #555;
+  color: #e0e0e0;
+}
+
+body.dark-mode .link:hover {
+  background-color: #444;
+}
+
+body.dark-mode .tab-btn {
+  background-color: #2e2e2e;
+  color: #ddd;
+  border-color: #555;
+}
+
+body.dark-mode .tab-btn.active {
+  background-color: #555;
+  color: #fff;
+}
+
+body.dark-mode .badge.upcoming {
+  background-color: #2a5031;
+  color: #9bf89b;
+}
+
+body.dark-mode .badge.past {
+  background-color: #582c2c;
+  color: #f7b1b1;
+}
+
+body.dark-mode .page-indicator,
+body.dark-mode .favorites-header h2,
+body.dark-mode .mybookings-header h2 {
+  color: #ffffff;
+}
+
+body.dark-mode .apartment-info h3,
+body.dark-mode .card-body h3 {
+  color: #aad1ff;
+}
+
+body.dark-mode .site-title,
+body.dark-mode .site-subtitle {
+  color: #d6d6ff;
+  text-shadow: none;
+}
+
+
 
 
 @media (max-width: 768px) {
@@ -315,6 +457,11 @@ button[type="submit"]:hover,
     margin-top: 8px;
     display: none;
     gap: 10px;
+  }
+   .theme-btn {
+    top: 35px;
+    right: 20px;
+    font-size: 25px;
   }
 
 }
