@@ -1,9 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   const username = localStorage.getItem("currentUser");
-  if (!username) {
-    window.location.href = "login.html";
-    return;
-  }
   const container = document.getElementById("favorites-container");
   const countDisplay = document.getElementById("favorites-count");
   const key = `${username}_favorites`;

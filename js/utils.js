@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
       location.href = "login.html";
     });
   }
+
   const hamburger = document.getElementById("hamburger");
   const navBar = document.querySelector(".nav-bar");
 
@@ -48,8 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
       navBar.classList.toggle("open");
     });
   }
-});
-document.addEventListener("DOMContentLoaded", () => {
+
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme === "dark") {
     document.body.classList.add("dark-mode");

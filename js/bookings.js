@@ -1,9 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
   const currentUser = localStorage.getItem("currentUser");
-  if (!currentUser) {
-    window.location.href = "login.html";
-    return;
-  }
   const bookingsContainer = document.getElementById("bookingsContainer");
   const allCount = document.getElementById("allCount");
   const upcomingCount = document.getElementById("upcomingCount");
