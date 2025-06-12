@@ -477,7 +477,7 @@ body.dark-mode .nav-center {
 
 @media (max-width: 768px) {
 
-   .hamburger-menu {
+    .hamburger-menu {
     display: block;
     align-self: center;
     margin-top: 10px;
