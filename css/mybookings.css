@@ -105,5 +105,15 @@
 @media (max-width: 768px) {
   .booking-card {
     width: 90%;
+    padding: 10px;
 }
+.booking-info{
+  margin: 0 0 16px 0;
+}
+.booking-img{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
 }
