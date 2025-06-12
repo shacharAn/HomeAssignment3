@@ -71,17 +71,21 @@ document.addEventListener("DOMContentLoaded", () => {
   <img src="${imgSrc}" alt="${apt.name}" />
   <div class="card-body">
     <h3>${apt.name}</h3>
-    <p class="location">
-      <i class="bi bi-geo-alt-fill text-success"></i> ${
-        apt.neighbourhood_cleansed
-      }
-    </p>
-    <div class="price-rating">
-      <span>Price per night: ${price}</span>
-      <span><i class="bi bi-star-fill"></i> ${parseFloat(rating).toFixed(
-        1
-      )} (${reviews})</span>
-    </div>
+<div class="card-meta">
+  <div class="meta-row">
+    <i class="bi bi-geo-alt-fill text-success"></i>
+    <span>${apt.neighbourhood_cleansed}</span>
+  </div>
+  <div class="meta-row">
+    <i class="bi bi-cash-coin text-dark"></i>
+    <span>Price per night: ${price}</span>
+  </div>
+  <div class="meta-row">
+    <i class="bi bi-star-fill text-warning"></i>
+    <span>${parseFloat(rating).toFixed(1)} (${reviews})</span>
+  </div>
+</div>
+
   </div>
   <button class="book-btn">Rent</button>
 `;

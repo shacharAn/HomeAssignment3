@@ -12,16 +12,18 @@
   position: relative;
   background-color: #fffdfd;
   padding: 15px 30px;
-  padding-top: 20px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  margin: 32px auto;
-  max-width: 900px;
   border: 1px solid #e0e0e0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 460px;
+  width: 380px;    
+  height: 580px;       
+  box-sizing: border-box;
+}
+.favorites-header{
+  font-size: 20px;
 }
 
 .favorite-card:hover {
@@ -43,36 +45,44 @@
   flex-grow: 1;
 }
 
-.favorite-card .location {
-  font-size: 15px;
-  color: #333;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 0px;
-}
-
-.favorite-card .price-rating {
-  margin: 0 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: #000000;
-  padding: 20px;
-}
-
 .empty-heart-icon i {
   font-size: 70px;
   color: #dc3545;
   margin-top: 1px;
 }
 
+.card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 10px 0;
+  margin-bottom: 20px;
+}
+
+.meta-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 19px;
+  color: #2d2c2c;
+}
+
+.meta-row i {
+  width: 24px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.card-body h3 {
+  font-size: 22px;
+  margin:28px 0 4px!important;
+};
+
+
 @media (max-width: 768px) {
   .favorite-card {
     width: 90%;
-    margin: 0 auto;
+    margin: auto;
   }
 
   .favorite-card img {

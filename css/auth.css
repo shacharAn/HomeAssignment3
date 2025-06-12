@@ -10,6 +10,11 @@ body.register-page {
   overflow: hidden;
 }
 
+.login-container h2{
+  font-size: 38px;
+  margin-top: 5px;
+}
+
 .login-page::before,
 .register-page::before {
   content: "";
@@ -27,12 +32,13 @@ body.register-page {
 }
 
 .login-container {
-  background-color: #fffdfd;
+  background-color: #f6f4f4;
   flex-direction: column;
   justify-content: center;
   padding: 30px 40px;
   border-radius: 10px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+  border: 2px solid #aaacad;
   width: 100%;
   max-width: 400px;
   z-index: 1;
@@ -41,8 +47,8 @@ body.register-page {
 
 .site-title {
   position: absolute;
-  top: 20px;
-  font-size: 35px;
+  top: 50px;
+  font-size: 42px;
   color: rgb(1, 1, 34);
   text-align: center;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
@@ -54,10 +60,10 @@ body.register-page {
 
 .site-subtitle {
   position: absolute;
-  top: 80px;
+  top: 135px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   color: rgb(36, 36, 48);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -75,26 +81,40 @@ body.register-page {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
+  font-size: 20px;
+  padding: 12px;
 }
 
 .form-group input {
-  width: 80%;
+  width: 400px;
+  max-width: 90%;
+  margin: 0 auto;
+  display: block;
   padding: 12px;
-  font-size: 15px;
+  font-size: 16px;
   border-radius: 6px;
   border: 1px solid #444444;
 }
 
+.login-container p{
+  font-size: 20px;
+  margin-top: 20px;
+
+}
+
 button[type="submit"] {
-  width: 85%;
+  width: 300px;
+  max-width: 90%;
+  margin: 0 auto;
+  display: block;
   font-weight: 600;
-  font-size: 14px;
-  margin-top: 10px;
-  margin-bottom: 12px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 body.register-page button[type="submit"] {
-  background-color: #006b19;
+  background-color: #377946;
 }
 
 body.register-page button[type="submit"]:hover {
@@ -118,18 +138,18 @@ body.register-page button[type="submit"]:hover {
 
 @media (max-width: 768px) {
   .site-title {
-    font-size: 30px;
+    font-size: 40px;
     top: 55px;
     max-width: 90%;
     line-height: 1.2;
   }
 
   .site-subtitle {
-    font-size: 17px;
+    font-size: 18px;
     max-width: 90%;
     line-height: 1.2;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    top: 140px;
+    top: 175px;
   }
 
   .login-container {

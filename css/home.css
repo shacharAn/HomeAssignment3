@@ -15,7 +15,7 @@
 
 .hero-section p {
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .features-row {
@@ -23,6 +23,12 @@
   justify-content: center;
   gap: 35px;
   flex-wrap: wrap;
+  font-size: 18px;
+}
+
+.hero-section h2 {
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .filter-row-group {
@@ -46,7 +52,7 @@
 .filter-row label {
   font-weight: 600;
   margin-bottom: 8px;
-  font-size: 17px;
+  font-size: 19px;
 }
 
 .filter-row select,
@@ -59,7 +65,7 @@
   width: 100%;
   box-sizing: border-box;
   margin-top: 25px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #resetBtn:hover {
@@ -89,6 +95,7 @@
 
 .filter-row p {
   margin-top: 30px;
+  font-size: 17px;
 }
 
 .apartment-card {
@@ -107,6 +114,11 @@
   padding: 25px;
   margin: 16px auto;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+  font-size:18px;
+}
+
+.apartment-card h3{
+  font-size: 24px;
 }
 
 .apartment-details {
@@ -145,7 +157,7 @@
 .rent-btn {
   padding: 6px 16px;
   margin-top: 8px;
-  font-size: 15px;
+  font-size: 18px;
   border: 1px solid #ccc;
   border-radius: 8px;
   cursor: pointer;
@@ -166,6 +178,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .toggle-details-btn:hover {
@@ -211,12 +224,14 @@
 #pagination button {
   background-color: #1e2833;
   color: white;
-  padding: 8px 12px;
-  margin: 8px;
+  padding: 8px 18px;
+  margin: 6px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 17px;
 }
+
 #pagination button:hover {
   background-color: #3d4046;
   transform: scale(1.02);
@@ -227,11 +242,17 @@
   text-align: center;
   font-weight: bold;
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .hidden {
   display: none;
+}
+
+#filterBtn,
+#resetBtn {
+  padding: 11px 22px; 
+  font-size: 18px; 
 }
 
 @media (max-width: 768px) {
@@ -241,6 +262,10 @@
     gap: 16px;
     text-align: center;
   }
+
+.apartment-card h3{
+  font-size: 22px;
+}
 
   .filter-row-group {
     flex-direction: column;
@@ -253,17 +278,23 @@
     max-width: 350px;
   }
 
-  .hero-section h1 {
-    font-size: 28px;
-  }
-
   .hero-section h2 {
     font-size: 24px;
+    font-weight: bold;
   }
 
   .hero-section h1 {
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 0.05px;
+  }
+
+  .hero-section p {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .features-row {
+    font-size: 17px;
   }
 
   .apartment-card {
@@ -306,18 +337,14 @@
     width: 90%;
     max-width: 240px;
     margin: 0 auto;
+    font-size: 18px;
   }
 
   .fav-icon-container {
     position: absolute;
     top: 2px;
     right: 20px;
-    font-size: 34px;
+    font-size: 42px;
   }
 
-  .favorite-card .heart {
-    top: 8px;
-    right: 8px;
-    font-size: 24px;
-  }
 }
