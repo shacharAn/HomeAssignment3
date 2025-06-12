@@ -12,7 +12,6 @@ function checkAvailability(listingId, startDate, endDate) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const currentUser = localStorage.getItem("currentUser");
   const selectedListingJSON = localStorage.getItem("selectedListing");
   if (!selectedListingJSON) {
     document.querySelector(".rent-container").innerHTML = `

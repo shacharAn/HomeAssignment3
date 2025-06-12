@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const username = localStorage.getItem("currentUser");
   const container = document.getElementById("favorites-container");
   const countDisplay = document.getElementById("favorites-count");
+  const username = localStorage.getItem("currentUser");
   const key = `${username}_favorites`;
   let favoriteIds = localStorage.getItem(key);
 
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ? target
         : target.parentNode;
       const id = heartDiv.getAttribute("data-id");
-      const key = `${username}_favorites`;
+      const key = localStorage.getItem("currentUser") + "_favorites";
       let favorites = JSON.parse(localStorage.getItem(key)) || [];
 
       const updated = favorites.filter((fav) => fav.listing_id !== id);
