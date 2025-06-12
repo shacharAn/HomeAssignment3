@@ -1,13 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const currentUser = localStorage.getItem("currentUser");
+  if (!currentUser) {
+    window.location.href = "login.html";
+    return;
+  }
   const bookingsContainer = document.getElementById("bookingsContainer");
   const allCount = document.getElementById("allCount");
   const upcomingCount = document.getElementById("upcomingCount");
   const pastCount = document.getElementById("pastCount");
   const tabs = document.querySelectorAll(".tab-btn");
 
-  const currentUsername = localStorage.getItem("currentUser");
   const bookings =
-    JSON.parse(localStorage.getItem(`${currentUsername}_bookings`)) || [];
+    JSON.parse(localStorage.getItem(`${currentUser}_bookings`)) || [];
 
   let activeTab = "all";
 
@@ -42,12 +46,13 @@ document.addEventListener("DOMContentLoaded", function () {
       ) {
         filtered.push(bookings[i]);
       }
-      filtered.sort((a, b) => {
-        const aStart = new Date(a.startDate);
-        const bStart = new Date(b.startDate);
-        return bStart - aStart;
-      });
     }
+
+    filtered.sort((a, b) => {
+      const aStart = new Date(a.startDate);
+      const bStart = new Date(b.startDate);
+      return bStart - aStart;
+    });
 
     if (filtered.length === 0) {
       bookingsContainer.innerHTML = `
@@ -163,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
     localStorage.setItem(
-      currentUsername + "_bookings",
+      currentUser + "_bookings",
       JSON.stringify(bookings)
     );
     renderBookings();

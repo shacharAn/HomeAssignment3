@@ -3,9 +3,13 @@ const pageSize = 5;
 let allApartments = amsterdam;
 
 document.addEventListener("DOMContentLoaded", function () {
+  const currentUser = getCurrentUser();
+  if (!currentUser) {
+    window.location.href = "login.html";
+    return;
+  }
   const currentUserSpan = document.getElementById("currentUser");
   const signoutBtn = document.getElementById("signout-btn");
-  const currentUser = getCurrentUser();
 
   if (currentUserSpan) {
     currentUserSpan.innerHTML = currentUser

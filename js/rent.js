@@ -12,6 +12,12 @@ function checkAvailability(listingId, startDate, endDate) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  const currentUser = localStorage.getItem("currentUser");
+  if (!currentUser) {
+    window.location.href = "login.html";
+    return;
+  }
+
   const selectedListingJSON = localStorage.getItem("selectedListing");
   if (!selectedListingJSON) {
     document.querySelector(".rent-container").innerHTML = `
