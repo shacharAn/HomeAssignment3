@@ -3,18 +3,35 @@ const pageSize = 5;
 let allApartments = amsterdam;
 
 document.addEventListener("DOMContentLoaded", function () {
+  const currentUser = getCurrentUser();
+  if (!currentUser) {
+    location.href = "login.html";
+  }
+
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    const mode = document.body.classList.contains("dark-mode") ? "dark" : "light";
+    localStorage.setItem("theme", mode);
+  }
+
+  const themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", toggleDarkMode);
+  }
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+
   const currentUserSpan = document.getElementById("currentUser");
   const signoutBtn = document.getElementById("signout-btn");
-  const currentUser = getCurrentUser();
 
-  if (currentUserSpan) {
-    currentUserSpan.innerHTML = currentUser
-      ? `<i class="bi bi-person-fill"></i> ${currentUser}`
-      : `<i class="bi bi-person-fill"></i> Guest`;
+  if (currentUserSpan && currentUser) {
+    currentUserSpan.innerHTML = `<i class="bi bi-person-fill"></i> ${currentUser}`;
   }
 
   if (signoutBtn) {
-    signoutBtn.style.display = currentUser ? "inline-block" : "none";
     signoutBtn.addEventListener("click", function () {
       clearUserData();
       location.href = "login.html";

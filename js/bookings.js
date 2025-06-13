@@ -1,4 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const currentUser = getCurrentUser();
+  if (!currentUser) {
+    location.href = "login.html";
+  }
+
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    const mode = document.body.classList.contains("dark-mode") ? "dark" : "light";
+    localStorage.setItem("theme", mode);
+  }
+
+  const themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", toggleDarkMode);
+  }
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+
   const bookingsContainer = document.getElementById("bookingsContainer");
   const allCount = document.getElementById("allCount");
   const upcomingCount = document.getElementById("upcomingCount");
@@ -42,12 +63,13 @@ document.addEventListener("DOMContentLoaded", function () {
       ) {
         filtered.push(bookings[i]);
       }
-      filtered.sort((a, b) => {
-        const aStart = new Date(a.startDate);
-        const bStart = new Date(b.startDate);
-        return bStart - aStart;
-      });
     }
+
+    filtered.sort((a, b) => {
+      const aStart = new Date(a.startDate);
+      const bStart = new Date(b.startDate);
+      return bStart - aStart;
+    });
 
     if (filtered.length === 0) {
       bookingsContainer.innerHTML = `
@@ -65,7 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
       const checkIn = new Date(booking.startDate);
       const checkOut = new Date(booking.endDate);
       const nights = Math.ceil((checkOut - checkIn) / (1000 * 60 * 60 * 24));
-      const today = toDateOnly(new Date());
 
       let apartment = null;
       for (let j = 0; j < amsterdam.length; j++) {

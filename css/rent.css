@@ -2,15 +2,24 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
 }
 
 .rent-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 40px;
   flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-end;
 }
+
+.browse-wrapper {
+  text-align: center;
+  margin-top: 150px;
+} 
 
 .rent-left,
 .rent-right {
@@ -25,7 +34,21 @@
   max-height: 200px;
   border-radius: 10px;
   object-fit: cover;
-  margin-bottom: 15px;
+}
+
+.rent-header h2{
+  margin-top: 18px;
+}
+
+.rent-header p{
+  text-align: center;
+  font-size: 16.5px;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.rent-header .empty-sub {
+  margin-bottom: 8px; 
 }
 
 .rent-summary {
@@ -33,28 +56,26 @@
   border: 1px solid #b2b2b2;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  max-width: 500px;
   margin: 10px 10px;
-  line-height: 1.6;
+  line-height: 1.1;
   margin-left: 0;
   margin-right: auto;
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
   max-width: 100%;
-  font-size: 17px;
   padding-left: 15px;
+  font-size: 16.5px;
 }
 
 .rent-left .card-body h3 {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
   margin-bottom: 12px;
 }
 
 .rent-left .card-body p {
-  font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.2;
   margin: 8px 0;
 }
 
@@ -64,61 +85,41 @@
 }
 
 .rent-summary h3 {
-  font-size: 24px;
   color: #1e3c5c;
 }
 
-.min-nights-text {
-  font-size: 17px;
-  margin: 12px 0;
-}
-
 .rent-right h3 {
-  font-size: 22px;
+  font-size: 21px;
   font-weight: bold;
   margin-bottom: 16px;
 }
 
 .min-nights-text {
-  font-size: 19px;
+  font-size: 16.5px;
 }
 
 .result-success {
   color: #198754;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .result-error {
   color: #dc3545;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 #result {
-  margin-top: 15px;
+  margin-top: 14px;
 }
 
 #rental-form label {
   font-weight: bold;
   display: block;
   margin-top: 12px;
-  margin-bottom: 4px;
-  font-size: 19px;
-}
-
-#rental-form .date-row {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-#rental-form .date-row input[type="date"] {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  margin-bottom: 5px;
+  font-size: 17px;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -133,7 +134,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .form-group label {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-weight: bold;
 }
 
@@ -148,10 +149,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
 }
 
-.rent-header {
-  font-size: 19px;
-}
-
 #rental-form {
   background-color: #ffffff;
   padding: 20px;
@@ -161,5 +158,68 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 #payment-form {
-  font-size: 18px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  
+  .rent-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rent-left,
+  .rent-right {
+    max-width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .rent-img {
+    max-height: 160px;
+  }
+
+  .rent-header h2 {
+    text-align: center;
+  }
+
+  .rent-header p {
+    font-size: 15px;
+    margin-bottom: -5px;
+  }
+
+  .rent-summary {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .rent-left .card-body h3,
+  .rent-right h3 {
+    font-size: 18px;
+  }
+
+  .rent-left .card-body p,
+  .min-nights-text,
+  #rental-form label,
+  #payment-form {
+    font-size: 14px;
+  }
+
+  .form-group input {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  #rental-form {
+    padding: 16px;
+  }
+
+  .result-success,
+  .result-error {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .browse-wrapper {
+    margin-top: 60px;
+  }
 }

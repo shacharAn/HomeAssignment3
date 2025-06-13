@@ -9,6 +9,23 @@ document.addEventListener("DOMContentLoaded", function () {
       passwordInput.setCustomValidity("");
     }
   });
+
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    const mode = document.body.classList.contains("dark-mode") ? "dark" : "light";
+    localStorage.setItem("theme", mode);
+  }
+
+  const themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", toggleDarkMode);
+  }
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+
   const registerFormElement = document.getElementById("registerForm");
   if (registerFormElement) {
     registerFormElement.addEventListener(

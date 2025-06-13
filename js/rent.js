@@ -12,20 +12,40 @@ function checkAvailability(listingId, startDate, endDate) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  const currentUser = localStorage.getItem("currentUser");
+  if (!currentUser) {
+    location.href = "login.html";
+  }
+
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    const mode = document.body.classList.contains("dark-mode") ? "dark" : "light";
+    localStorage.setItem("theme", mode);
+  }
+
+  const themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", toggleDarkMode);
+  }
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+
   const selectedListingJSON = localStorage.getItem("selectedListing");
   if (!selectedListingJSON) {
     document.querySelector(".rent-container").innerHTML = `
    <section class="rent-header">
-  <h2>Rent an Apartment</h2>
-  <p>No apartment selected</p>
-  <p class="empty-sub">Please choose an apartment from the home page <i class="bi bi-stars gold-icon"></i></p>
-  <button onclick="window.location.href='index.html'" class="browse-btn">
-    <i class="bi bi-search"></i> Browse Apartments
-  </button>
-</section>
-
-`;
-
+     <h2>Rent an Apartment</h2>
+     <p>No apartment selected</p>
+     <div class="browse-wrapper">
+     <p class="empty-sub">Please choose an apartment from the home page <i class="bi bi-stars gold-icon"></i></p>
+     <button onclick="window.location.href='index.html'" class="browse-btn">
+      <i class="bi bi-search"></i> Browse Apartments
+      </button>
+    </div>
+   </section>`;
     return;
   }
 
