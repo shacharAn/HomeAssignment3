@@ -46,10 +46,9 @@ document.addEventListener("DOMContentLoaded", function () {
           return;
         }
 
-        let registeredUsersList =
-          JSON.parse(localStorage.getItem("usersList")) || [];
-        const existingUser = registeredUsersList.find(
-          (userObject) => userObject.username === usernameInputValue
+        let usersList = loadFromStorage("usersList") || [];
+        const existingUser = usersList.find(
+          (user) => user.username === usernameInputValue
         );
 
         if (existingUser) {
@@ -57,11 +56,13 @@ document.addEventListener("DOMContentLoaded", function () {
           return;
         }
 
-        registeredUsersList.push({
+        usersList.push({
           username: usernameInputValue,
           password: passwordInputValue,
         });
-        localStorage.setItem("usersList", JSON.stringify(registeredUsersList));
+
+        saveToStorage("usersList", usersList);
+
         alert("Registration successful! Redirecting to login...");
         location.href = "login.html";
       }
@@ -82,22 +83,25 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Please fill in both fields.");
         return;
       }
-      const registeredUsersList =
-        JSON.parse(localStorage.getItem("usersList")) || [];
-      const matchedUserObject = registeredUsersList.find(
-        (userObject) =>
-          userObject.username === usernameInputValue &&
-          userObject.password === passwordInputValue
+
+      let usersList = loadFromStorage("usersList") || [];
+      const matchedUser = usersList.find(
+        (user) =>
+          user.username === usernameInputValue &&
+          user.password === passwordInputValue
       );
 
-      if (!matchedUserObject) {
+      if (!matchedUser) {
         alert("Invalid username or password.");
         return;
       }
 
-      localStorage.setItem("currentUser", usernameInputValue);
+      saveToStorage("currentUser", usernameInputValue);
+
       alert("Login successful!");
       location.href = "index.html";
     });
   }
 });
+
+

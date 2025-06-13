@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const user = localStorage.getItem("currentUser");
+  const user = getCurrentUser();
   const currentPage = location.pathname.split("/").pop();
   const pagesToProtect = [
     "rent.html",

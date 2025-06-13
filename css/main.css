@@ -6,7 +6,6 @@ body {
 }
 
 * {
-  word-break: normal;
   overflow-wrap: break-word;
 }
 
@@ -212,9 +211,13 @@ button[type="submit"]:hover,
   cursor: pointer;
 }
 
+.browse-wrapper {
+  text-align: center;
+  margin-top: 150px;
+}
+
 .mybookings-header,
-.favorites-header,
-.mybookings-header {
+.favorites-header {
   margin: 12px auto 4px;
   display: flex;
   flex-direction: column;
@@ -295,6 +298,7 @@ body.dark-mode.login-page::before,
 body.dark-mode.register-page::before {
   filter: brightness(45%);
 }
+
 body.dark-mode .theme-btn {
   color: #f1f1f1;
 }
@@ -484,11 +488,16 @@ body.dark-mode .nav-center {
   border: none;
 }
 
-@media (max-width: 768px) {
-  * {
-    word-break: normal;
-    overflow-wrap: break-word;
-  }
+body.dark-mode .form-btn.small-btn {
+  background-color: #3a3a3a;
+  color: white;
+}
+
+body.dark-mode .form-btn.small-btn:hover {
+  background-color: #323232;
+}
+
+@media (max-width: 767px) {
 
   .hamburger-menu {
     display: block;
@@ -530,6 +539,7 @@ body.dark-mode .nav-center {
   .nav-center li {
     list-style: none;
   }
+
   .nav-center li a {
     background-color: #d4d9dd;
     color: #2c2c2c;
@@ -574,7 +584,7 @@ body.dark-mode .nav-center {
     font-size: 25px;
   }
 
-    footer {
+  footer {
     padding: 10px 5px;
     font-size: 14px;
     text-align: center;
@@ -590,10 +600,16 @@ body.dark-mode .nav-center {
     font-size: 14px;
     word-break: break-word;
   }
+
+  .browse-wrapper {
+    margin-top: 60px;
+  }
+
 }
 
 
 @media (min-width: 768px) and (max-width: 1100px) {
+
   .nav-center {
     gap: 20px;
   }
@@ -612,4 +628,5 @@ body.dark-mode .nav-center {
     font-weight: 400;
     font-size: 12px;
   }
+  
 }

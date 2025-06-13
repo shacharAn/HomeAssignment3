@@ -27,9 +27,17 @@
 }
 
 .booking-details p {
-  margin-top: 10px;
-  margin-bottom: 12px;
+  margin: 4px 0;
   font-size: 17px;
+  flex: 1 1 100%;
+}
+
+.booking-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .badge {
@@ -42,7 +50,6 @@
 .mybookings-header h2 {
   margin-top: 18px;
 }
-
 
 .badge.upcoming {
   background-color: #d4f7dc;
@@ -109,18 +116,35 @@
   font-size: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+
   .booking-card {
     width: 90%;
     padding: 10px;
-}
-.booking-info{
-  margin: 0 0 16px 0;
-}
-.booking-img{
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-}
+  }
+
+  .booking-info {
+    margin: 0 0 16px 0;
+  }
+
+  .booking-img {
+    width: 90%;
+    max-width: 180px;
+    height: 160px;
+  }
+
+  .tab-btn,
+  .cancel-btn,
+  .badge {
+    font-size: 14px;
+  }
+
+  .booking-details p {
+    font-size: 16px;
+  }
+
+  .booking-card h3 {
+    font-size: 18px;
+  }
 
 }

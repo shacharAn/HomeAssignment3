@@ -4,7 +4,8 @@
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .rent-content {
@@ -16,17 +17,15 @@
   justify-content: flex-end;
 }
 
-.browse-wrapper {
-  text-align: center;
-  margin-top: 150px;
-} 
-
 .rent-left,
 .rent-right {
   flex: 1;
   min-width: 300px;
   max-width: 500px;
+  box-sizing: border-box;
   height: fit-content;
+  padding: 15px;
+  margin: 10px auto;
 }
 
 .rent-img {
@@ -36,11 +35,11 @@
   object-fit: cover;
 }
 
-.rent-header h2{
+.rent-header h2 {
   margin-top: 18px;
 }
 
-.rent-header p{
+.rent-header p {
   text-align: center;
   font-size: 16.5px;
   margin-top: auto;
@@ -48,7 +47,7 @@
 }
 
 .rent-header .empty-sub {
-  margin-bottom: 8px; 
+  margin-bottom: 8px;
 }
 
 .rent-summary {
@@ -66,6 +65,7 @@
   max-width: 100%;
   padding-left: 15px;
   font-size: 16.5px;
+  box-sizing: border-box;
 }
 
 .rent-left .card-body h3 {
@@ -154,15 +154,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #ccc;
+  box-sizing: border-box;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 #payment-form {
   font-size: 16px;
+  box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  
+@media (max-width: 767px) {
+
   .rent-content {
     flex-direction: column;
     align-items: center;
@@ -219,7 +221,4 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-align: center;
   }
 
-  .browse-wrapper {
-    margin-top: 60px;
-  }
 }

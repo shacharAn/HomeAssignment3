@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
-    const mode = document.body.classList.contains("dark-mode") ? "dark" : "light";
+    const mode = document.body.classList.contains("dark-mode")
+      ? "dark"
+      : "light";
     localStorage.setItem("theme", mode);
   }
 
@@ -25,9 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const upcomingCount = document.getElementById("upcomingCount");
   const pastCount = document.getElementById("pastCount");
   const tabs = document.querySelectorAll(".tab-btn");
-
-  const currentUsername = localStorage.getItem("currentUser");
-  const bookings =
+  const currentUsername = currentUser; const bookings =
     JSON.parse(localStorage.getItem(`${currentUsername}_bookings`)) || [];
 
   let activeTab = "all";
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (filtered.length === 0) {
       bookingsContainer.innerHTML = `
-      <div class="empty-state">
+      <div class="empty-state browse-wrapper">
         <p>No bookings to show</p>
         <p class="empty-sub">Start exploring apartments and make your first booking! <i class="bi bi-stars gold-icon"></i></p>
         <button class="browse-btn" onclick="location.href='index.html'">
@@ -125,15 +125,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const name =
         apartment && apartment.name ? apartment.name : "Apartment in Amsterdam";
 
-      let cancelBtn = "";
-      if (isUpcoming) {
-        cancelBtn = `<button class="cancel-btn" data-id="${booking.listing_id}">Cancel Booking</button>`;
-      }
-
       card.innerHTML = `
       <div class="booking-info">
-        <h3><i class="bi bi-house-fill"></i> ${
-          apartment?.name || "Apartment in Amsterdam"
+        <h3><i class="bi bi-house-fill"></i> ${apartment?.name || "Apartment in Amsterdam"
         }</h3>
         <div class="booking-details">
           <p><strong>Check-in:</strong> ${booking.startDate}</p>
@@ -141,16 +135,14 @@ document.addEventListener("DOMContentLoaded", function () {
           <p><strong>Nights:</strong> ${nights}</p>
           <p><strong>Total price:</strong> $${totalPrice.toFixed(2)}</p>
           <span class="badge ${status.toLowerCase()}">${status}</span>
-          ${
-            isUpcoming
-              ? `<button class="cancel-btn" data-id="${booking.listing_id}">Cancel Booking</button>`
-              : ""
-          }
+          ${isUpcoming
+          ? `<button class="cancel-btn" data-id="${booking.listing_id}">Cancel Booking</button>`
+          : ""
+        }
         </div>
       </div>
-      <img class="booking-img" src="${
-        apartment?.picture_url || "images/default.jpg"
-      }" alt="Apartment image" />
+      <img class="booking-img" src="${apartment?.picture_url || "images/default.jpg"
+        }" alt="Apartment image" />
     `;
 
       bookingsContainer.appendChild(card);

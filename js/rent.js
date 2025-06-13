@@ -12,7 +12,7 @@ function checkAvailability(listingId, startDate, endDate) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const currentUser = localStorage.getItem("currentUser");
+  const currentUser = getCurrentUser();
   if (!currentUser) {
     location.href = "login.html";
   }
@@ -56,21 +56,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("listing-details").innerHTML = `
     <div class="card mb-4">
-      <img src="${
-        listing.picture_url
-      }" class="card-img-top rent-img" alt="Listing image">
+      <img src="${listing.picture_url
+    }" class="card-img-top rent-img" alt="Listing image">
       <div class="card-body">
         <h3>${listing.name}</h3>
         <p class="text-muted">
-          <i class="bi bi-geo-alt-fill"></i> ${
-            listing.neighbourhood_cleansed || "Unknown"
-          }
+          <i class="bi bi-geo-alt-fill"></i> ${listing.neighbourhood_cleansed || "Unknown"
+    }
         </p>
         <p><strong>Price:</strong> ${listing.price}</p>
         <p><strong>Min nights:</strong> ${listing.minimum_nights}</p>
         <p><i class="bi bi-star-fill text-warning"></i> ${parseFloat(
-          listing.review_scores_rating || 4.8
-        ).toFixed(1)} (${listing.number_of_reviews || 0})</p>
+      listing.review_scores_rating || 4.8
+    ).toFixed(1)} (${listing.number_of_reviews || 0})</p>
         <p>${listing.description}</p>
         <div id="map" style="height: 300px; margin-top: 1rem;"></div>
       </div>
@@ -172,20 +170,21 @@ document.addEventListener("DOMContentLoaded", () => {
       const expiryDate = document.getElementById("expiryDate").value;
       const cvv = document.getElementById("cvv").value;
 
-      if (!/^\d{16}$/.test(cardNumber)) {
-        alert("Invalid card number");
+      if (cardNumber.length !== 16 || isNaN(cardNumber)) {
+        alert("Card number must be 16 digits");
         return;
       }
-      if (!/^\d{2}\/\d{2}$/.test(expiryDate)) {
-        alert("Invalid expiry date. Use MM/YY format.");
+
+      if (!expiryDate.includes("/") || expiryDate.length !== 5) {
+        alert("Expiry date must be in MM/YY format");
         return;
       }
-      if (!/^\d{3,4}$/.test(cvv)) {
+
+      if (cvv.length < 3 || cvv.length > 4 || isNaN(cvv)) {
         alert("Invalid CVV");
         return;
       }
 
-      const currentUser = localStorage.getItem("currentUser");
       const key = `${currentUser}_bookings`;
       const start = startDateInput.value;
       const end = endDateInput.value;

@@ -1,3 +1,20 @@
+function saveToStorage(key, value) {
+  if (typeof value === "string") {
+    localStorage.setItem(key, value);
+  } else {
+    localStorage.setItem(key, JSON.stringify(value));
+  }
+}
+
+function loadFromStorage(key) {
+  const value = localStorage.getItem(key);
+  return value ? JSON.parse(value) : null;
+}
+
+function removeFromStorage(key) {
+  localStorage.removeItem(key);
+}
+
 function getCurrentUser() {
   return localStorage.getItem("currentUser");
 }
@@ -8,17 +25,12 @@ function clearUserData() {
 
 function getAllBookings() {
   const bookings = [];
-
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
-    const suffix = "_bookings";
-    if (key.indexOf(suffix) === key.length - suffix.length) {
+    if (key.endsWith("_bookings")) {
       const userBookings = JSON.parse(localStorage.getItem(key));
-      for (let j = 0; j < userBookings.length; j++) {
-        bookings.push(userBookings[j]);
-      }
+      bookings.push(...userBookings);
     }
   }
-
   return bookings;
 }
