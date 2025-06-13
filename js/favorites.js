@@ -1,39 +1,52 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const currentUser = getCurrentUser();
+  if (!currentUser) {
+    location.href = "login.html";
+  }
+
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    const mode = document.body.classList.contains("dark-mode") ? "dark" : "light";
+    localStorage.setItem("theme", mode);
+  }
+
+  const themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", toggleDarkMode);
+  }
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+  }
   const container = document.getElementById("favorites-container");
   const countDisplay = document.getElementById("favorites-count");
-  const username = localStorage.getItem("currentUser");
-  const key = `${username}_favorites`;
-  let favoriteIds = localStorage.getItem(key);
+  const key = `${currentUser}_favorites`;
 
+  let favoriteIds = localStorage.getItem(key);
   favoriteIds = favoriteIds ? JSON.parse(favoriteIds) : [];
 
   const favorites = [];
   for (let i = 0; i < amsterdam.length; i++) {
     for (let j = 0; j < favoriteIds.length; j++) {
-      if (amsterdam[i].listing_id === favoriteIds[j].listing_id) {
-        favorites.push(amsterdam[i]);
-        break;
-      }
+      if
+        (amsterdam[i].listing_id === favoriteIds[j].listing_id) { favorites.push(amsterdam[i]); break; }
     }
   }
-
-  countDisplay.textContent = `${favorites.length} apartment${
-    favorites.length !== 1 ? "s" : ""
-  } in your favorites`;
-
-  if (favorites.length === 0) {
-    container.innerHTML = `
-      <div class="empty-state">
-        <div class="empty-heart-icon">
-          <i class="bi bi-heart-fill text-danger"></i>
-        </div>
-        <p>No favorites yet</p>
-        <p class="empty-sub"> Start browsing apartments and save your favorites for easy access later! <i class="bi bi-stars gold-icon"></i></p>
-        <button onclick="location.href='index.html'" class="browse-btn">
-          <i class="bi bi-search"></i> Browse Apartments
-        </button>
-      </div>
-    `;
+  countDisplay.textContent = `${favorites.length} apartment${favorites.length !== 1 ? "s" : ""} in your favorites`; if
+    (favorites.length === 0) {
+      container.innerHTML = ` <div class="empty-state">
+  <div class="empty-heart-icon">
+    <i class="bi bi-heart-fill text-danger"></i>
+  </div>
+  <p>No favorites yet</p>
+  <p class="empty-sub"> Start browsing apartments and save your favorites for easy access later! <i
+      class="bi bi-stars gold-icon"></i></p>
+  <button onclick="location.href='index.html'" class="browse-btn">
+    <i class="bi bi-search"></i> Browse Apartments
+  </button>
+  </div>
+  `;
     return;
   }
 
@@ -71,24 +84,24 @@ document.addEventListener("DOMContentLoaded", () => {
   <img src="${imgSrc}" alt="${apt.name}" />
   <div class="card-body">
     <h3>${apt.name}</h3>
-<div class="card-meta">
-  <div class="meta-row">
-    <i class="bi bi-geo-alt-fill text-success"></i>
-    <span>${apt.neighbourhood_cleansed}</span>
-  </div>
-  <div class="meta-row">
-    <i class="bi bi-cash-coin text-dark"></i>
-    <span>Price per night: ${price}</span>
-  </div>
-  <div class="meta-row">
-    <i class="bi bi-star-fill text-warning"></i>
-    <span>${parseFloat(rating).toFixed(1)} (${reviews})</span>
-  </div>
-</div>
+    <div class="card-meta">
+      <div class="meta-row">
+        <i class="bi bi-geo-alt-fill text-success"></i>
+        <span>${apt.neighbourhood_cleansed}</span>
+      </div>
+      <div class="meta-row">
+        <i class="bi bi-cash-coin text-dark"></i>
+        <span>Price per night: ${price}</span>
+      </div>
+      <div class="meta-row">
+        <i class="bi bi-star-fill text-warning"></i>
+        <span>${parseFloat(rating).toFixed(1)} (${reviews})</span>
+      </div>
+    </div>
 
   </div>
   <button class="book-btn">Rent</button>
-`;
+  `;
 
     card.querySelector(".book-btn").addEventListener("click", () => {
       localStorage.setItem("selectedListing", JSON.stringify(apt));

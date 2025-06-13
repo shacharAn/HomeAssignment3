@@ -9,6 +9,23 @@ document.addEventListener("DOMContentLoaded", function () {
       passwordInput.setCustomValidity("");
     }
   });
+
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    const mode = document.body.classList.contains("dark-mode") ? "dark" : "light";
+    localStorage.setItem("theme", mode);
+  }
+
+  const themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", toggleDarkMode);
+  }
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+
   const registerFormElement = document.getElementById("registerForm");
   if (registerFormElement) {
     registerFormElement.addEventListener(
@@ -29,10 +46,9 @@ document.addEventListener("DOMContentLoaded", function () {
           return;
         }
 
-        let registeredUsersList =
-          JSON.parse(localStorage.getItem("usersList")) || [];
-        const existingUser = registeredUsersList.find(
-          (userObject) => userObject.username === usernameInputValue
+        let usersList = loadFromStorage("usersList") || [];
+        const existingUser = usersList.find(
+          (user) => user.username === usernameInputValue
         );
 
         if (existingUser) {
@@ -40,11 +56,13 @@ document.addEventListener("DOMContentLoaded", function () {
           return;
         }
 
-        registeredUsersList.push({
+        usersList.push({
           username: usernameInputValue,
           password: passwordInputValue,
         });
-        localStorage.setItem("usersList", JSON.stringify(registeredUsersList));
+
+        saveToStorage("usersList", usersList);
+
         alert("Registration successful! Redirecting to login...");
         location.href = "login.html";
       }
@@ -65,22 +83,25 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Please fill in both fields.");
         return;
       }
-      const registeredUsersList =
-        JSON.parse(localStorage.getItem("usersList")) || [];
-      const matchedUserObject = registeredUsersList.find(
-        (userObject) =>
-          userObject.username === usernameInputValue &&
-          userObject.password === passwordInputValue
+
+      let usersList = loadFromStorage("usersList") || [];
+      const matchedUser = usersList.find(
+        (user) =>
+          user.username === usernameInputValue &&
+          user.password === passwordInputValue
       );
 
-      if (!matchedUserObject) {
+      if (!matchedUser) {
         alert("Invalid username or password.");
         return;
       }
 
-      localStorage.setItem("currentUser", usernameInputValue);
+      saveToStorage("currentUser", usernameInputValue);
+
       alert("Login successful!");
       location.href = "index.html";
     });
   }
 });
+
+

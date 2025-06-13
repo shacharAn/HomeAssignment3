@@ -1,44 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
-    <link rel="icon" href="images/icon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/auth.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <script src="js/utils.js" defer></script>
-    <script src="js/storage.js" defer></script>
-    <script src="js/auth.js" defer></script>
-  </head>
 
-  <body class="register-page">
-    <div class="theme-toggle-container">
-      <button
-        id="theme-toggle"
-        onclick="toggleDarkMode()"
-        class="theme-btn"
-        title="Toggle dark mode"
-      >
-        <i class="bi bi-moon-stars"></i>
-      </button>
-    </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="icon" href="images/icon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/auth.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <script src="js/utils.js" defer></script>
+  <script src="js/storage.js" defer></script>
+  <script src="js/auth.js" defer></script>
+</head>
+
+<body class="register-page">
+  <div class="theme-toggle-container">
+    <button id="theme-toggle" onclick="toggleDarkMode()" class="theme-btn" title="Toggle dark mode">
+      <i class="bi bi-moon-stars"></i>
+    </button>
+  </div>
+  <div class="form-wrapper">
     <h1 class="site-title">Amsterdam Apartments for Rent</h1>
     <p class="site-subtitle">
-      Book unique apartments in the heart of Amsterdam <i class="bi bi-stars gold-icon"></i></p>
+      Book unique apartments in the heart of Amsterdam
+      <i class="bi bi-stars gold-icon"></i>
     </p>
-    <div class="login-container">
-      <div class="login-card">
+    <div class="register-container">
+      <div class="form-card">
         <h2>Register</h2>
         <form id="registerForm">
           <div class="form-group">
-            <label for="username"
-              ><i class="bi bi-person-fill"></i> Username</label
-            >
+            <label for="username"><i class="bi bi-person-fill"></i> Username</label>
             <input type="text" id="username" required />
           </div>
           <div class="form-group">
@@ -47,13 +40,17 @@
             </label>
             <input type="password" id="password" required minlength="8" />
           </div>
-
           <button type="submit">Register</button>
         </form>
-        <p class="register-link">
-          Already have an account? <a href="login.html">Login here</a>
-        </p>
+        <div class="register-link-inline">
+          <span>Already have an account?</span>
+          <button onclick="location.href='login.html'" class="form-btn small-btn">
+            Login here
+          </button>
+        </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

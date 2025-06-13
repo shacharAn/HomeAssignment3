@@ -1,149 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dream Stays</title>
-    <link rel="icon" href="images/icon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/home.css" />
-    <script src="js/utils.js" defer></script>
-    <script src="js/data/amsterdam.js" defer></script>
-    <script src="js/storage.js" defer></script>
-    <script src="js/listing.js" defer></script>
-  </head>
 
-  <body>
-    <header>
-      <nav class="nav-bar">
-        <div class="nav-left">
-          <button id="signout-btn">Sign Out</button>
-          <span id="currentUser"><i class="bi bi-person-fill"></i> Guest</span>
-        </div>
-        <div class="hamburger-menu" id="hamburger">
-          <i class="bi bi-list"></i>
-        </div>
-        <ul class="nav-center">
-          <li>
-            <a href="index.html" class="active"
-              ><i class="bi bi-house-fill"></i> Home</a
-            >
-          </li>
-          <li>
-            <a href="rent.html"><i class="bi bi-building"></i> Rent</a>
-          </li>
-          <li>
-            <a href="favorites.html"
-              ><i class="bi bi-heart-fill"></i> Favorites</a
-            >
-          </li>
-          <li>
-            <a href="mybookings.html"
-              ><i class="bi bi-calendar-fill"></i> My Bookings</a
-            >
-          </li>
-        </ul>
-        <div class="nav-right">
-          <a href="login.html">Login</a>
-          <a href="register.html">Register</a>
-          <button
-            id="theme-toggle"
-            onclick="toggleDarkMode()"
-            class="theme-btn"
-            title="Toggle dark mode"
-          >
-            <i class="bi bi-moon-stars"></i>
-          </button>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dream Stays</title>
+  <link rel="icon" href="images/icon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <script src="js/utils.js" defer></script>
+  <script src="js/data/amsterdam.js" defer></script>
+  <script src="js/storage.js" defer></script>
+  <script src="js/listing.js" defer></script>
+</head>
 
-    <main>
-      <section class="hero-section">
-        <h1>Find Your Perfect Stay</h1>
-        <h2>in Amsterdam</h2>
-        <p>
-          Discover unique accommodations and create unforgettable memories in<br />
-          one of Europe's most beautiful cities
-        </p>
-        <div class="features-row">
-          <div><i class="bi bi-search"></i> Easy Search</div>
-          <div><i class="bi bi-geo-alt-fill"></i> Great Locations</div>
-          <div><i class="bi bi-calendar3"></i> Instant Booking</div>
-        </div>
-      </section>
+<body>
+  <header>
+    <nav class="nav-bar">
+      <div class="nav-left">
+        <button id="signout-btn">Sign Out</button>
+        <span id="currentUser"><i class="bi bi-person-fill"></i></span>
+      </div>
+      <div class="hamburger-menu" id="hamburger">
+        <i class="bi bi-list"></i>
+      </div>
+      <ul class="nav-center">
+        <li>
+          <a href="index.html" class="active"><i class="bi bi-house-fill"></i> Home</a>
+        </li>
+        <li>
+          <a href="rent.html"><i class="bi bi-building"></i> Rent</a>
+        </li>
+        <li>
+          <a href="favorites.html"><i class="bi bi-heart-fill"></i> Favorites</a>
+        </li>
+        <li>
+          <a href="mybookings.html"><i class="bi bi-calendar-fill"></i> My Bookings</a>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <button id="theme-toggle" onclick="toggleDarkMode()" class="theme-btn" title="Toggle dark mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-      <section class="filter-section" id="filterSection">
-        <h2><i class="bi bi-filter"></i> Filter Apartments</h2>
-        <div class="filter-row-group">
-          <div class="filter-row">
-            <label for="rating"
-              ><i class="bi bi-star-fill"></i> Minimum Rating:</label
-            >
-            <select id="rating">
-              <option value="">No Rating Filter</option>
-            </select>
-          </div>
-
-          <div class="filter-row">
-            <label for="roomSelect"
-              ><i class="bi bi-house-fill"></i> Number of Rooms:</label
-            >
-            <select id="roomSelect"></select>
-          </div>
-
-          <div class="filter-row">
-            <label for="minPrice"
-              ><i class="bi bi-cash-coin"></i> Price per night ($):</label
-            >
-            <div class="price-inputs">
-              <input type="number" id="minPrice" placeholder="Min" min="0" />
-              <input type="number" id="maxPrice" placeholder="Max" min="0" />
-            </div>
-            <p class="text-muted mt-2">Enter minimum and maximum price.</p>
-          </div>
-        </div>
-        <div>
-          <button id="filterBtn"><i class="bi bi-search"></i></button>
-          <button id="resetBtn">Reset</button>
-        </div>
-        <h4 id="apartment-count"></h4>
-      </section>
-
-      <section>
-        <div id="results"></div>
-        <div id="page-indicator" class="page-indicator"></div>
-        <div id="pagination">
-          <button id="prevPage">Previous</button>
-          <button id="nextPage">Next</button>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>Find your next stay with us in Amsterdam | &copy; 2025 DreamStays</p>
+  <main>
+    <section class="hero-section">
+      <h1>Find Your Perfect Stay</h1>
+      <h2>in Amsterdam</h2>
       <p>
-        Recommended Amsterdam guides:
-        <a href="https://www.getyourguide.com/-l36/?cmp=ga..." target="_blank"
-          >GetYourGuide</a
-        >
-        |
-        <a
-          href="https://www.mako.co.il/travel-world/guides-amsterdam"
-          target="_blank"
-          >Mako</a
-        >
-        |
-        <a
-          href="https://www.lametayel.co.il/destinations/amsterdam-541"
-          target="_blank"
-          >Lametayel</a
-        >
+        Discover unique accommodations and create unforgettable memories in<br />
+        one of Europe's most beautiful cities
       </p>
-    </footer>
-  </body>
+      <div class="features-row">
+        <div><i class="bi bi-search"></i> Easy Search</div>
+        <div><i class="bi bi-geo-alt-fill"></i> Great Locations</div>
+        <div><i class="bi bi-calendar3"></i> Instant Booking</div>
+      </div>
+    </section>
+
+    <section class="filter-section" id="filterSection">
+      <h2><i class="bi bi-filter"></i> Filter Apartments</h2>
+      <div class="filter-row-group">
+        <div class="filter-row">
+          <label for="rating"><i class="bi bi-star-fill"></i> Minimum Rating:</label>
+          <select id="rating">
+            <option value="">No Rating Filter</option>
+          </select>
+        </div>
+        <div class="filter-row">
+          <label for="roomSelect"><i class="bi bi-house-fill"></i> Number of Rooms:</label>
+          <select id="roomSelect"></select>
+        </div>
+        <div class="filter-row">
+          <label for="minPrice"><i class="bi bi-cash-coin"></i> Price per night ($):</label>
+          <div class="price-inputs">
+            <input type="number" id="minPrice" placeholder="Min" min="0" />
+            <input type="number" id="maxPrice" placeholder="Max" min="0" />
+          </div>
+          <p class="text-muted mt-2">Enter minimum and maximum price.</p>
+        </div>
+      </div>
+      <div>
+        <button id="filterBtn"><i class="bi bi-search"></i></button>
+        <button id="resetBtn">Reset</button>
+      </div>
+      <h4 id="apartment-count"></h4>
+    </section>
+
+    <section>
+      <div id="results"></div>
+      <div id="page-indicator" class="page-indicator"></div>
+      <div id="pagination">
+        <button id="prevPage">Previous</button>
+        <button id="nextPage">Next</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Find your next stay with us in Amsterdam | &copy; 2025 DreamStays</p>
+    <p>
+      Recommended Amsterdam guides:
+      <a href="https://www.getyourguide.com/-l36/?cmp=ga..." target="_blank">GetYourGuide</a>
+      |
+      <a href="https://www.mako.co.il/travel-world/guides-amsterdam" target="_blank">Mako</a>
+      |
+      <a href="https://www.lametayel.co.il/destinations/amsterdam-541" target="_blank">Lametayel</a>
+    </p>
+  </footer>
+</body>
+
 </html>

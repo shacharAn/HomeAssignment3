@@ -8,27 +8,35 @@
   margin: 0 auto;
 }
 
+.favorites-header h2 {
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+.favorites-header p {
+  margin-top: 9px;
+  margin-bottom: 4px;
+  font-size: 16.5px;
+}
+
 .favorite-card {
   position: relative;
   background-color: #fffdfd;
   padding: 15px 30px;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
   border: 1px solid #e0e0e0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 380px;    
-  height: 580px;       
+  width: 100%;
+  max-width: 380px;
   box-sizing: border-box;
-}
-.favorites-header{
-  font-size: 20px;
+  margin: auto;
 }
 
-.favorite-card:hover {
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.02);
-  transform: translateY(-3px);
+.favorite-card h3 {
+  font-size: 20px;
 }
 
 .favorite-card img {
@@ -48,23 +56,14 @@
 .empty-heart-icon i {
   font-size: 70px;
   color: #dc3545;
-  margin-top: 1px;
 }
 
 .card-meta {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  margin: 10px 0;
-  margin-bottom: 20px;
-}
-
-.meta-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 19px;
-  color: #2d2c2c;
+  margin-bottom: 40px;
+  font-size: 17px;
 }
 
 .meta-row i {
@@ -73,19 +72,45 @@
   font-size: 18px;
 }
 
-.card-body h3 {
-  font-size: 22px;
-  margin:28px 0 4px!important;
-};
+.empty-state {
+  text-align: center;
+  margin: 5px auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16.5px;
+  padding-top: 100px;
+  text-align: center;
+}
 
+@media (max-width: 767px) {
 
-@media (max-width: 768px) {
   .favorite-card {
-    width: 90%;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    max-width: 90%;
+    margin: 5px auto;
+    overflow: hidden;
+    min-height: 460px;
   }
 
   .favorite-card img {
     height: 160px;
+    object-fit: cover;
   }
+
+  .favorite-card h3 {
+    font-size: 18px;
+  }
+
+  .book-btn {
+    font-size: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+
 }
