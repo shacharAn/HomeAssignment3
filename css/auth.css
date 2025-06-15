@@ -20,7 +20,7 @@ body.register-page:before {
   height: 100%;
   background: linear-gradient(rgba(255, 255, 255, 0.25),
       rgba(255, 255, 255, 0.25)),
-    url("../images/amsterdam.jpg") no-repeat center center/cover;
+    url("/images/amsterdam.jpg") no-repeat center center/cover;
   z-index: -1;
 }
 
@@ -140,7 +140,7 @@ body.register-page button[type="submit"]:hover {
   }
 
   .site-title {
-    font-size: 30px;
+    font-size: 29px;
   }
 
   .site-subtitle {
