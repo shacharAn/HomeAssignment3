@@ -15,10 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     themeToggle.addEventListener("click", toggleDarkMode);
   }
 
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
-    document.body.classList.add("dark-mode");
-  }
   const container = document.getElementById("favorites-container");
   const countDisplay = document.getElementById("favorites-count");
   const key = `${currentUser}_favorites`;
