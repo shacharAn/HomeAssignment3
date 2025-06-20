@@ -187,7 +187,7 @@ function displayApartments(apartments) {
     <p><strong>Bedrooms:</strong> ${ap.bedrooms}</p>
     <p><strong>Price:</strong> ${ap.price}</p>
     <div class="action-icons">
-      <button class="toggle-details-btn"> Show more</button>
+      <button class="toggle-details-btn">▼ Show more</button>
     </div>
     <div class="apartment-details hidden">
       <p>${ap.description}</p>
