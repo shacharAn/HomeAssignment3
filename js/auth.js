@@ -21,11 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     themeToggle.addEventListener("click", toggleDarkMode);
   }
 
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
-    document.body.classList.add("dark-mode");
-  }
-
   const registerFormElement = document.getElementById("registerForm");
   if (registerFormElement) {
     registerFormElement.addEventListener(

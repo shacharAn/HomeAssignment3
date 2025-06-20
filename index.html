@@ -30,9 +30,6 @@
           <a href="index.html" class="active"><i class="bi bi-house-fill"></i> Home</a>
         </li>
         <li>
-          <a href="rent.html"><i class="bi bi-building"></i> Rent</a>
-        </li>
-        <li>
           <a href="favorites.html"><i class="bi bi-heart-fill"></i> Favorites</a>
         </li>
         <li>
@@ -40,8 +37,6 @@
         </li>
       </ul>
       <div class="nav-right">
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
         <button id="theme-toggle" onclick="toggleDarkMode()" class="theme-btn" title="Toggle dark mode">
           <i class="bi bi-moon-stars"></i>
         </button>
@@ -64,36 +59,37 @@
       </div>
     </section>
 
-    <section class="filter-section" id="filterSection">
-      <h2><i class="bi bi-filter"></i> Filter Apartments</h2>
-      <div class="filter-row-group">
-        <div class="filter-row">
-          <label for="rating"><i class="bi bi-star-fill"></i> Minimum Rating:</label>
-          <select id="rating">
-            <option value="">No Rating Filter</option>
-          </select>
-        </div>
-        <div class="filter-row">
-          <label for="roomSelect"><i class="bi bi-house-fill"></i> Number of Rooms:</label>
-          <select id="roomSelect"></select>
-        </div>
-        <div class="filter-row">
-          <label for="minPrice"><i class="bi bi-cash-coin"></i> Price per night ($):</label>
-          <div class="price-inputs">
-            <input type="number" id="minPrice" placeholder="Min" min="0" />
-            <input type="number" id="maxPrice" placeholder="Max" min="0" />
-          </div>
-          <p class="text-muted mt-2">Enter minimum and maximum price.</p>
-        </div>
-      </div>
-      <div>
+<section class="filter-bar">
+  <div class="filter-container">
+
+    <div class="filter-item">
+      <label for="rating"><i class="bi bi-star-fill text-warning"></i> Minimum Rating:</label>
+      <select id="rating">
+        <option value="">No Rating Filter</option>
+      </select>
+    </div>
+
+    <div class="filter-item">
+      <label for="roomSelect"><i class="bi bi-house-door-fill"></i> Number of Rooms:</label>
+      <select id="roomSelect"></select>
+    </div>
+
+    <div class="filter-item price-combo">
+      <label><i class="bi bi-cash-coin"></i> Price per night ($):</label>
+      <div class="price-row">
+        <input type="number" id="minPrice" placeholder="Min" min="0" />
+        <input type="number" id="maxPrice" placeholder="Max" min="0" />
         <button id="filterBtn"><i class="bi bi-search"></i></button>
         <button id="resetBtn">Reset</button>
       </div>
-      <h4 id="apartment-count"></h4>
-    </section>
+    </div>
 
+  </div>
+</section>
+
+<h4 id="apartment-count" class="results-count"></h4>
     <section>
+      <div id="scroll-anchor"></div>
       <div id="results"></div>
       <div id="page-indicator" class="page-indicator"></div>
       <div id="pagination">

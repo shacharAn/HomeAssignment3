@@ -1,3 +1,11 @@
+// storage.js – בתחילת הקובץ
+(function applySavedTheme() {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+})();
+
 function saveToStorage(key, value) {
   if (typeof value === "string") {
     localStorage.setItem(key, value);
