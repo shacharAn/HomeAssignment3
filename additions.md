@@ -16,9 +16,3 @@ A calendar (Datepicker) was used to enhance date selection for apartment booking
 - We used the native HTML5 `input type="date"` field for selecting start and end dates.
 - Date availability was validated using JavaScript logic that checks existing bookings stored in `localStorage`.
 - Blocked or overlapping date ranges are prevented during booking using the `isDateRangeOverlap` function.
-
-## Review System
-**Feature Not Implemented:** Review and rating system for apartments  
-**Note:** This feature was not included in our implementation.
-
-
