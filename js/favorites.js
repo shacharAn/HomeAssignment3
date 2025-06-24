@@ -4,17 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     location.href = "login.html";
   }
 
-  function toggleDarkMode() {
-    document.body.classList.toggle("dark-mode");
-    const mode = document.body.classList.contains("dark-mode") ? "dark" : "light";
-    localStorage.setItem("theme", mode);
-  }
-
-  const themeToggle = document.getElementById("theme-toggle");
-  if (themeToggle) {
-    themeToggle.addEventListener("click", toggleDarkMode);
-  }
-
   const container = document.getElementById("favorites-container");
   const countDisplay = document.getElementById("favorites-count");
   const key = `${currentUser}_favorites`;

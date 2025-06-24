@@ -8,17 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!currentUser) {
     location.href = "login.html";
   }
-  function toggleDarkMode() {
-    document.body.classList.toggle("dark-mode");
-    document.body.classList.contains("dark-mode")
-      ? "dark"
-      : "light";
-    localStorage.setItem("theme", mode);
-  }
-  const themeToggle = document.getElementById("theme-toggle");
-  if (themeToggle) {
-    themeToggle.addEventListener("click", toggleDarkMode);
-  }
   
   const currentUserSpan = document.getElementById("currentUser");
   const signoutBtn = document.getElementById("signout-btn");
@@ -78,6 +67,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const minPriceInput = document.getElementById("minPrice");
   const maxPriceInput = document.getElementById("maxPrice");
 
+  [minPriceInput, maxPriceInput].forEach((input) => {
+  input.addEventListener("input", () => {
+    let value = parseInt(input.value);
+    if (isNaN(value)) return;
+
+    if (value < 0) {
+      alert("Price cannot be negative.");
+    } else if (value > 8001) {
+      alert("Maximum price allowed is 8001.");
+    }
+  });
+});
   document.getElementById("filterBtn").addEventListener("click", function () {
     const selectedRating = parseFloat(ratingSelect.value) || 0;
     const selectedRooms = roomSelect.value;
@@ -187,7 +188,7 @@ function displayApartments(apartments) {
     <p><strong>Bedrooms:</strong> ${ap.bedrooms}</p>
     <p><strong>Price:</strong> ${ap.price}</p>
     <div class="action-icons">
-      <button class="toggle-details-btn">▼ Show more</button>
+      <button class="toggle-details-btn"> Show more</button>
     </div>
     <div class="apartment-details hidden">
       <p>${ap.description}</p>

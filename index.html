@@ -18,26 +18,30 @@
 <body>
   <header>
     <nav class="nav-bar">
-  <div class="nav-top-row">
-    <div class="hamburger-menu" id="hamburger">
-      <i class="bi bi-list"></i>
-    </div>
-    <button id="theme-toggle" onclick="toggleDarkMode()" class="theme-btn" title="Toggle dark mode">
-      <i class="bi bi-moon-stars"></i>
-    </button>
-  </div>
-
-  <div class="nav-left">
-    <button id="signout-btn">Sign Out</button>
-    <span id="currentUser"><i class="bi bi-person-fill"></i><span id="username"></span></span>
-  </div>
-
-  <ul class="nav-center">
-    <li><a href="index.html"><i class="bi bi-house-fill"></i> Home</a></li>
-    <li><a href="favorites.html"><i class="bi bi-heart-fill"></i> Favorites</a></li>
-    <li><a href="mybookings.html" class="active"><i class="bi bi-calendar-fill"></i> My Bookings</a></li>
-  </ul>
-</nav>
+      <div class="nav-left">
+        <span id="currentUser"><i class="bi bi-person-fill"></i></span>
+      </div>
+      <div class="hamburger-menu" id="hamburger">
+        <i class="bi bi-list"></i>
+      </div>
+      <ul class="nav-center">
+        <li>
+          <a href="index.html" class="active"><i class="bi bi-house-fill"></i> Home</a>
+        </li>
+        <li>
+          <a href="favorites.html"><i class="bi bi-heart-fill"></i> Favorites</a>
+        </li>
+        <li>
+          <a href="mybookings.html"><i class="bi bi-calendar-fill"></i> My Bookings</a>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <button id="theme-toggle" class="theme-btn" title="Toggle dark mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button id="signout-btn">Sign Out</button>
+      </div>
+    </nav>
   </header>
 
   <main>
@@ -73,8 +77,8 @@
     <div class="filter-item price-combo">
       <label><i class="bi bi-cash-coin"></i> Price per night ($):</label>
       <div class="price-row">
-        <input type="number" id="minPrice" placeholder="Min" min="0" />
-        <input type="number" id="maxPrice" placeholder="Max" min="0" />
+        <input type="number" id="minPrice" placeholder="Min" min="0" max="8001"/>
+        <input type="number" id="maxPrice" placeholder="Max" min="0" max="8001"/>
         <button id="filterBtn"><i class="bi bi-search"></i></button>
         <button id="resetBtn">Reset</button>
       </div>
@@ -87,9 +91,9 @@
     <section>
       <div id="scroll-anchor"></div>
       <div id="results"></div>
-      <div id="page-indicator" class="page-indicator"></div>
       <div id="pagination">
         <button id="prevPage">Previous</button>
+        <div id="page-indicator" class="page-indicator"></div>
         <button id="nextPage">Next</button>
       </div>
     </section>
