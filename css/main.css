@@ -1,11 +1,24 @@
+html {
+  height: 100%;
+}
+
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-color: #f5f5f5;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
+main {
+  flex: 1;
+  padding-top: 0;
+  margin: 0;
+}
 
 * {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow-wrap: break-word;
 }
 
@@ -14,7 +27,7 @@ header {
   top: 0;
   z-index: 1000;
   background-color: #89a8b2;
-  box-shadow: 0 2px 8px rgba(215, 13, 13, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
 
@@ -22,9 +35,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px;
+  padding: 8px 14px;
   width: 100%;
-  font-size: 18px;
+  font-size: 16px;
   box-sizing: border-box;
   background-color: #89a8b2;
   border-bottom: 1px solid #ccd8e2;
@@ -38,7 +51,7 @@ header {
 }
 
 .nav-left {
-  gap: 14px;
+  gap: 8px;
 }
 
 .nav-left span {
@@ -101,7 +114,6 @@ header {
 }
 
 #signout-btn::before {
-  content: "↶";
   font-weight: bold;
   margin-right: 6px;
 }
@@ -149,7 +161,6 @@ h3 {
   transform: translateY(-3px);
 }
 
-.filter-section,
 .apartment-card,
 .rent-left,
 .rent-right {
@@ -233,14 +244,13 @@ button[type="submit"]:hover,
 
 .fav-icon-container,
 .favorite-card .heart {
-  position: static;
-  text-align: right;
-  font-size: 42px;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  font-size: 25px;
   color: #dc3545;
   cursor: pointer;
-  padding-top: 8px;
-  padding-left: 12px;
-  transition: all 0.3s ease;
+  z-index: 2;
 }
 
 .fav-icon-container:hover,
@@ -256,12 +266,12 @@ button[type="submit"]:hover,
 .theme-btn {
   background: none;
   border: none;
-  font-size: 22px;
-  color: #000000;
-  cursor: pointer;
-  padding: 6px 10px;
-  margin-left: auto;
-  transition: transform 0.2s ease;
+  font-size: 1.4rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  height: 100%;
 }
 
 .theme-btn:hover {
@@ -337,8 +347,10 @@ body.dark-mode .nav-left span {
   background-color: transparent;
   border: none;
 }
-
-body.dark-mode .filter-section,
+body.dark-mode .filter-bar {
+  background-color: #292828;
+}
+body.dark-mode .filter-container,
 body.dark-mode .apartment-card,
 body.dark-mode .rent-left,
 body.dark-mode .rent-right,
@@ -359,9 +371,11 @@ body.dark-mode input[type="date"],
 body.dark-mode select {
   background-color: #2b2b2b;
   color: #ffffff;
-  border: 1px solid#717171;
+  border: 1px solid#717171; 
 }
-
+body.dark-mode .filter-item label {
+  color: #f2f2f2;
+}
 body.dark-mode .toggle-details-btn {
   background-color: #d3d3d3;
   color: #000000;
@@ -502,7 +516,7 @@ body.dark-mode .form-btn.small-btn:hover {
   .hamburger-menu {
     display: block;
     align-self: center;
-    margin-top: -20px;
+    margin-top: -38px;
   }
 
   .nav-bar {
@@ -511,12 +525,12 @@ body.dark-mode .form-btn.small-btn:hover {
   }
 
   .nav-left {
-    flex-direction: column;
-    align-items: flex-start;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
-    padding-left: 2px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    box-sizing: border-box;
   }
 
   .nav-center {
@@ -573,6 +587,7 @@ body.dark-mode .form-btn.small-btn:hover {
   }
 
   .nav-right {
+    text-align: center;
     margin-top: 8px;
     display: none;
     gap: 10px;
@@ -607,7 +622,6 @@ body.dark-mode .form-btn.small-btn:hover {
 
 }
 
-
 @media (min-width: 768px) and (max-width: 1100px) {
 
   .nav-center {
@@ -627,6 +641,5 @@ body.dark-mode .form-btn.small-btn:hover {
     border-radius: 5px;
     font-weight: 400;
     font-size: 12px;
-  }
-  
+  } 
 }

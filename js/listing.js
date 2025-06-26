@@ -1,31 +1,14 @@
 let currentPage = 1;
-const pageSize = 5;
+const pageSize = 6;
 let allApartments = amsterdam;
 
 document.addEventListener("DOMContentLoaded", function () {
+
   const currentUser = getCurrentUser();
   if (!currentUser) {
     location.href = "login.html";
   }
-
-  function toggleDarkMode() {
-    document.body.classList.toggle("dark-mode");
-    const mode = document.body.classList.contains("dark-mode")
-      ? "dark"
-      : "light";
-    localStorage.setItem("theme", mode);
-  }
-
-  const themeToggle = document.getElementById("theme-toggle");
-  if (themeToggle) {
-    themeToggle.addEventListener("click", toggleDarkMode);
-  }
-
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
-    document.body.classList.add("dark-mode");
-  }
-
+  
   const currentUserSpan = document.getElementById("currentUser");
   const signoutBtn = document.getElementById("signout-btn");
 
@@ -84,6 +67,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const minPriceInput = document.getElementById("minPrice");
   const maxPriceInput = document.getElementById("maxPrice");
 
+  [minPriceInput, maxPriceInput].forEach((input) => {
+  input.addEventListener("input", () => {
+    let value = parseInt(input.value);
+    if (isNaN(value)) return;
+
+    if (value < 0) {
+      alert("Price cannot be negative.");
+    } else if (value > 8001) {
+      alert("Maximum price allowed is 8001.");
+    }
+  });
+});
   document.getElementById("filterBtn").addEventListener("click", function () {
     const selectedRating = parseFloat(ratingSelect.value) || 0;
     const selectedRooms = roomSelect.value;
@@ -128,9 +123,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentPage > 1) {
       currentPage--;
       displayApartments(allApartments);
-      window.scrollTo({
-        top: 750,
+      document.getElementById("scroll-anchor").scrollIntoView({
         behavior: "smooth",
+        block: "start",
       });
     }
   });
@@ -140,9 +135,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentPage < totalPages) {
       currentPage++;
       displayApartments(allApartments);
-      window.scrollTo({
-        top: 750,
+      document.getElementById("scroll-anchor").scrollIntoView({
         behavior: "smooth",
+        block: "start",
       });
     }
   });
@@ -181,31 +176,27 @@ function displayApartments(apartments) {
   paginated.forEach((ap) => {
     const card = document.createElement("div");
     card.className = "apartment-card";
-
     card.innerHTML = `
-      <div class="fav-icon-container">
-        <i class="bi bi-heart fav-icon" title="Add to Favorites"></i>
-      </div>
-      <div class="apartment-image-wrapper">
-        <img src="${ap.picture_url}" alt="${ap.name}" class="apartment-image"/>
-        <button class="rent-btn">Rent this apartment</button>
-      </div>
-      <div class="apartment-info">
-        <h3>${ap.name}</h3>
-        <p><strong>ID:</strong> ${ap.listing_id}</p>
-        <p><strong>Rating:</strong> ${ap.review_scores_rating}</p>
-        <p><strong>Bedrooms:</strong> ${ap.bedrooms}</p>
-        <p><strong>Price:</strong> ${ap.price}</p>
-        <a href="${ap.listing_url}" target="_blank" class="link">View Listing</a>
-        <div class="action-icons">
-          <button class="toggle-details-btn">➤ Show more</button>
-        </div>
-        <div class="apartment-details hidden">
-          <p>${ap.description}</p>
-        </div>
-      </div>
-    `;
-
+  <div class="fav-icon-container">
+    <i class="bi bi-heart fav-icon" title="Add to Favorites"></i>
+  </div>
+  <img src="${ap.picture_url}" alt="${ap.name}" class="apartment-image"/>
+  <div class="card-body">
+    <h3>${ap.name}</h3>
+    <p><strong>ID:</strong> ${ap.listing_id}</p>
+    <p><strong>Rating:</strong> ${ap.review_scores_rating}</p>
+    <p><strong>Bedrooms:</strong> ${ap.bedrooms}</p>
+    <p><strong>Price:</strong> ${ap.price}</p>
+    <div class="action-icons">
+      <button class="toggle-details-btn"> Show more</button>
+    </div>
+    <div class="apartment-details hidden">
+      <p>${ap.description}</p>
+    </div>
+    <a href="${ap.listing_url}" target="_blank" class="link">Go to listing</a>
+  </div>
+  <button class="rent-btn">Rent this apartment</button>
+`;
     card.querySelector(".rent-btn").addEventListener("click", () => {
       localStorage.setItem("selectedListing", JSON.stringify(ap));
       location.href = "rent.html";
@@ -241,7 +232,7 @@ function displayApartments(apartments) {
         const detailsDiv = card.querySelector(".apartment-details");
         const isHidden = detailsDiv.classList.contains("hidden");
         detailsDiv.classList.toggle("hidden");
-        this.textContent = isHidden ? "▼ Hide details" : "➤ Show more";
+        this.textContent = isHidden ? "➤  Hide details" : "▼ Show more";
       });
 
     track.appendChild(card);

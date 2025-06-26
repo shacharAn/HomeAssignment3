@@ -1,3 +1,23 @@
+  function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("dark-mode", "enabled");
+  } else {
+    localStorage.setItem("dark-mode", "disabled");
+  }
+}
+  document.addEventListener("DOMContentLoaded", function () {
+  if (localStorage.getItem("dark-mode") === "enabled") {
+    document.body.classList.add("dark-mode");
+  }
+
+  const themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", toggleDarkMode);
+  }
+});
+
 function saveToStorage(key, value) {
   if (typeof value === "string") {
     localStorage.setItem(key, value);
