@@ -19,6 +19,6 @@ A calendar (Datepicker) was used to enhance date selection for apartment booking
 
 ## Review System
 **Feature Not Implemented:** Review and rating system for apartments  
-**Note:** This feature was not included in our implementation.
+**Note:** This feature was not included in our implementation.6
 
 
