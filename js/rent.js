@@ -12,12 +12,15 @@ function checkAvailability(listingId, startDate, endDate) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  
   const currentUser = getCurrentUser();
+
   if (!currentUser) {
     location.href = "login.html";
   }
 
   const selectedListingJSON = localStorage.getItem("selectedListing");
+
   if (!selectedListingJSON) {
     document.querySelector(".rent-container").innerHTML = `
     <section class="rent-header">
@@ -111,6 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const nights = Math.ceil(
       (new Date(end) - new Date(start)) / (1000 * 60 * 60 * 24)
     );
+
     if (nights < minNights) {
       result.innerHTML = `<div class="result-error">Minimum stay is ${minNights} nights.</div>`;
       return;

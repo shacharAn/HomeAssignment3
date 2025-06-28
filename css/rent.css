@@ -11,7 +11,7 @@
 .rent-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: flex-end;
@@ -164,7 +164,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 @media (max-width: 767px) {
-
   .rent-content {
     flex-direction: column;
     align-items: center;
@@ -220,5 +219,4 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 15px;
     text-align: center;
   }
-
 }

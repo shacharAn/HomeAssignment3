@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!currentUser) {
     location.href = "login.html";
   }
-  
+
   const currentUserSpan = document.getElementById("currentUser");
   const signoutBtn = document.getElementById("signout-btn");
 
@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
   roomSelect.appendChild(noFilterOption);
 
   const roomNumbers = [];
+
   for (let ap of amsterdam) {
     const room = parseInt(ap.bedrooms);
     if (!isNaN(room) && !roomNumbers.includes(room)) {
@@ -68,27 +69,30 @@ document.addEventListener("DOMContentLoaded", function () {
   const maxPriceInput = document.getElementById("maxPrice");
 
   [minPriceInput, maxPriceInput].forEach((input) => {
-  input.addEventListener("input", () => {
-    let value = parseInt(input.value);
-    if (isNaN(value)) return;
+    input.addEventListener("input", () => {
+      let value = parseInt(input.value);
+      if (isNaN(value)) return;
 
-    if (value < 0) {
-      alert("Price cannot be negative.");
-    } else if (value > 8001) {
-      alert("Maximum price allowed is 8001.");
-    }
+      if (value < 0) {
+        alert("Price cannot be negative.");
+      } else if (value > 8000) {
+        alert("Maximum price allowed is 8000.");
+      }
+    });
   });
-});
+
   document.getElementById("filterBtn").addEventListener("click", function () {
     const selectedRating = parseFloat(ratingSelect.value) || 0;
     const selectedRooms = roomSelect.value;
     const minPrice = parseFloat(minPriceInput.value) || 0;
     const maxPrice = parseFloat(maxPriceInput.value) || Infinity;
+
     if (minPrice > maxPrice) {
       alert("Minimum price must be less than or equal to maximum price.");
       return;
     }
-    const filtered = amsterdam.filter((ap) => {
+
+      const filtered = amsterdam.filter((ap) => {
       const rating = parseFloat(ap.review_scores_rating) || 0;
       const price = parseFloat(ap.price.replace(/[^0-9.]/g, "")) || 0;
       const rooms = parseInt(ap.bedrooms) || 0;
@@ -123,10 +127,13 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentPage > 1) {
       currentPage--;
       displayApartments(allApartments);
-      document.getElementById("scroll-anchor").scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+
+      setTimeout(() => {
+        window.scrollTo({
+          top: 500,
+          behavior: "smooth"
+        });
+      }, 0);
     }
   });
 
@@ -135,10 +142,13 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentPage < totalPages) {
       currentPage++;
       displayApartments(allApartments);
-      document.getElementById("scroll-anchor").scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+
+      setTimeout(() => {
+        window.scrollTo({
+          top: 500,
+          behavior: "smooth"
+        });
+      }, 0);
     }
   });
 
@@ -168,11 +178,6 @@ function displayApartments(apartments) {
     countElement.textContent = `${apartments.length} apartments found`;
   }
 
-  if (apartments.length === 0) {
-    track.innerHTML = "<p>No apartments match your criteria.</p>";
-    return;
-  }
-
   paginated.forEach((ap) => {
     const card = document.createElement("div");
     card.className = "apartment-card";
@@ -188,15 +193,18 @@ function displayApartments(apartments) {
     <p><strong>Bedrooms:</strong> ${ap.bedrooms}</p>
     <p><strong>Price:</strong> ${ap.price}</p>
     <div class="action-icons">
-      <button class="toggle-details-btn"> Show more</button>
+      <button class="toggle-details-btn">▼ Show more</button>
     </div>
     <div class="apartment-details hidden">
       <p>${ap.description}</p>
     </div>
-    <a href="${ap.listing_url}" target="_blank" class="link">Go to listing</a>
+    <div class="card-actions">
+      <a href="${ap.listing_url}" target="_blank" class="link">Go to listing</a>
+      <button class="rent-btn">Rent this apartment</button>
+    </div>
   </div>
-  <button class="rent-btn">Rent this apartment</button>
-`;
+  `;
+
     card.querySelector(".rent-btn").addEventListener("click", () => {
       localStorage.setItem("selectedListing", JSON.stringify(ap));
       location.href = "rent.html";
@@ -227,11 +235,15 @@ function displayApartments(apartments) {
     });
 
     card
-      .querySelector(".toggle-details-btn")
+    card.querySelector(".toggle-details-btn")
       .addEventListener("click", function () {
         const detailsDiv = card.querySelector(".apartment-details");
+        const actionsDiv = card.querySelector(".card-actions"); // ✨ הכפתורים
         const isHidden = detailsDiv.classList.contains("hidden");
-        detailsDiv.classList.toggle("hidden");
+
+        detailsDiv.classList.toggle("hidden", !isHidden);
+        actionsDiv.classList.toggle("hidden", isHidden);
+
         this.textContent = isHidden ? "➤  Hide details" : "▼ Show more";
       });
 

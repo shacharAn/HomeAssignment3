@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const passwordInput = document.getElementById("password");
+
   passwordInput.addEventListener("input", function () {
     if (passwordInput.validity.tooShort) {
       passwordInput.setCustomValidity(
@@ -11,12 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const registerFormElement = document.getElementById("registerForm");
+
   if (registerFormElement) {
     registerFormElement.addEventListener(
       "submit",
       function (registrationEvent) {
         registrationEvent.preventDefault();
-
         const usernameInput = document.getElementById("username");
         const usernameInputValue = usernameInput.value.trim();
         const passwordInputValue = passwordInput.value;
@@ -25,6 +26,14 @@ document.addEventListener("DOMContentLoaded", function () {
           alert("Username is required.");
           return;
         }
+
+        const englishLettersOnlyRegex = /^[a-zA-Z]+$/;
+
+        if (!englishLettersOnlyRegex.test(usernameInputValue)) {
+          alert("Username must contain only English letters!");
+          return;
+        }
+
         if (passwordInputValue.length < 8) {
           alert("Password must be at least 8 characters.");
           return;
@@ -54,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const loginFormElement = document.getElementById("loginForm");
+
   if (loginFormElement) {
     loginFormElement.addEventListener("submit", function (loginEvent) {
       loginEvent.preventDefault();
@@ -61,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const usernameInputValue = document
         .getElementById("username")
         .value.trim();
+        
       const passwordInputValue = document.getElementById("password").value;
 
       if (!usernameInputValue || !passwordInputValue) {

@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+
   const currentUser = getCurrentUser();
   if (!currentUser) {
     location.href = "login.html";
@@ -18,9 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
         (amsterdam[i].listing_id === favoriteIds[j].listing_id) { favorites.push(amsterdam[i]); break; }
     }
   }
+  
   countDisplay.textContent = `${favorites.length} apartment${favorites.length !== 1 ? "s" : ""} in your favorites`; if
     (favorites.length === 0) {
-      container.innerHTML = ` <div class="empty-state">
+    container.innerHTML = ` <div class="empty-state">
   <div class="empty-heart-icon">
     <i class="bi bi-heart-fill text-danger"></i>
   </div>
@@ -85,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
 
   </div>
-  <button class="book-btn">Rent</button>
+  <button class="book-btn">Rent this apartment</button>
   `;
 
     card.querySelector(".book-btn").addEventListener("click", () => {

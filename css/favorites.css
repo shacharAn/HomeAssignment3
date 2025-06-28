@@ -1,6 +1,6 @@
 #favorites-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* תמיד 3 בעמוד */
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   padding: 20px;
   max-width: 1200px;
@@ -29,6 +29,7 @@
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
   height: 100%;
+  position: relative;
 }
 
 .favorite-card h3 {
@@ -42,7 +43,7 @@
   border-radius: 8px;
 }
 
-.card-body {  
+.card-body {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -82,23 +83,12 @@
 }
 
 @media (max-width: 767px) {
-#favorites-container {
+  #favorites-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     padding: 10px;
-}
-  /* .favorite-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    min-height: 460px;
-    box-sizing: border-box;
-  } */
+  }
 
   .favorite-card img {
     height: 160px;
@@ -115,6 +105,7 @@
     margin-bottom: 30px;
   }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
   #favorites-container {
     display: grid;

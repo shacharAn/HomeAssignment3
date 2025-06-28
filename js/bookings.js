@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  
   const currentUser = getCurrentUser();
   if (!currentUser) {
     location.href = "login.html";
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function toDateOnly(date) {
     return new Date(date.getFullYear(), date.getMonth(), date.getDate());
   }
+
   function renderBookings() {
     bookingsContainer.innerHTML = "";
     const today = toDateOnly(new Date());
@@ -157,14 +159,17 @@ document.addEventListener("DOMContentLoaded", function () {
         break;
       }
     }
+
     localStorage.setItem(
       currentUsername + "_bookings",
       JSON.stringify(bookings)
     );
+
     renderBookings();
   }
 
   const defaultTab = document.querySelector(".tab-btn[data-type='all']");
+
   if (defaultTab) {
     defaultTab.classList.add("active");
   }

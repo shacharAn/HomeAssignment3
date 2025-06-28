@@ -30,6 +30,7 @@
   font-size: 28px;
   margin-bottom: 6px;
 }
+
 .filter-bar {
   background-color: #f5f5f5;
   padding: 40px 20px;
@@ -45,7 +46,7 @@
   align-items: center;
   padding: 20px 30px;
   gap: 20px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   max-width: 1100px;
   width: 100%;
   justify-content: space-between;
@@ -80,7 +81,9 @@
 }
 
 .apartment-details.hidden {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
 }
 
 #resetBtn:hover {
@@ -97,6 +100,7 @@
   border: none;
   cursor: pointer;
 }
+
 .price-row {
   display: flex;
   align-items: center;
@@ -114,7 +118,9 @@
   line-height: 1.5;
   font-size: 16px;
   margin-top: 10px;
+  transition: max-height 0.3s ease;
 }
+
 .action-icons {
   display: flex;
   justify-content: center;
@@ -128,14 +134,15 @@
   border-radius: 10px;
   background-color: #d8d8d8;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
   font-weight: bold;
   font-size: 16px;
 }
 
-.toggle-details-btn:hover {
+.toggle-details-btn:hover,
+.link:hover {
   box-shadow: inset 0 0 0 1px #8695aa;
   transform: scale(1.03);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 #results {
@@ -145,6 +152,7 @@
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  align-items: stretch;
 }
 
 .apartment-card {
@@ -161,11 +169,13 @@
   max-width: 380px;
   box-sizing: border-box;
   margin: auto;
+  height: 610px;
+  overflow: hidden;
 }
 
 .apartment-image {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -187,8 +197,25 @@
   font-size: 16px;
 }
 
+.card-actions.hidden {
+  display: none;
+}
+
+.card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.card-actions a.link,
+.card-actions .rent-btn {
+  width: 100%;
+  text-align: center;
+}
+
 .link {
-  display: inline-block;
+  display: block;
   text-align: center;
   margin-top: 10px;
   padding: 6px 14px;
@@ -198,6 +225,16 @@
   text-decoration: none;
   color: black;
   font-size: 15px;
+}
+
+.card-actions a.link,
+.card-actions .rent-btn {
+  width: 100%;
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .rent-btn {
@@ -233,6 +270,7 @@
   border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
+  min-width: 100px;
 }
 
 #pagination button:hover {
@@ -256,14 +294,15 @@
 #resetBtn {
   padding: 8px 16px;
   font-size: 15px;
-  border-radius: 25px;
+  border-radius: 15px;
   border: none;
   cursor: pointer;
   font-weight: bold;
   height: 100%;
 }
+
 .results-count {
-font-size: 18px;
+  font-size: 18px;
   font-weight: 600;
   margin: 30px auto;
   text-align: center;
@@ -271,7 +310,6 @@ font-size: 18px;
 }
 
 @media (max-width: 767px) {
-
   .filter-container {
     flex-direction: column;
     border-radius: 20px;
@@ -292,12 +330,18 @@ font-size: 18px;
     overflow: hidden;
     min-height: 460px;
   }
-  #results{
+
+    .apartment-card {
+    height: 580px; 
+  }
+
+  #results {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     padding: 10px;
   }
+
   .apartment-image {
     height: 160px;
     object-fit: cover;
@@ -312,7 +356,7 @@ font-size: 18px;
     border-radius: 10px;
     margin-bottom: 30px;
   }
-  
+
   .hero-section h2 {
     font-size: 20px;
     margin-bottom: -4px;
@@ -333,13 +377,13 @@ font-size: 18px;
     font-size: 15px;
   }
 
-.results-count {
-font-size: 18px;
-  font-weight: 600;
-  margin: 30px auto;
-  text-align: center;
-  width: 100%;
-}
+  .results-count {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+  }
 
   #pagination button {
     padding: 4px 12px;
@@ -352,7 +396,6 @@ font-size: 18px;
     text-align: center;
     margin-top: 5px;
   }
-
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -361,12 +404,13 @@ font-size: 18px;
     min-width: 200px;
   }
 
-  #results{
+  #results {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
   }
-  .filter-section { 
+
+  .filter-section {
     margin-left: 15px;
     margin-right: 15px;
     box-sizing: border-box;
