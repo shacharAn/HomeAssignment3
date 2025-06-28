@@ -1,3 +1,4 @@
+
 function saveToStorage(key, value) {
   if (typeof value === "string") {
     localStorage.setItem(key, value);
@@ -23,4 +24,14 @@ function clearUserData() {
   localStorage.removeItem("currentUser");
 }
 
-
+function getAllBookings() {
+  const bookings = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key.endsWith("_bookings")) {
+      const userBookings = JSON.parse(localStorage.getItem(key));
+      bookings.push(...userBookings);
+    }
+  }
+  return bookings;
+}
